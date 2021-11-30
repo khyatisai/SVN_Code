@@ -1,0 +1,90 @@
+package com.unfpa.appsistenciamaternaunfpa.adapters.my_health;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 10/22/2019.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB\u0015\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007J\b\u0010\r\u001a\u00020\u000eH\u0016J\u0018\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00022\u0006\u0010\u0012\u001a\u00020\u000eH\u0017J\u0018\u0010\u0013\u001a\u00020\u00022\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u000eH\u0016J\u0014\u0010\u0017\u001a\u00020\u00102\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\tJ\u000e\u0010\u0018\u001a\u00020\u00102\u0006\u0010\u0019\u001a\u00020\nR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\tX\u0082.\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\f\u00a8\u0006\u001b"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_health/AppointmentReminderAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "activity", "Landroidx/fragment/app/FragmentActivity;", "listener", "Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;", "(Landroidx/fragment/app/FragmentActivity;Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;)V", "appointmentReminderList", "", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_health/AppointmentReminder;", "getListener", "()Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;", "getItemCount", "", "onBindViewHolder", "", "itemView", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "setAppointmnetList", "showDelPopup", "appointmentReminder", "AppointReminderViewHolder", "app_debug"})
+public final class AppointmentReminderAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder> {
+    private java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.AppointmentReminder> appointmentReminderList;
+    private androidx.fragment.app.FragmentActivity activity;
+    @org.jetbrains.annotations.NotNull()
+    private final com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener listener = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener getListener() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public androidx.recyclerview.widget.RecyclerView.ViewHolder onCreateViewHolder(@org.jetbrains.annotations.NotNull()
+    android.view.ViewGroup parent, int viewType) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public int getItemCount() {
+        return 0;
+    }
+    
+    @android.annotation.SuppressLint(value = {"SimpleDateFormat"})
+    @java.lang.Override()
+    public void onBindViewHolder(@org.jetbrains.annotations.NotNull()
+    androidx.recyclerview.widget.RecyclerView.ViewHolder itemView, int position) {
+    }
+    
+    public final void showDelPopup(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.AppointmentReminder appointmentReminder) {
+    }
+    
+    public final void setAppointmnetList(@org.jetbrains.annotations.NotNull()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.AppointmentReminder> appointmentReminderList) {
+    }
+    
+    public AppointmentReminderAdapter(@org.jetbrains.annotations.NotNull()
+    androidx.fragment.app.FragmentActivity activity, @org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener listener) {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0019\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0019\u0010\n\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\tR\u0019\u0010\f\u001a\n \u0007*\u0004\u0018\u00010\r0\r\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0019\u0010\u0010\u001a\n \u0007*\u0004\u0018\u00010\u00110\u0011\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0019\u0010\u0014\u001a\n \u0007*\u0004\u0018\u00010\u00110\u0011\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0013R\u0019\u0010\u0016\u001a\n \u0007*\u0004\u0018\u00010\u00110\u0011\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0013\u00a8\u0006\u0018"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_health/AppointmentReminderAdapter$AppointReminderViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Landroid/view/View;)V", "cardAddAppointment", "Landroidx/cardview/widget/CardView;", "kotlin.jvm.PlatformType", "getCardAddAppointment", "()Landroidx/cardview/widget/CardView;", "cardContainer", "getCardContainer", "imgDelete", "Landroid/widget/ImageView;", "getImgDelete", "()Landroid/widget/ImageView;", "txtAppointmentName", "Landroid/widget/TextView;", "getTxtAppointmentName", "()Landroid/widget/TextView;", "txtCenterName", "getTxtCenterName", "txtDateTime", "getTxtDateTime", "app_debug"})
+    public static final class AppointReminderViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+        private final android.widget.TextView txtAppointmentName = null;
+        private final android.widget.ImageView imgDelete = null;
+        private final android.widget.TextView txtDateTime = null;
+        private final android.widget.TextView txtCenterName = null;
+        private final androidx.cardview.widget.CardView cardAddAppointment = null;
+        private final androidx.cardview.widget.CardView cardContainer = null;
+        
+        public final android.widget.TextView getTxtAppointmentName() {
+            return null;
+        }
+        
+        public final android.widget.ImageView getImgDelete() {
+            return null;
+        }
+        
+        public final android.widget.TextView getTxtDateTime() {
+            return null;
+        }
+        
+        public final android.widget.TextView getTxtCenterName() {
+            return null;
+        }
+        
+        public final androidx.cardview.widget.CardView getCardAddAppointment() {
+            return null;
+        }
+        
+        public final androidx.cardview.widget.CardView getCardContainer() {
+            return null;
+        }
+        
+        public AppointReminderViewHolder(@org.jetbrains.annotations.NotNull()
+        android.view.View itemView) {
+            super(null);
+        }
+    }
+}

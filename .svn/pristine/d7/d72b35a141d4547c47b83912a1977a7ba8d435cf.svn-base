@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FF8000"
+                app:elevation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextColor="@color/colorWhite">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- Date picker layout-->
+    <RelativeLayout
+            android:id="@+id/rlContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBar"
+            android:background="@drawable/page_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible">
+
+
+        <ScrollView
+                android:id="@+id/scrollpaciente3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:fillViewport="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerMyPacient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/activity_doctor_list" />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <!-- Days picker layout-->
+    <RelativeLayout
+            android:layout_below="@+id/appBar"
+            android:id="@+id/rlDaysPicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            android:background="@drawable/page_bg"
+    >
+        <ImageView
+                android:id="@+id/imgArrow"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_arrow_small"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/txtDaysHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avg_period_length"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/imgArrow"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="20dp"
+                      android:gravity="center"
+                      android:layout_below="@+id/txtDaysHeader"
+                      android:layout_height="wrap_content">
+            <NumberPicker
+                    android:id="@+id/numberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.Picker"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/DAYS"
+                      android:layout_marginLeft="20dp"
+                      style="@style/Text14Orange"
+            />
+        </LinearLayout>
+        <Button
+                android:id="@+id/btnDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/Done"
+                android:background="@drawable/button_border"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:textAppearance="?android:attr/textAppearanceButton"/>
+    </RelativeLayout>
+
+</RelativeLayout>

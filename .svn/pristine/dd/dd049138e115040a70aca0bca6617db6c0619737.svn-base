@@ -1,0 +1,78 @@
+package com.unfpa.appsistenciamaternaunfpa.adapters.patient;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\f\u0012\b\u0012\u00060\u0002R\u00020\u00000\u0001:\u0001\u0015B=\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006\u0012\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006\u0012\u000e\b\u0002\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006\u00a2\u0006\u0002\u0010\nJ\b\u0010\u000b\u001a\u00020\fH\u0016J\u001c\u0010\r\u001a\u00020\u000e2\n\u0010\u000f\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u0010\u001a\u00020\fH\u0016J\u001c\u0010\u0011\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\fH\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0016"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/patient/CustomAdapterPregnantListByBrigadista;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/patient/CustomAdapterPregnantListByBrigadista$MyViewHolder;", "context", "Landroid/content/Context;", "nombrePac", "Ljava/util/ArrayList;", "", "tvCitasPersona", "tvCitasTelemedicina", "(Landroid/content/Context;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V", "getItemCount", "", "onBindViewHolder", "", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "MyViewHolder", "app_debug"})
+public final class CustomAdapterPregnantListByBrigadista extends androidx.recyclerview.widget.RecyclerView.Adapter<com.unfpa.appsistenciamaternaunfpa.adapters.patient.CustomAdapterPregnantListByBrigadista.MyViewHolder> {
+    private android.content.Context context;
+    private java.util.ArrayList<java.lang.String> nombrePac;
+    private java.util.ArrayList<java.lang.String> tvCitasPersona;
+    private java.util.ArrayList<java.lang.String> tvCitasTelemedicina;
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public com.unfpa.appsistenciamaternaunfpa.adapters.patient.CustomAdapterPregnantListByBrigadista.MyViewHolder onCreateViewHolder(@org.jetbrains.annotations.NotNull()
+    android.view.ViewGroup parent, int viewType) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onBindViewHolder(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.adapters.patient.CustomAdapterPregnantListByBrigadista.MyViewHolder holder, int position) {
+    }
+    
+    @java.lang.Override()
+    public int getItemCount() {
+        return 0;
+    }
+    
+    public CustomAdapterPregnantListByBrigadista(@org.jetbrains.annotations.NotNull()
+    android.content.Context context, @org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> nombrePac, @org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> tvCitasPersona, @org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> tvCitasTelemedicina) {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\nR\u001a\u0010\u000b\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\b\"\u0004\b\r\u0010\nR\u001a\u0010\u000e\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\b\"\u0004\b\u0010\u0010\n\u00a8\u0006\u0011"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/patient/CustomAdapterPregnantListByBrigadista$MyViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Lcom/unfpa/appsistenciamaternaunfpa/adapters/patient/CustomAdapterPregnantListByBrigadista;Landroid/view/View;)V", "CitasPersona", "Landroid/widget/TextView;", "getCitasPersona", "()Landroid/widget/TextView;", "setCitasPersona", "(Landroid/widget/TextView;)V", "CitasTelemedicina", "getCitasTelemedicina", "setCitasTelemedicina", "nombrePregnant", "getNombrePregnant", "setNombrePregnant", "app_debug"})
+    public final class MyViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+        @org.jetbrains.annotations.NotNull()
+        private android.widget.TextView nombrePregnant;
+        @org.jetbrains.annotations.NotNull()
+        private android.widget.TextView CitasPersona;
+        @org.jetbrains.annotations.NotNull()
+        private android.widget.TextView CitasTelemedicina;
+        
+        @org.jetbrains.annotations.NotNull()
+        public final android.widget.TextView getNombrePregnant() {
+            return null;
+        }
+        
+        public final void setNombrePregnant(@org.jetbrains.annotations.NotNull()
+        android.widget.TextView p0) {
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final android.widget.TextView getCitasPersona() {
+            return null;
+        }
+        
+        public final void setCitasPersona(@org.jetbrains.annotations.NotNull()
+        android.widget.TextView p0) {
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final android.widget.TextView getCitasTelemedicina() {
+            return null;
+        }
+        
+        public final void setCitasTelemedicina(@org.jetbrains.annotations.NotNull()
+        android.widget.TextView p0) {
+        }
+        
+        public MyViewHolder(@org.jetbrains.annotations.NotNull()
+        android.view.View itemView) {
+            super(null);
+        }
+    }
+}

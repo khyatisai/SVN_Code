@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorWhite</color>
+    <color name="colorPrimaryDark">@color/colorGrey</color>
+    <color name="colorAccent">@color/colorBlue</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#D3D3D3</color>
+    <color name="colorBlue">#0062A9</color>
+    <color name="transparent">#C0000000</color>
+    <color name="orangetransparent">#86FF8000</color>
+    <color name="colorLightOrange">#FF6F62</color>
+    <color name="colorLightPink">#D077CC</color>
+    <color name="colorYellow">#ED8B00</color>
+    <color name="colorPink">#FE6093</color>
+    <color name="colorLightBlue">#BDD7E9</color>
+    <color name="white">#ffffff</color>
+    <color name="colorGray">#D5D5D5</color>
+    <color name="colorDarkGray">#5E5D5D</color>
+    <color name="colorLightGray">#616161</color>
+    <color name="colorButtonGray">#3F3D3D</color>
+    <color name="colorRegularBlack">#303030</color>
+    <color name="colorGreen">#44970E</color>
+    <color name="colorRed">#E84C3D</color>
+    <color name="colorLightBlueChat">#E5F4FF</color>
+
+    <color name="colorSuccess">#468847</color>
+    <color name="colorWarning">#c09853</color>
+    <color name="colorDanger">#b94a48</color>
+
+
+    <color name="colorDoctorBlue">#3E92C2</color>
+    <color name="colorPregnantOrange">#FF8000</color>
+    <color name="colorBrigadistPink">#da007f</color>
+
+
+    <color name="loading_overlay_color">#1A525050</color>
+
+    <!-- Nurse module color-->
+    <color name="nurse_green_color">#67ba4e</color>
+    <color name="nurse_light_green_color">#F0FFEB</color>
+    <color name="button_disable_green_color">#9BD18B</color>
+    <color name="button_disable_text_color">#585858</color>
+</resources>

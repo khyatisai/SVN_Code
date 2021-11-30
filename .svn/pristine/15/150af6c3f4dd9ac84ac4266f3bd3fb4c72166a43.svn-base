@@ -1,0 +1,68 @@
+package com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge;
+
+import java.lang.System;
+
+@androidx.room.Dao()
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0010\n\u0002\u0010\u000b\n\u0000\bg\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\'J\u000e\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H\'J\u000e\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H\'J\u0010\u0010\b\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\nH\'J\u0016\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\f\u001a\u00020\nH\'J\u001e\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u000e\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\nH\'J\u0016\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u000f\u001a\u00020\nH\'J\u001e\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0012\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\nH\'J\u0016\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0012\u001a\u00020\nH\'J\u000e\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H\'J\u0016\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u000f\u001a\u00020\nH\'J\u0010\u0010\u0016\u001a\u00020\u00032\u0006\u0010\u0017\u001a\u00020\u0006H\'J\u0018\u0010\u0018\u001a\u00020\u00032\u0006\u0010\u0019\u001a\u00020\n2\u0006\u0010\u001a\u001a\u00020\u001bH\'\u00a8\u0006\u001c"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/database/dao/my_knowledge/SRHContentDAO;", "", "deleteAll", "", "getAllContent", "", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_knowledge/SRHContent;", "getContentByHotTopics", "getContentById", "contentId", "", "getContentCategoryWise", "categoryId", "getContentListSearch", "categoryName", "strSearch", "getContentListSearchAll", "getContentListSearchTags", "strTag", "getContentTagwise", "getFavourite", "getFavouriteSearched", "insert", "contentMaster", "setFavourite", "nid", "isFavourite", "", "app_debug"})
+public abstract interface SRHContentDAO {
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getAllContent();
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE nid = :contentId")
+    public abstract com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent getContentById(@org.jetbrains.annotations.NotNull()
+    java.lang.String contentId);
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE field_thematic_area_id = :categoryId AND field_hot_srh_content = \'No\'")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getContentCategoryWise(@org.jetbrains.annotations.NotNull()
+    java.lang.String categoryId);
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE field_hot_srh_content = \'Yes\'")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getContentByHotTopics();
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE field_thematic_area = :categoryName AND (title LIKE \'%\' || :strSearch || \'%\' OR  field_short_description LIKE \'%\' || :strSearch || \'%\')")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getContentListSearch(@org.jetbrains.annotations.NotNull()
+    java.lang.String categoryName, @org.jetbrains.annotations.NotNull()
+    java.lang.String strSearch);
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE  (title LIKE \'%\' || :strSearch || \'%\' OR  field_short_description LIKE \'%\' || :strSearch || \'%\')")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getContentListSearchAll(@org.jetbrains.annotations.NotNull()
+    java.lang.String strSearch);
+    
+    @androidx.room.Insert(onConflict = androidx.room.OnConflictStrategy.IGNORE)
+    public abstract void insert(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent contentMaster);
+    
+    @androidx.room.Query(value = "DELETE FROM content_master")
+    public abstract void deleteAll();
+    
+    @androidx.room.Query(value = "UPDATE content_master SET isFavourite = :isFavourite WHERE nid = :nid")
+    public abstract void setFavourite(@org.jetbrains.annotations.NotNull()
+    java.lang.String nid, boolean isFavourite);
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE isFavourite = 1")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getFavourite();
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE isFavourite = 1 AND (title LIKE \'%\' || :strSearch || \'%\' OR  field_short_description LIKE \'%\' || :strSearch || \'%\')")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getFavouriteSearched(@org.jetbrains.annotations.NotNull()
+    java.lang.String strSearch);
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE field_tags LIKE \'%\'|| :strTag ||\'%\'")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getContentTagwise(@org.jetbrains.annotations.NotNull()
+    java.lang.String strTag);
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * from content_master WHERE (field_tags LIKE \'%\'|| :strTag ||\'%\' ) AND (title LIKE \'%\' || :strSearch || \'%\' OR  field_short_description LIKE \'%\' || :strSearch || \'%\')")
+    public abstract java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> getContentListSearchTags(@org.jetbrains.annotations.NotNull()
+    java.lang.String strTag, @org.jetbrains.annotations.NotNull()
+    java.lang.String strSearch);
+}

@@ -1,0 +1,561 @@
+package com.unfpa.appsistenciamaternaunfpa.utils;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0015\n\u0002\u0010\t\n\u0003\b\u008b\u0001\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0014\u0010\u000b\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006R\u0014\u0010\r\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006R\u0014\u0010\u000f\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0006R\u0014\u0010\u0011\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0006R\u0014\u0010\u0013\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0006R\u0014\u0010\u0015\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0006R\u0014\u0010\u0017\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0006R\u0014\u0010\u0019\u001a\u00020\u001aX\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0014\u0010\u001d\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0006R\u0014\u0010\u001f\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b \u0010\u0006R\u0014\u0010!\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0006R\u0014\u0010#\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b$\u0010\u0006R\u0014\u0010%\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b&\u0010\u0006R\u0014\u0010\'\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b(\u0010\u0006R\u0014\u0010)\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b*\u0010\u0006R\u0014\u0010+\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b,\u0010\u0006R\u0014\u0010-\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b.\u0010\u0006R\u0014\u0010/\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b0\u0010\u0006R\u0014\u00101\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b2\u0010\u0006R\u0014\u00103\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b4\u0010\u0006R\u0014\u00105\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b6\u0010\u0006R\u0014\u00107\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b8\u0010\u0006R\u0014\u00109\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b:\u0010\u0006R\u0014\u0010;\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b<\u0010\u0006R\u0014\u0010=\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b>\u0010\u0006R\u0014\u0010?\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b@\u0010\u0006R\u0014\u0010A\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bB\u0010\u0006R\u0014\u0010C\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bD\u0010\u0006R\u0014\u0010E\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bF\u0010\u0006R\u0014\u0010G\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bH\u0010\u0006R\u0014\u0010I\u001a\u00020\u001aX\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bJ\u0010\u001cR\u0014\u0010K\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bL\u0010\u0006R\u0014\u0010M\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bN\u0010\u0006R\u0014\u0010O\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bP\u0010\u0006R\u0014\u0010Q\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bR\u0010\u0006R\u0014\u0010S\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bT\u0010\u0006R\u0014\u0010U\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bV\u0010\u0006R\u0014\u0010W\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bX\u0010\u0006R\u0014\u0010Y\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bZ\u0010\u0006R\u0014\u0010[\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\\\u0010\u0006R\u0014\u0010]\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b^\u0010\u0006R\u0014\u0010_\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b`\u0010\u0006R\u0014\u0010a\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bb\u0010\u0006R\u0014\u0010c\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bd\u0010\u0006R\u0014\u0010e\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bf\u0010\u0006R\u0014\u0010g\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bh\u0010\u0006R\u0014\u0010i\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bj\u0010\u0006R\u0014\u0010k\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bl\u0010\u0006R\u0014\u0010m\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bn\u0010\u0006R\u0014\u0010o\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bp\u0010\u0006R\u0014\u0010q\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\br\u0010\u0006R\u0014\u0010s\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bt\u0010\u0006R\u0014\u0010u\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bv\u0010\u0006R\u0014\u0010w\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bx\u0010\u0006R\u0014\u0010y\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\bz\u0010\u0006R\u0014\u0010{\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b|\u0010\u0006R\u0014\u0010}\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b~\u0010\u0006R\u0015\u0010\u007f\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0080\u0001\u0010\u0006R\u0016\u0010\u0081\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0082\u0001\u0010\u0006R\u0016\u0010\u0083\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0084\u0001\u0010\u0006R\u0016\u0010\u0085\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0086\u0001\u0010\u0006R\u0016\u0010\u0087\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0088\u0001\u0010\u0006R\u0016\u0010\u0089\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u008a\u0001\u0010\u0006R\u0016\u0010\u008b\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u008c\u0001\u0010\u0006R\u0016\u0010\u008d\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u008e\u0001\u0010\u0006R\u0016\u0010\u008f\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0090\u0001\u0010\u0006R\u0016\u0010\u0091\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0092\u0001\u0010\u0006R\u0016\u0010\u0093\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0094\u0001\u0010\u0006R\u0016\u0010\u0095\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0096\u0001\u0010\u0006R\u0016\u0010\u0097\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u0098\u0001\u0010\u0006R\u0016\u0010\u0099\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u009a\u0001\u0010\u0006R\u0016\u0010\u009b\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u009c\u0001\u0010\u0006R\u0016\u0010\u009d\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u009e\u0001\u0010\u0006R\u0016\u0010\u009f\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u00a0\u0001\u0010\u0006R\u0016\u0010\u00a1\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u00a2\u0001\u0010\u0006R\u0016\u0010\u00a3\u0001\u001a\u00020\u0004X\u0086D\u00a2\u0006\t\n\u0000\u001a\u0005\b\u00a4\u0001\u0010\u0006\u00a8\u0006\u00a5\u0001"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/utils/Constant;", "", "()V", "APPOINTMENT_DISPLAY_DATE_FORMAT", "", "getAPPOINTMENT_DISPLAY_DATE_FORMAT", "()Ljava/lang/String;", "APP_OPEN", "getAPP_OPEN", "CALL_KNOWLEDGEABLE_PERSON", "getCALL_KNOWLEDGEABLE_PERSON", "CENTER_ID", "getCENTER_ID", "CENTER_NAME", "getCENTER_NAME", "CHANNEL_ID", "getCHANNEL_ID", "CHANNEL_NAME", "getCHANNEL_NAME", "CHAT_KNOWLEDGEABLE_PERSON", "getCHAT_KNOWLEDGEABLE_PERSON", "CONVERSATION_NODE", "getCONVERSATION_NODE", "DB_NAME", "getDB_NAME", "DISCONNECT_TIMEOUT", "", "getDISCONNECT_TIMEOUT", "()J", "FRAG_TAGED_NAME", "getFRAG_TAGED_NAME", "INTRO_FLAG", "getINTRO_FLAG", "ITEM_AGE_GROUP", "getITEM_AGE_GROUP", "ITEM_COUNTRY_CODE", "getITEM_COUNTRY_CODE", "ITEM_DISTRICT", "getITEM_DISTRICT", "ITEM_EDUCATION", "getITEM_EDUCATION", "ITEM_GENDER", "getITEM_GENDER", "ITEM_INTEREST", "getITEM_INTEREST", "KNOWLEDGEABLE_PERSON_COUNTRY_CODE", "getKNOWLEDGEABLE_PERSON_COUNTRY_CODE", "KNOWLEDGEABLE_PERSON_NAME", "getKNOWLEDGEABLE_PERSON_NAME", "KNOWLEDGEABLE_PERSON_NODE", "getKNOWLEDGEABLE_PERSON_NODE", "KNOWLEDGEABLE_PERSON_UID", "getKNOWLEDGEABLE_PERSON_UID", "MEDICINE_TIME_FORMAT_INPUT", "getMEDICINE_TIME_FORMAT_INPUT", "MEDICINE_TIME_FORMAT_TARGET", "getMEDICINE_TIME_FORMAT_TARGET", "MENSTRUAL_TRACKER", "getMENSTRUAL_TRACKER", "MESSAGES_NODE", "getMESSAGES_NODE", "MESSAGE_COUNT", "getMESSAGE_COUNT", "MESSAGE_TYPE_INCOMING", "getMESSAGE_TYPE_INCOMING", "MESSAGE_TYPE_OUTGOING", "getMESSAGE_TYPE_OUTGOING", "NOTIFICATION_ID", "getNOTIFICATION_ID", "NOTIFICATION_ITEM_ID", "getNOTIFICATION_ITEM_ID", "NOTIFICATION_SUB_TITLE", "getNOTIFICATION_SUB_TITLE", "NOTIFICATION_TIMEOUT", "getNOTIFICATION_TIMEOUT", "NOTIFICATION_TITLE", "getNOTIFICATION_TITLE", "NOTIFICATION_TYPE", "getNOTIFICATION_TYPE", "NOTIFICATION_TYPE_APPOINTMENT", "getNOTIFICATION_TYPE_APPOINTMENT", "NOTIFICATION_TYPE_MEDICINE", "getNOTIFICATION_TYPE_MEDICINE", "NO_OF_DAYS", "getNO_OF_DAYS", "OTHER_HEALTH_TOOL", "getOTHER_HEALTH_TOOL", "PERIOD_DATE_FORMAT", "getPERIOD_DATE_FORMAT", "PREF_AGE_GROUP", "getPREF_AGE_GROUP", "PREF_CHAT_DISP_NAME", "getPREF_CHAT_DISP_NAME", "PREF_CHAT_UID", "getPREF_CHAT_UID", "PREF_COUNTRY", "getPREF_COUNTRY", "PREF_CO_CODE", "getPREF_CO_CODE", "PREF_GENDER", "getPREF_GENDER", "PREF_IS_FIRST_TIME", "getPREF_IS_FIRST_TIME", "PREF_LANGUAGE_CODE", "getPREF_LANGUAGE_CODE", "PREF_NAME", "getPREF_NAME", "PREF_UNIQUE_ID", "getPREF_UNIQUE_ID", "PREF_USER_EMAIL", "getPREF_USER_EMAIL", "PREF_USER_FIRSTNAME", "getPREF_USER_FIRSTNAME", "PREF_USER_ID", "getPREF_USER_ID", "PREF_USER_LASTNAME", "getPREF_USER_LASTNAME", "QUEUE_NODE", "getQUEUE_NODE", "REQ_CATEGORIES", "getREQ_CATEGORIES", "REQ_CONTENT_LIST", "getREQ_CONTENT_LIST", "REQ_COUNTRY_LIST", "getREQ_COUNTRY_LIST", "REQ_COUNT_OFFICE", "getREQ_COUNT_OFFICE", "REQ_QUIZ", "getREQ_QUIZ", "REQ_SERVICE_CENTER_DETAIL", "getREQ_SERVICE_CENTER_DETAIL", "REQ_SERVICE_LIST", "getREQ_SERVICE_LIST", "SELECTED_DATE", "getSELECTED_DATE", "SERVER_TIMESTEMP", "getSERVER_TIMESTEMP", "SERVICE_PROVIDER_FEEDBACK", "getSERVICE_PROVIDER_FEEDBACK", "SERVICE_PROVIDER_SEARCH", "getSERVICE_PROVIDER_SEARCH", "SERVICE_PROVIDER_SHARE", "getSERVICE_PROVIDER_SHARE", "SRH_CONTENT_FAVORITE", "getSRH_CONTENT_FAVORITE", "SRH_CONTENT_SEARCH", "getSRH_CONTENT_SEARCH", "SRH_CONTENT_SHARE", "getSRH_CONTENT_SHARE", "SRH_CONTENT_VIEW", "getSRH_CONTENT_VIEW", "STORY_SUBMIT", "getSTORY_SUBMIT", "TAG_NAME", "getTAG_NAME", "TYPE_USER", "getTYPE_USER", "USERS_NODE", "getUSERS_NODE", "USER_PROFILE_REG", "getUSER_PROFILE_REG", "USER_QUIZ_RESPOND", "getUSER_QUIZ_RESPOND", "USER_QUIZ_TAKE", "getUSER_QUIZ_TAKE", "app_debug"})
+public final class Constant {
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String DB_NAME = "mhealth_database.db";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_UNIQUE_ID = "UNIQUE_ID";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_NAME = "MY_PREF";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_AGE_GROUP = "AgeGroup";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_GENDER = "Gender";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_COUNTRY = "CountryCode";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NO_OF_DAYS = "NumberOfDays";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SELECTED_DATE = "SelectedDate";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PERIOD_DATE_FORMAT = "dd-MM-yyyy";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String MEDICINE_TIME_FORMAT_INPUT = "HH:mm";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String MEDICINE_TIME_FORMAT_TARGET = "hh:mm aa";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String CENTER_ID = "center_id";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String CENTER_NAME = "center_name";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String APPOINTMENT_DISPLAY_DATE_FORMAT = "dd MMM yyyy";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SERVER_TIMESTEMP = "ServerTimestemp";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_CHAT_UID = "ChatUID";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_CHAT_DISP_NAME = "ChatDispName";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_IS_FIRST_TIME = "isFirstTime";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_CO_CODE = "coCode";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String ITEM_COUNTRY_CODE = "CountryCode";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_LANGUAGE_CODE = "languageCode";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String APP_OPEN = "App_Open";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String USER_PROFILE_REG = "User_Profile_Registration";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SRH_CONTENT_VIEW = "SRH_Content_View";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SRH_CONTENT_SHARE = "SRH_Content_Share";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SRH_CONTENT_SEARCH = "SRH_Content_Search";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SRH_CONTENT_FAVORITE = "SRH_Content_Favorite";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String USER_QUIZ_TAKE = "User_Quiz_Take";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String USER_QUIZ_RESPOND = "User_Quiz_Respond";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String MENSTRUAL_TRACKER = "Menstrual_Tracker";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String OTHER_HEALTH_TOOL = "Other_Health_Tool";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SERVICE_PROVIDER_SEARCH = "Service_Provider_Search";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SERVICE_PROVIDER_SHARE = "Service_Provider_Share";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String SERVICE_PROVIDER_FEEDBACK = "Service_Provider_Feedback";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String STORY_SUBMIT = "Story_Submit";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String CALL_KNOWLEDGEABLE_PERSON = "Call_Knowledgeable_person";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String CHAT_KNOWLEDGEABLE_PERSON = "Chat_Knowledgeable_person";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String MESSAGE_TYPE_INCOMING = "Incoming";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String MESSAGE_TYPE_OUTGOING = "Outgoing";
+    private static final long NOTIFICATION_TIMEOUT = 300000L;
+    private static final long DISCONNECT_TIMEOUT = 300000L;
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String CHANNEL_ID = "com.unfpa.appsistenciamaternaunfpa.notification.CHANNEL_ID";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String CHANNEL_NAME = "mHealth Notification";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NOTIFICATION_TYPE_MEDICINE = "Noti_Medi";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NOTIFICATION_TYPE_APPOINTMENT = "Noti_Appo";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NOTIFICATION_ITEM_ID = "NotificationItemId";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NOTIFICATION_ID = "NotificationId";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NOTIFICATION_TITLE = "NotificationTitle";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NOTIFICATION_TYPE = "NotificationType";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String NOTIFICATION_SUB_TITLE = "NotificationSubTitle";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String ITEM_DISTRICT = "District";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String ITEM_GENDER = "Gender";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String ITEM_AGE_GROUP = "AgeGroup";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String ITEM_INTEREST = "Interest";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String ITEM_EDUCATION = "Education";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String INTRO_FLAG = "IntroFlag";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String KNOWLEDGEABLE_PERSON_NODE = "KnowledgeablePersons";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String MESSAGES_NODE = "Messages";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String USERS_NODE = "Users";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String QUEUE_NODE = "Que";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String CONVERSATION_NODE = "Con";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String KNOWLEDGEABLE_PERSON_UID = "UID";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String KNOWLEDGEABLE_PERSON_NAME = "Name";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String KNOWLEDGEABLE_PERSON_COUNTRY_CODE = "CountryCode";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String MESSAGE_COUNT = "messageCount";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String REQ_COUNT_OFFICE = "CountryOfficeList";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String REQ_CATEGORIES = "ContentCategories";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String REQ_CONTENT_LIST = "ContentList";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String REQ_SERVICE_CENTER_DETAIL = "ServiceCenterDetail";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String REQ_SERVICE_LIST = "ServiceList";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String REQ_QUIZ = "Quiz";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String REQ_COUNTRY_LIST = "CountryList";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String TAG_NAME = "tagName";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String FRAG_TAGED_NAME = "taggedFrag";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_USER_ID = "UserId";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_USER_FIRSTNAME = "UserFirstName";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_USER_LASTNAME = "UserLastName";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String PREF_USER_EMAIL = "UserEmail";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String TYPE_USER = "TypeUser";
+    public static final com.unfpa.appsistenciamaternaunfpa.utils.Constant INSTANCE = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getDB_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_UNIQUE_ID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_AGE_GROUP() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_GENDER() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_COUNTRY() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNO_OF_DAYS() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSELECTED_DATE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPERIOD_DATE_FORMAT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMEDICINE_TIME_FORMAT_INPUT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMEDICINE_TIME_FORMAT_TARGET() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCENTER_ID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCENTER_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAPPOINTMENT_DISPLAY_DATE_FORMAT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSERVER_TIMESTEMP() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_CHAT_UID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_CHAT_DISP_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_IS_FIRST_TIME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_CO_CODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITEM_COUNTRY_CODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_LANGUAGE_CODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAPP_OPEN() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUSER_PROFILE_REG() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSRH_CONTENT_VIEW() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSRH_CONTENT_SHARE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSRH_CONTENT_SEARCH() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSRH_CONTENT_FAVORITE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUSER_QUIZ_TAKE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUSER_QUIZ_RESPOND() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMENSTRUAL_TRACKER() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getOTHER_HEALTH_TOOL() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSERVICE_PROVIDER_SEARCH() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSERVICE_PROVIDER_SHARE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSERVICE_PROVIDER_FEEDBACK() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSTORY_SUBMIT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCALL_KNOWLEDGEABLE_PERSON() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCHAT_KNOWLEDGEABLE_PERSON() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMESSAGE_TYPE_INCOMING() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMESSAGE_TYPE_OUTGOING() {
+        return null;
+    }
+    
+    public final long getNOTIFICATION_TIMEOUT() {
+        return 0L;
+    }
+    
+    public final long getDISCONNECT_TIMEOUT() {
+        return 0L;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCHANNEL_ID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCHANNEL_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_TYPE_MEDICINE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_TYPE_APPOINTMENT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_ITEM_ID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_ID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_TITLE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_TYPE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_SUB_TITLE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITEM_DISTRICT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITEM_GENDER() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITEM_AGE_GROUP() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITEM_INTEREST() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getITEM_EDUCATION() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getINTRO_FLAG() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getKNOWLEDGEABLE_PERSON_NODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMESSAGES_NODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUSERS_NODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getQUEUE_NODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCONVERSATION_NODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getKNOWLEDGEABLE_PERSON_UID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getKNOWLEDGEABLE_PERSON_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getKNOWLEDGEABLE_PERSON_COUNTRY_CODE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMESSAGE_COUNT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREQ_COUNT_OFFICE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREQ_CATEGORIES() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREQ_CONTENT_LIST() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREQ_SERVICE_CENTER_DETAIL() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREQ_SERVICE_LIST() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREQ_QUIZ() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREQ_COUNTRY_LIST() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTAG_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getFRAG_TAGED_NAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_USER_ID() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_USER_FIRSTNAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_USER_LASTNAME() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPREF_USER_EMAIL() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTYPE_USER() {
+        return null;
+    }
+    
+    private Constant() {
+        super();
+    }
+}

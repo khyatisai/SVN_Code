@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/tools"
+            android:background="@drawable/page_bg"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <EditText
+                android:id="@+id/edtSearch"
+                android:background="@drawable/rounded_border_edittext"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="false"
+                android:paddingRight="10dp"
+                android:hint="@string/SearchArticlesServices"
+                android:drawableRight="@drawable/ic_input_search"
+                android:layout_height="40dp"/>
+        <!-- Dashboard layout-->
+        <LinearLayout
+                android:id="@+id/llDashboard"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_below="@+id/edtSearch"
+                android:layout_height="match_parent">
+
+
+            <!--Tiles Section-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <!-- My Knowledge Card -->
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMyKnowledge"
+                        android:layout_width="match_parent"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardElevation="4dp"
+                        android:layout_height="match_parent">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="match_parent">
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:background="@color/colorLightOrange"
+                                      android:layout_height="wrap_content">
+                            <ImageView
+                                    android:id="@+id/imgMyKnowledge"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="20dp"
+                                    android:src="@drawable/ic_landing_knowledge"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_marginLeft="10dp"
+                                      android:layout_marginRight="10dp"
+                                      android:gravity="center_vertical"
+                                      android:layout_height="match_parent">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/colorLightOrange"
+                                      android:textSize="@dimen/text_16SP"
+                                      android:layout_centerHorizontal="true"
+                                      fontPath="fonts/Roboto-Bold.ttf"
+                                      android:text="@string/menu_my_knowledge"
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="5dp"
+                                      android:textColor="@color/colorBlack"
+                                      android:textSize="@dimen/text_12SP"
+                                      android:layout_centerHorizontal="true"
+                                      android:text="@string/myknowledge_desc"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- My Services Card -->
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMyServices"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="match_parent">
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:background="@color/colorBlue"
+                                      android:layout_height="wrap_content">
+                            <ImageView
+                                    android:id="@+id/imgMyServices"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_landing_services"
+                                    android:layout_margin="20dp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_marginLeft="10dp"
+                                      android:layout_marginRight="10dp"
+                                      android:gravity="center_vertical"
+                                      android:layout_height="match_parent">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/colorBlue"
+                                      android:textSize="@dimen/text_16SP"
+                                      fontPath="fonts/Roboto-Bold.ttf"
+                                      android:layout_centerHorizontal="true"
+                                      android:text="@string/menu_my_services"
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="5dp"
+                                      android:textColor="@color/colorBlack"
+                                      android:textSize="@dimen/text_12SP"
+                                      android:layout_centerHorizontal="true"
+                                      android:text="@string/myservices_desc"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- My Health Card -->
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMyHealth"
+                        android:layout_width="match_parent"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardElevation="4dp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="match_parent">
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:background="@color/colorLightPink"
+                                      android:layout_height="wrap_content">
+                            <ImageView
+                                    android:id="@+id/imgMyHealth"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_landing_health"
+                                    android:layout_margin="20dp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_marginLeft="10dp"
+                                      android:layout_marginRight="10dp"
+                                      android:gravity="center_vertical"
+                                      android:layout_height="match_parent">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/colorLightPink"
+                                      android:textSize="@dimen/text_16SP"
+                                      fontPath="fonts/Roboto-Bold.ttf"
+                                      android:layout_centerHorizontal="true"
+                                      android:layout_below="@+id/imgMyHealth"
+                                      android:text="@string/menu_my_health"
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="5dp"
+                                      android:textColor="@color/colorBlack"
+                                      android:textSize="@dimen/text_12SP"
+                                      android:layout_centerHorizontal="true"
+                                      android:text="@string/myhealth_desc"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- My Voice Section-->
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/cardMyVoice"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_height="match_parent">
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:background="@color/colorYellow"
+                                      android:layout_height="wrap_content">
+                            <ImageView
+                                    android:id="@+id/imgMyVoice"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_landing_voice"
+                                    android:layout_margin="20dp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_marginLeft="10dp"
+                                      android:layout_marginRight="10dp"
+                                      android:gravity="center_vertical"
+                                      android:layout_height="match_parent">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/colorYellow"
+                                      android:textSize="@dimen/text_16SP"
+                                      fontPath="fonts/Roboto-Bold.ttf"
+                                      android:layout_centerHorizontal="true"
+                                      android:layout_below="@+id/imgMyVoice"
+                                      android:text="@string/menu_my_voice"
+                            />
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="5dp"
+                                      android:textColor="@color/colorBlack"
+                                      android:textSize="@dimen/text_12SP"
+                                      android:layout_centerHorizontal="true"
+                                      android:text="@string/myVoice_desc"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- My Reminders Section-->
+                <LinearLayout
+                        android:id="@+id/llMyReminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:textSize="14sp"
+                              android:textColor="@color/colorLightOrange"
+                              android:text="@string/MedicationForToday"
+                              android:layout_marginLeft="20dp"
+                              android:layout_marginRight="20dp"
+                              android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/lstMedicineReminder"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <!-- My Appointment Section-->
+                <LinearLayout
+                        android:id="@+id/llMyAppoints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:textSize="14sp"
+                              android:layout_marginLeft="20dp"
+                              android:layout_marginRight="20dp"
+                              android:textColor="@color/colorLightOrange"
+                              android:text="@string/MyAppointments"
+                              android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/lstAppointmentReminder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Search Result Layout -->
+        <LinearLayout
+                android:id="@+id/llSearchResult"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:paddingRight="15dp"
+                android:layout_below="@+id/edtSearch"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:id="@+id/llArticleContainer"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_height="0dp">
+                <TextView
+                        android:id="@+id/txtArticleHeader"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorLightOrange"
+                        android:text="@string/articles"
+                        android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lstSRHContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                >
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/llServiceContainer"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_height="0dp">
+                <TextView
+                        android:id="@+id/txtHeaderServices"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorLightOrange"
+                        android:text="@string/services"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lstSRHServices"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                >
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/txtNoItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Text20Gray"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_result_found"/>
+        </LinearLayout>
+        <!-- Search layout-->
+    </RelativeLayout>
+</ScrollView>

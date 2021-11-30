@@ -1,0 +1,77 @@
+package com.unfpa.appsistenciamaternaunfpa.activities.my_health.profile_pregnant;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0014J\b\u0010\u001b\u001a\u00020\u0018H\u0002J\b\u0010\u001c\u001a\u00020\u0018H\u0016J\u0012\u0010\u001d\u001a\u00020\u00182\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0014J\u0010\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0010\u0010$\u001a\u00020!2\u0006\u0010%\u001a\u00020&H\u0016R \u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u000e\u00a2\u0006\u0002\n\u0000R \u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0007\"\u0004\b\u0016\u0010\t\u00a8\u0006\'"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/my_health/profile_pregnant/InformacionActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "IdConsejos", "Ljava/util/ArrayList;", "", "getIdConsejos", "()Ljava/util/ArrayList;", "setIdConsejos", "(Ljava/util/ArrayList;)V", "getAllCategoryInfo", "getGetAllCategoryInfo", "()Ljava/lang/String;", "setGetAllCategoryInfo", "(Ljava/lang/String;)V", "numberOfDays", "", "selectedDt", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "tvCategoriaConsejos", "getTvCategoriaConsejos", "setTvCategoriaConsejos", "attachBaseContext", "", "newBase", "Landroid/content/Context;", "getAllInformacionCategoria2", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateOptionsMenu", "", "menu", "Landroid/view/Menu;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "app_debug"})
+public final class InformacionActivity extends androidx.appcompat.app.AppCompatActivity {
+    private androidx.appcompat.widget.Toolbar toolbar;
+    private java.lang.String selectedDt;
+    private int numberOfDays;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> IdConsejos;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvCategoriaConsejos;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getAllCategoryInfo;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getIdConsejos() {
+        return null;
+    }
+    
+    public final void setIdConsejos(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvCategoriaConsejos() {
+        return null;
+    }
+    
+    public final void setTvCategoriaConsejos(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetAllCategoryInfo() {
+        return null;
+    }
+    
+    public final void setGetAllCategoryInfo(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    private final void getAllInformacionCategoria2() {
+    }
+    
+    @java.lang.Override()
+    public boolean onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
+    android.view.Menu menu) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.NotNull()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public InformacionActivity() {
+        super();
+    }
+}

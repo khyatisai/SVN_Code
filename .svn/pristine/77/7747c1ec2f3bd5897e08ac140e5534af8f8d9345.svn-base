@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Date picker layout-->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:background="@drawable/page_bg"
+>
+
+    <TextView
+            android:id="@+id/txtHeader"
+            style="@style/Text14Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/last_period_start"
+            android:textColor="#3E92C2" />
+
+    <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:elevation="10dp"
+            android:theme="@style/CalenderViewCustom2"
+            android:layout_below="@+id/txtHeader"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+    <TextView
+            android:id="@+id/txtClose"
+            style="@style/Text14Blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnDone"
+            android:layout_centerHorizontal="true"
+            android:text="@string/CloseSpanish" />
+
+    <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#3E92C2"
+            android:gravity="center"
+            android:text="@string/Done"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+</RelativeLayout>

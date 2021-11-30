@@ -1,0 +1,191 @@
+package com.unfpa.appsistenciamaternaunfpa.activities;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u001c\u00101\u001a\u0002022\b\u00103\u001a\u0004\u0018\u0001042\b\u00105\u001a\u0004\u0018\u00010\u0004H\u0007J\u0006\u00106\u001a\u000207J\u0006\u00108\u001a\u000202J\"\u00109\u001a\u0002022\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020;2\b\u0010=\u001a\u0004\u0018\u00010>H\u0014J\u0012\u0010?\u001a\u0002022\b\u0010@\u001a\u0004\u0018\u00010AH\u0014J\b\u0010B\u001a\u000202H\u0002J\b\u0010C\u001a\u000202H\u0002J\u000e\u0010D\u001a\u0002022\u0006\u00105\u001a\u00020\u0004J\u0012\u0010E\u001a\u00020\u0004*\u00020\u00002\u0006\u0010F\u001a\u00020GR\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0006\"\u0004\b\u000b\u0010\bR\u001a\u0010\f\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u0006\"\u0004\b\u000e\u0010\bR\u001a\u0010\u000f\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0006\"\u0004\b\u0011\u0010\bR\u001a\u0010\u0012\u001a\u00020\u0013X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R\u001a\u0010\u0018\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0006\"\u0004\b\u001a\u0010\bR\u001a\u0010\u001b\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0006\"\u0004\b\u001d\u0010\bR\u001a\u0010\u001e\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u0006\"\u0004\b \u0010\bR\u0011\u0010!\u001a\u00020\"\u00a2\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u001a\u0010%\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b&\u0010\u0006\"\u0004\b\'\u0010\bR\u001a\u0010(\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010\u0006\"\u0004\b*\u0010\bR\u001a\u0010+\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010\u0006\"\u0004\b-\u0010\bR\u001a\u0010.\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u0010\u0006\"\u0004\b0\u0010\b\u00a8\u0006H"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/LoginPregnantActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "LOGIN", "", "getLOGIN", "()Ljava/lang/String;", "setLOGIN", "(Ljava/lang/String;)V", "REGISTER", "getREGISTER", "setREGISTER", "UPDATETOKEN", "getUPDATETOKEN", "setUPDATETOKEN", "accessToken", "getAccessToken", "setAccessToken", "callbackManager", "Lcom/facebook/CallbackManager;", "getCallbackManager", "()Lcom/facebook/CallbackManager;", "setCallbackManager", "(Lcom/facebook/CallbackManager;)V", "email", "getEmail", "setEmail", "firstName", "getFirstName", "setFirstName", "id", "getId", "setId", "jsonobj", "Lorg/json/JSONObject;", "getJsonobj", "()Lorg/json/JSONObject;", "lastName", "getLastName", "setLastName", "middleName", "getMiddleName", "setMiddleName", "name", "getName", "setName", "picture", "getPicture", "setPicture", "getUserProfile", "", "token", "Lcom/facebook/AccessToken;", "userId", "isLoggedIn", "", "logOutUser", "onActivityResult", "requestCode", "", "resultCode", "data", "Landroid/content/Intent;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "openDetailsActivity", "saveUserByFB", "storeToken", "getVolleyError", "error", "Lcom/android/volley/VolleyError;", "app_debug"})
+public final class LoginPregnantActivity extends androidx.appcompat.app.AppCompatActivity {
+    @org.jetbrains.annotations.NotNull()
+    public com.facebook.CallbackManager callbackManager;
+    @org.jetbrains.annotations.NotNull()
+    private final org.json.JSONObject jsonobj = null;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String id;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String firstName;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String middleName;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String lastName;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String name;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String picture;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String email;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String accessToken;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String LOGIN;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String REGISTER;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String UPDATETOKEN;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.facebook.CallbackManager getCallbackManager() {
+        return null;
+    }
+    
+    public final void setCallbackManager(@org.jetbrains.annotations.NotNull()
+    com.facebook.CallbackManager p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final org.json.JSONObject getJsonobj() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getId() {
+        return null;
+    }
+    
+    public final void setId(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getFirstName() {
+        return null;
+    }
+    
+    public final void setFirstName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getMiddleName() {
+        return null;
+    }
+    
+    public final void setMiddleName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getLastName() {
+        return null;
+    }
+    
+    public final void setLastName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getName() {
+        return null;
+    }
+    
+    public final void setName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPicture() {
+        return null;
+    }
+    
+    public final void setPicture(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getEmail() {
+        return null;
+    }
+    
+    public final void setEmail(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAccessToken() {
+        return null;
+    }
+    
+    public final void setAccessToken(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getLOGIN() {
+        return null;
+    }
+    
+    public final void setLOGIN(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getREGISTER() {
+        return null;
+    }
+    
+    public final void setREGISTER(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUPDATETOKEN() {
+        return null;
+    }
+    
+    public final void setUPDATETOKEN(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @android.annotation.SuppressLint(value = {"LongLogTag"})
+    public final void getUserProfile(@org.jetbrains.annotations.Nullable()
+    com.facebook.AccessToken token, @org.jetbrains.annotations.Nullable()
+    java.lang.String userId) {
+    }
+    
+    public final boolean isLoggedIn() {
+        return false;
+    }
+    
+    public final void logOutUser() {
+    }
+    
+    @java.lang.Override()
+    protected void onActivityResult(int requestCode, int resultCode, @org.jetbrains.annotations.Nullable()
+    android.content.Intent data) {
+    }
+    
+    private final void openDetailsActivity() {
+    }
+    
+    private final void saveUserByFB() {
+    }
+    
+    public final void storeToken(@org.jetbrains.annotations.NotNull()
+    java.lang.String userId) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getVolleyError(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.activities.LoginPregnantActivity $this$getVolleyError, @org.jetbrains.annotations.NotNull()
+    com.android.volley.VolleyError error) {
+        return null;
+    }
+    
+    public LoginPregnantActivity() {
+        super();
+    }
+}

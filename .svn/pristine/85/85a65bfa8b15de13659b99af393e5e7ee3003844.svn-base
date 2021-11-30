@@ -1,0 +1,205 @@
+package com.unfpa.appsistenciamaternaunfpa.fragments;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 8/16/2019.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0011\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0015\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010G\u001a\u00020HH\u0002J\b\u0010I\u001a\u00020HH\u0002J\b\u0010J\u001a\u00020\u0004H\u0002J\b\u0010K\u001a\u00020LH\u0002J&\u0010M\u001a\u0004\u0018\u00010N2\u0006\u0010O\u001a\u00020P2\b\u0010Q\u001a\u0004\u0018\u00010R2\b\u0010S\u001a\u0004\u0018\u00010TH\u0016J+\u0010U\u001a\u00020H2\u0006\u0010V\u001a\u00020F2\f\u0010B\u001a\b\u0012\u0004\u0012\u00020\u00040C2\u0006\u0010W\u001a\u00020XH\u0016\u00a2\u0006\u0002\u0010YJ\u001a\u0010Z\u001a\u00020H2\u0006\u0010[\u001a\u00020N2\b\u0010S\u001a\u0004\u0018\u00010TH\u0016J\u0010\u0010\\\u001a\u00020H2\b\u0010]\u001a\u0004\u0018\u00010^R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R*\u0010\u0007\u001a\u0012\u0012\u0004\u0012\u00020\u00040\bj\b\u0012\u0004\u0012\u00020\u0004`\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR\u001a\u0010\u000e\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0006\"\u0004\b\u0010\u0010\u0011R*\u0010\u0012\u001a\u0012\u0012\u0004\u0012\u00020\u00040\bj\b\u0012\u0004\u0012\u00020\u0004`\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u000b\"\u0004\b\u0014\u0010\rR*\u0010\u0015\u001a\u0012\u0012\u0004\u0012\u00020\u00040\bj\b\u0012\u0004\u0012\u00020\u0004`\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u000b\"\u0004\b\u0017\u0010\rR\u001a\u0010\u0018\u001a\u000e\u0012\b\u0012\u00060\u001aR\u00020\u001b\u0018\u00010\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u001c\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u0006\"\u0004\b\u001e\u0010\u0011R\u001a\u0010\u001f\u001a\u00020 X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u001a\u0010%\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b&\u0010\u0006\"\u0004\b\'\u0010\u0011R\u001a\u0010(\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010\u0006\"\u0004\b*\u0010\u0011R\u001a\u0010+\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010\u0006\"\u0004\b-\u0010\u0011R\u001a\u0010.\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u0010\u0006\"\u0004\b0\u0010\u0011R\u000e\u00101\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u00102\u001a\u000203\u00a2\u0006\b\n\u0000\u001a\u0004\b4\u00105R\u0010\u00106\u001a\u0004\u0018\u000107X\u0082\u000e\u00a2\u0006\u0002\n\u0000R \u00108\u001a\b\u0012\u0004\u0012\u00020:09X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b;\u0010<\"\u0004\b=\u0010>R\u001a\u0010?\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b@\u0010\u0006\"\u0004\bA\u0010\u0011R\u0016\u0010B\u001a\b\u0012\u0004\u0012\u00020\u00040CX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010DR\u000e\u0010E\u001a\u00020FX\u0082D\u00a2\u0006\u0002\n\u0000\u00a8\u0006_"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/fragments/HomeDoctorFragment;", "Landroidx/fragment/app/Fragment;", "()V", "APPOINTMENT", "", "getAPPOINTMENT", "()Ljava/lang/String;", "HoraCitaPac", "Ljava/util/ArrayList;", "Lkotlin/collections/ArrayList;", "getHoraCitaPac", "()Ljava/util/ArrayList;", "setHoraCitaPac", "(Ljava/util/ArrayList;)V", "IdAppointment", "getIdAppointment", "setIdAppointment", "(Ljava/lang/String;)V", "ListCancelada", "getListCancelada", "setListCancelada", "NombreCompletoPac", "getNombreCompletoPac", "setNombreCompletoPac", "adapter", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/doctor/CustomAdapterAppointment$MyViewHolder;", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/doctor/CustomAdapterAppointment;", "birth", "getBirth", "setBirth", "firebaseRef", "Lcom/google/firebase/database/DatabaseReference;", "getFirebaseRef", "()Lcom/google/firebase/database/DatabaseReference;", "setFirebaseRef", "(Lcom/google/firebase/database/DatabaseReference;)V", "gestationWeeks", "getGestationWeeks", "setGestationWeeks", "gestationWeeksDate", "getGestationWeeksDate", "setGestationWeeksDate", "getAppByDoctor", "getGetAppByDoctor", "setGetAppByDoctor", "getMyUserId", "getGetMyUserId", "setGetMyUserId", "horas", "jsonobj", "Lorg/json/JSONObject;", "getJsonobj", "()Lorg/json/JSONObject;", "layoutManager", "Landroidx/recyclerview/widget/RecyclerView$LayoutManager;", "medicineReminderList", "", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_health/MedicineReminder;", "getMedicineReminderList", "()Ljava/util/List;", "setMedicineReminderList", "(Ljava/util/List;)V", "pacientId", "getPacientId", "setPacientId", "permissions", "", "[Ljava/lang/String;", "requestcode", "", "askPermissions", "", "enterChatroom", "getUniqueID", "isPermissionGranted", "", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onRequestPermissionsResult", "requestCode", "grantResults", "", "(I[Ljava/lang/String;[I)V", "onViewCreated", "view", "startInstalledAppDetailsActivity", "context", "Landroid/app/Activity;", "app_debug"})
+public final class HomeDoctorFragment extends androidx.fragment.app.Fragment {
+    private final java.lang.String[] permissions = null;
+    private final int requestcode = 1;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder> medicineReminderList;
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.String APPOINTMENT = "http://143.208.181.241/api/v1/appointment/getbyday";
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String pacientId;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String IdAppointment;
+    @org.jetbrains.annotations.NotNull()
+    private com.google.firebase.database.DatabaseReference firebaseRef;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String birth;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String gestationWeeks;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String gestationWeeksDate;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getAppByDoctor;
+    @org.jetbrains.annotations.NotNull()
+    private final org.json.JSONObject jsonobj = null;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> HoraCitaPac;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> NombreCompletoPac;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> ListCancelada;
+    private java.lang.String horas;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getMyUserId;
+    private androidx.recyclerview.widget.RecyclerView.LayoutManager layoutManager;
+    private androidx.recyclerview.widget.RecyclerView.Adapter<com.unfpa.appsistenciamaternaunfpa.adapters.doctor.CustomAdapterAppointment.MyViewHolder> adapter;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder> getMedicineReminderList() {
+        return null;
+    }
+    
+    public final void setMedicineReminderList(@org.jetbrains.annotations.NotNull()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAPPOINTMENT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPacientId() {
+        return null;
+    }
+    
+    public final void setPacientId(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getIdAppointment() {
+        return null;
+    }
+    
+    public final void setIdAppointment(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.firebase.database.DatabaseReference getFirebaseRef() {
+        return null;
+    }
+    
+    public final void setFirebaseRef(@org.jetbrains.annotations.NotNull()
+    com.google.firebase.database.DatabaseReference p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getBirth() {
+        return null;
+    }
+    
+    public final void setBirth(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGestationWeeks() {
+        return null;
+    }
+    
+    public final void setGestationWeeks(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGestationWeeksDate() {
+        return null;
+    }
+    
+    public final void setGestationWeeksDate(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetAppByDoctor() {
+        return null;
+    }
+    
+    public final void setGetAppByDoctor(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final org.json.JSONObject getJsonobj() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getHoraCitaPac() {
+        return null;
+    }
+    
+    public final void setHoraCitaPac(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getNombreCompletoPac() {
+        return null;
+    }
+    
+    public final void setNombreCompletoPac(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getListCancelada() {
+        return null;
+    }
+    
+    public final void setListCancelada(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetMyUserId() {
+        return null;
+    }
+    
+    public final void setGetMyUserId(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onViewCreated(@org.jetbrains.annotations.NotNull()
+    android.view.View view, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    private final void enterChatroom() {
+    }
+    
+    public final void startInstalledAppDetailsActivity(@org.jetbrains.annotations.Nullable()
+    android.app.Activity context) {
+    }
+    
+    private final void askPermissions() {
+    }
+    
+    private final boolean isPermissionGranted() {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onRequestPermissionsResult(int requestCode, @org.jetbrains.annotations.NotNull()
+    java.lang.String[] permissions, @org.jetbrains.annotations.NotNull()
+    int[] grantResults) {
+    }
+    
+    private final java.lang.String getUniqueID() {
+        return null;
+    }
+    
+    public HomeDoctorFragment() {
+        super();
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.my_knowledge.my_knowledge_tabs.HotTopicsFragment">
+    <LinearLayout
+            android:id="@+id/linearLayoutNoArticleGuides"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/txtItemDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text20Gray"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:text="@string/no_guides_as_of_now_in_my_knowledge"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lstCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

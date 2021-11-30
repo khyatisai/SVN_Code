@@ -1,0 +1,126 @@
+package com.unfpa.appsistenciamaternaunfpa.fragments.my_health;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000x\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\"\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\u00052\u0006\u0010,\u001a\u00020\u00052\b\u0010-\u001a\u0004\u0018\u00010.H\u0016J\u0010\u0010/\u001a\u00020*2\u0006\u00100\u001a\u00020$H\u0016J\u0018\u00101\u001a\u00020*2\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u000205H\u0016J&\u00106\u001a\u0004\u0018\u0001072\u0006\u00104\u001a\u0002082\b\u00109\u001a\u0004\u0018\u00010:2\b\u0010;\u001a\u0004\u0018\u00010<H\u0016J\u001a\u0010=\u001a\u00020*2\u0006\u0010>\u001a\u0002072\b\u0010;\u001a\u0004\u0018\u00010<H\u0016J\u0006\u0010?\u001a\u00020*J\b\u0010@\u001a\u00020*H\u0007J\u0006\u0010A\u001a\u00020*J\u0006\u0010B\u001a\u00020*J\u000e\u0010C\u001a\u00020*2\u0006\u0010D\u001a\u00020$J\u0006\u0010E\u001a\u00020*J\u000e\u0010F\u001a\u00020*2\u0006\u0010D\u001a\u00020$R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R \u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\u001a\u0010\u0014\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R \u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u001a0\u000eX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u0011\"\u0004\b\u001c\u0010\u0013R\u001a\u0010\u001d\u001a\u00020\u001eX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R\u001a\u0010#\u001a\u00020$X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b%\u0010&\"\u0004\b\'\u0010(\u00a8\u0006G"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/fragments/my_health/MyHealthLandingFragment;", "Landroidx/fragment/app/Fragment;", "Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;", "()V", "REQ_CODE_APPOINTMENT_REMINDER", "", "REQ_CODE_MEDICINE_REMINDER", "REQ_CODE_PERIOD_TRACKER", "forgotAddPeriod", "", "isAppointsReminderEmpty", "isMedicationReminderEmpty", "isPeriodTrackerEmpty", "medicineReminderList", "", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_health/MedicineReminder;", "getMedicineReminderList", "()Ljava/util/List;", "setMedicineReminderList", "(Ljava/util/List;)V", "periodLength", "getPeriodLength", "()I", "setPeriodLength", "(I)V", "periodList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_health/PeriodTracker;", "getPeriodList", "setPeriodList", "periodTrackerDAO", "Lcom/unfpa/appsistenciamaternaunfpa/database/dao/my_health/PeriodTrackerDAO;", "getPeriodTrackerDAO", "()Lcom/unfpa/appsistenciamaternaunfpa/database/dao/my_health/PeriodTrackerDAO;", "setPeriodTrackerDAO", "(Lcom/unfpa/appsistenciamaternaunfpa/database/dao/my_health/PeriodTrackerDAO;)V", "selectedDt", "", "getSelectedDt", "()Ljava/lang/String;", "setSelectedDt", "(Ljava/lang/String;)V", "onActivityResult", "", "requestCode", "resultCode", "data", "Landroid/content/Intent;", "onComplete", "response", "onCreateOptionsMenu", "menu", "Landroid/view/Menu;", "inflater", "Landroid/view/MenuInflater;", "onCreateView", "Landroid/view/View;", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onViewCreated", "view", "setMedicineReminderUI", "setPeriodDetails", "setupAppointmentUI", "setupPeriodTrackingUI", "showEndDatePopup", "message", "showForgotPeriodPopup", "showStartDatePopup", "app_debug"})
+public final class MyHealthLandingFragment extends androidx.fragment.app.Fragment implements com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener {
+    private boolean isPeriodTrackerEmpty;
+    private boolean isMedicationReminderEmpty;
+    private boolean isAppointsReminderEmpty;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.PeriodTrackerDAO periodTrackerDAO;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String selectedDt;
+    private int periodLength;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.PeriodTracker> periodList;
+    @org.jetbrains.annotations.NotNull()
+    public java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder> medicineReminderList;
+    private final int REQ_CODE_PERIOD_TRACKER = 100;
+    private final int REQ_CODE_MEDICINE_REMINDER = 200;
+    private final int REQ_CODE_APPOINTMENT_REMINDER = 300;
+    private boolean forgotAddPeriod;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.PeriodTrackerDAO getPeriodTrackerDAO() {
+        return null;
+    }
+    
+    public final void setPeriodTrackerDAO(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.PeriodTrackerDAO p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSelectedDt() {
+        return null;
+    }
+    
+    public final void setSelectedDt(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final int getPeriodLength() {
+        return 0;
+    }
+    
+    public final void setPeriodLength(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.PeriodTracker> getPeriodList() {
+        return null;
+    }
+    
+    public final void setPeriodList(@org.jetbrains.annotations.NotNull()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.PeriodTracker> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder> getMedicineReminderList() {
+        return null;
+    }
+    
+    public final void setMedicineReminderList(@org.jetbrains.annotations.NotNull()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onViewCreated(@org.jetbrains.annotations.NotNull()
+    android.view.View view, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    public void onActivityResult(int requestCode, int resultCode, @org.jetbrains.annotations.Nullable()
+    android.content.Intent data) {
+    }
+    
+    @java.lang.Override()
+    public void onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
+    android.view.Menu menu, @org.jetbrains.annotations.NotNull()
+    android.view.MenuInflater inflater) {
+    }
+    
+    public final void setMedicineReminderUI() {
+    }
+    
+    public final void setupPeriodTrackingUI() {
+    }
+    
+    public final void setupAppointmentUI() {
+    }
+    
+    @android.annotation.SuppressLint(value = {"SetTextI18n"})
+    public final void setPeriodDetails() {
+    }
+    
+    public final void showForgotPeriodPopup() {
+    }
+    
+    public final void showEndDatePopup(@org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+    }
+    
+    public final void showStartDatePopup(@org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+    }
+    
+    @java.lang.Override()
+    public void onComplete(@org.jetbrains.annotations.NotNull()
+    java.lang.String response) {
+    }
+    
+    public MyHealthLandingFragment() {
+        super();
+    }
+}

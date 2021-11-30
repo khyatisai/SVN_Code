@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:background="@drawable/rounded_border_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cardViewCenter"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            tools:ignore="RtlHardcoded"
+            android:weightSum="4">
+        <TextView
+                android:id="@+id/txtVoiceStoryHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/story_header"
+                style="@style/Text14Blue"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:layout_weight="3"/>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="right">
+            <ImageView
+                    android:id="@+id/imgTick"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_myvoice_tick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+            android:id="@+id/txtVoiceStoryDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:text="@string/story_description"
+            style="@style/Text12Grey"/>
+</LinearLayout>

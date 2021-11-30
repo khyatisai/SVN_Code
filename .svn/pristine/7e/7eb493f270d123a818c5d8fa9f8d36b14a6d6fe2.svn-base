@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">216135740098-71tr65c468de5lr5npm6icsba8i21suj.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://unfpa-mhealth.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">216135740098</string>
+    <string name="google_api_key" translatable="false">AIzaSyAqH_Phkj_lOObN4D7UZ-lOA90RoH3hdL0</string>
+    <string name="google_app_id" translatable="false">1:216135740098:android:1353d419696bf970fce95b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAqH_Phkj_lOObN4D7UZ-lOA90RoH3hdL0</string>
+    <string name="google_storage_bucket" translatable="false">unfpa-mhealth.appspot.com</string>
+    <string name="project_id" translatable="false">unfpa-mhealth</string>
+</resources>

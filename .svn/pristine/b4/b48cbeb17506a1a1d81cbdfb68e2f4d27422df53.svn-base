@@ -1,0 +1,79 @@
+package com.unfpa.appsistenciamaternaunfpa.activities;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\"\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010\u001f\u001a\u00020\n2\b\u0010 \u001a\u0004\u0018\u00010!H\u0014J\u0012\u0010\"\u001a\u00020\u001d2\b\u0010#\u001a\u0004\u0018\u00010$H\u0014J\u000e\u0010%\u001a\u00020\u001d2\u0006\u0010&\u001a\u00020\u0004J\u0012\u0010\'\u001a\u00020\u0004*\u00020\u00002\u0006\u0010(\u001a\u00020)R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082D\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u000b\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\u0006\"\u0004\b\r\u0010\bR\u001a\u0010\u000e\u001a\u00020\u000fX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\u001a\u0010\u0014\u001a\u00020\u0015X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0017\"\u0004\b\u0018\u0010\u0019R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082.\u00a2\u0006\u0002\n\u0000\u00a8\u0006*"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/LoginMedicoActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "LOGIN", "", "getLOGIN", "()Ljava/lang/String;", "setLOGIN", "(Ljava/lang/String;)V", "RC_SIGN_IN", "", "UPDATETOKEN", "getUPDATETOKEN", "setUPDATETOKEN", "callbackManager", "Lcom/facebook/CallbackManager;", "getCallbackManager", "()Lcom/facebook/CallbackManager;", "setCallbackManager", "(Lcom/facebook/CallbackManager;)V", "googleSignInClient", "Lcom/google/android/gms/auth/api/signin/GoogleSignInClient;", "getGoogleSignInClient", "()Lcom/google/android/gms/auth/api/signin/GoogleSignInClient;", "setGoogleSignInClient", "(Lcom/google/android/gms/auth/api/signin/GoogleSignInClient;)V", "notificationDAO", "Lcom/unfpa/appsistenciamaternaunfpa/database/dao/notification/NotificationDAO2;", "onActivityResult", "", "requestCode", "resultCode", "data", "Landroid/content/Intent;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "storeToken", "userId", "getVolleyError", "error", "Lcom/android/volley/VolleyError;", "app_debug"})
+public final class LoginMedicoActivity extends androidx.appcompat.app.AppCompatActivity {
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String LOGIN;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String UPDATETOKEN;
+    private final int RC_SIGN_IN = 1;
+    @org.jetbrains.annotations.NotNull()
+    public com.google.android.gms.auth.api.signin.GoogleSignInClient googleSignInClient;
+    @org.jetbrains.annotations.NotNull()
+    public com.facebook.CallbackManager callbackManager;
+    private com.unfpa.appsistenciamaternaunfpa.database.dao.notification.NotificationDAO2 notificationDAO;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getLOGIN() {
+        return null;
+    }
+    
+    public final void setLOGIN(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUPDATETOKEN() {
+        return null;
+    }
+    
+    public final void setUPDATETOKEN(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.android.gms.auth.api.signin.GoogleSignInClient getGoogleSignInClient() {
+        return null;
+    }
+    
+    public final void setGoogleSignInClient(@org.jetbrains.annotations.NotNull()
+    com.google.android.gms.auth.api.signin.GoogleSignInClient p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.facebook.CallbackManager getCallbackManager() {
+        return null;
+    }
+    
+    public final void setCallbackManager(@org.jetbrains.annotations.NotNull()
+    com.facebook.CallbackManager p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    protected void onActivityResult(int requestCode, int resultCode, @org.jetbrains.annotations.Nullable()
+    android.content.Intent data) {
+    }
+    
+    public final void storeToken(@org.jetbrains.annotations.NotNull()
+    java.lang.String userId) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getVolleyError(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.activities.LoginMedicoActivity $this$getVolleyError, @org.jetbrains.annotations.NotNull()
+    com.android.volley.VolleyError error) {
+        return null;
+    }
+    
+    public LoginMedicoActivity() {
+        super();
+    }
+}

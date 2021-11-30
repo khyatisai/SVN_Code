@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#F8F9FB"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btn_exit"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="36dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:text="X"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_20sdp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_layout_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#E4E4E4"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/editTextChatDialog"
+                android:inputType="textShortMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight=".5"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@android:color/white"
+                android:hint="Enviar mensaje..."
+                android:padding="10dp"
+                android:singleLine="true"
+                />
+
+        <!--        <ImageView-->
+        <!--                android:id="@+id/send"-->
+        <!--                android:layout_width="30dp"-->
+        <!--                android:layout_height="30dp"-->
+        <!--                android:layout_marginEnd="8dp"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:src="@drawable/paper_plane"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent" />-->
+        <Button
+                android:id="@+id/sendChatDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#3E92C2"
+                android:text="Enviar"
+                android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_layout_bar"
+            android:layout_below="@+id/dark_divider"
+            android:layout_marginTop="50dp" />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:id="@+id/dark_divider"/>
+
+</RelativeLayout>

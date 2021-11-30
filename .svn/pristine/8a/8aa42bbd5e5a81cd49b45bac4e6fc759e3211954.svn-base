@@ -1,0 +1,362 @@
+package com.unfpa.appsistenciamaternaunfpa.database.dao.notification;
+
+import android.database.Cursor;
+import androidx.room.EntityInsertionAdapter;
+import androidx.room.RoomDatabase;
+import androidx.room.RoomSQLiteQuery;
+import androidx.room.SharedSQLiteStatement;
+import androidx.sqlite.db.SupportSQLiteStatement;
+import com.unfpa.appsistenciamaternaunfpa.database.entity.notification.Notification;
+import java.lang.Override;
+import java.lang.String;
+import java.lang.SuppressWarnings;
+import java.util.ArrayList;
+import java.util.List;
+
+@SuppressWarnings("unchecked")
+public final class NotificationDAO_Impl implements NotificationDAO {
+  private final RoomDatabase __db;
+
+  private final EntityInsertionAdapter __insertionAdapterOfNotification;
+
+  private final SharedSQLiteStatement __preparedStmtOfUpdateNotificationDisplayFlag;
+
+  private final SharedSQLiteStatement __preparedStmtOfUpdateNotificationTime;
+
+  private final SharedSQLiteStatement __preparedStmtOfUpdateNotificationReqId;
+
+  private final SharedSQLiteStatement __preparedStmtOfDeleteNotification;
+
+  public NotificationDAO_Impl(RoomDatabase __db) {
+    this.__db = __db;
+    this.__insertionAdapterOfNotification = new EntityInsertionAdapter<Notification>(__db) {
+      @Override
+      public String createQuery() {
+        return "INSERT OR IGNORE INTO `notification`(`notificationId`,`title`,`subTitile1`,`subTitile2`,`timeStr`,`type`,`notificationTime`,`isDisplayed`,`notificationItemId`,`notificationReqId`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?)";
+      }
+
+      @Override
+      public void bind(SupportSQLiteStatement stmt, Notification value) {
+        stmt.bindLong(1, value.getNotificationId());
+        if (value.getTitle() == null) {
+          stmt.bindNull(2);
+        } else {
+          stmt.bindString(2, value.getTitle());
+        }
+        if (value.getSubTitile1() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getSubTitile1());
+        }
+        if (value.getSubTitile2() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getSubTitile2());
+        }
+        if (value.getTimeStr() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getTimeStr());
+        }
+        if (value.getType() == null) {
+          stmt.bindNull(6);
+        } else {
+          stmt.bindString(6, value.getType());
+        }
+        if (value.getNotificationTime() == null) {
+          stmt.bindNull(7);
+        } else {
+          stmt.bindString(7, value.getNotificationTime());
+        }
+        final int _tmp;
+        _tmp = value.isDisplayed() ? 1 : 0;
+        stmt.bindLong(8, _tmp);
+        stmt.bindLong(9, value.getNotificationItemId());
+        if (value.getNotificationReqId() == null) {
+          stmt.bindNull(10);
+        } else {
+          stmt.bindString(10, value.getNotificationReqId());
+        }
+      }
+    };
+    this.__preparedStmtOfUpdateNotificationDisplayFlag = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "UPDATE notification SET isDisplayed = 1  WHERE notificationId= ?";
+        return _query;
+      }
+    };
+    this.__preparedStmtOfUpdateNotificationTime = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "UPDATE notification SET notificationTime = ?  WHERE notificationId= ?";
+        return _query;
+      }
+    };
+    this.__preparedStmtOfUpdateNotificationReqId = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "UPDATE notification SET notificationReqId = ?  WHERE notificationId= ?";
+        return _query;
+      }
+    };
+    this.__preparedStmtOfDeleteNotification = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "DELETE FROM notification WHERE  notificationId = ?";
+        return _query;
+      }
+    };
+  }
+
+  @Override
+  public long insert(Notification notification) {
+    __db.beginTransaction();
+    try {
+      long _result = __insertionAdapterOfNotification.insertAndReturnId(notification);
+      __db.setTransactionSuccessful();
+      return _result;
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void updateNotificationDisplayFlag(int notificationId) {
+    final SupportSQLiteStatement _stmt = __preparedStmtOfUpdateNotificationDisplayFlag.acquire();
+    __db.beginTransaction();
+    try {
+      int _argIndex = 1;
+      _stmt.bindLong(_argIndex, notificationId);
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfUpdateNotificationDisplayFlag.release(_stmt);
+    }
+  }
+
+  @Override
+  public void updateNotificationTime(int notificationId, String notificationTime) {
+    final SupportSQLiteStatement _stmt = __preparedStmtOfUpdateNotificationTime.acquire();
+    __db.beginTransaction();
+    try {
+      int _argIndex = 1;
+      if (notificationTime == null) {
+        _stmt.bindNull(_argIndex);
+      } else {
+        _stmt.bindString(_argIndex, notificationTime);
+      }
+      _argIndex = 2;
+      _stmt.bindLong(_argIndex, notificationId);
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfUpdateNotificationTime.release(_stmt);
+    }
+  }
+
+  @Override
+  public void updateNotificationReqId(int notificationId, String notificationReqId) {
+    final SupportSQLiteStatement _stmt = __preparedStmtOfUpdateNotificationReqId.acquire();
+    __db.beginTransaction();
+    try {
+      int _argIndex = 1;
+      if (notificationReqId == null) {
+        _stmt.bindNull(_argIndex);
+      } else {
+        _stmt.bindString(_argIndex, notificationReqId);
+      }
+      _argIndex = 2;
+      _stmt.bindLong(_argIndex, notificationId);
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfUpdateNotificationReqId.release(_stmt);
+    }
+  }
+
+  @Override
+  public void deleteNotification(int notificationId) {
+    final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteNotification.acquire();
+    __db.beginTransaction();
+    try {
+      int _argIndex = 1;
+      _stmt.bindLong(_argIndex, notificationId);
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfDeleteNotification.release(_stmt);
+    }
+  }
+
+  @Override
+  public List<Notification> getAllNotification() {
+    final String _sql = "SELECT * from notification Where isDisplayed = 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _cursorIndexOfNotificationId = _cursor.getColumnIndexOrThrow("notificationId");
+      final int _cursorIndexOfTitle = _cursor.getColumnIndexOrThrow("title");
+      final int _cursorIndexOfSubTitile1 = _cursor.getColumnIndexOrThrow("subTitile1");
+      final int _cursorIndexOfSubTitile2 = _cursor.getColumnIndexOrThrow("subTitile2");
+      final int _cursorIndexOfTimeStr = _cursor.getColumnIndexOrThrow("timeStr");
+      final int _cursorIndexOfType = _cursor.getColumnIndexOrThrow("type");
+      final int _cursorIndexOfNotificationTime = _cursor.getColumnIndexOrThrow("notificationTime");
+      final int _cursorIndexOfIsDisplayed = _cursor.getColumnIndexOrThrow("isDisplayed");
+      final int _cursorIndexOfNotificationItemId = _cursor.getColumnIndexOrThrow("notificationItemId");
+      final int _cursorIndexOfNotificationReqId = _cursor.getColumnIndexOrThrow("notificationReqId");
+      final List<Notification> _result = new ArrayList<Notification>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final Notification _item;
+        final String _tmpTitle;
+        _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+        final String _tmpSubTitile1;
+        _tmpSubTitile1 = _cursor.getString(_cursorIndexOfSubTitile1);
+        final String _tmpSubTitile2;
+        _tmpSubTitile2 = _cursor.getString(_cursorIndexOfSubTitile2);
+        final String _tmpTimeStr;
+        _tmpTimeStr = _cursor.getString(_cursorIndexOfTimeStr);
+        final String _tmpType;
+        _tmpType = _cursor.getString(_cursorIndexOfType);
+        final String _tmpNotificationTime;
+        _tmpNotificationTime = _cursor.getString(_cursorIndexOfNotificationTime);
+        final boolean _tmpIsDisplayed;
+        final int _tmp;
+        _tmp = _cursor.getInt(_cursorIndexOfIsDisplayed);
+        _tmpIsDisplayed = _tmp != 0;
+        final int _tmpNotificationItemId;
+        _tmpNotificationItemId = _cursor.getInt(_cursorIndexOfNotificationItemId);
+        final String _tmpNotificationReqId;
+        _tmpNotificationReqId = _cursor.getString(_cursorIndexOfNotificationReqId);
+        _item = new Notification(_tmpTitle,_tmpSubTitile1,_tmpSubTitile2,_tmpTimeStr,_tmpType,_tmpNotificationTime,_tmpIsDisplayed,_tmpNotificationItemId,_tmpNotificationReqId);
+        final int _tmpNotificationId;
+        _tmpNotificationId = _cursor.getInt(_cursorIndexOfNotificationId);
+        _item.setNotificationId(_tmpNotificationId);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public Notification getNotificationById(int notificationId) {
+    final String _sql = "SELECT * from notification where notificationId = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, notificationId);
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _cursorIndexOfNotificationId = _cursor.getColumnIndexOrThrow("notificationId");
+      final int _cursorIndexOfTitle = _cursor.getColumnIndexOrThrow("title");
+      final int _cursorIndexOfSubTitile1 = _cursor.getColumnIndexOrThrow("subTitile1");
+      final int _cursorIndexOfSubTitile2 = _cursor.getColumnIndexOrThrow("subTitile2");
+      final int _cursorIndexOfTimeStr = _cursor.getColumnIndexOrThrow("timeStr");
+      final int _cursorIndexOfType = _cursor.getColumnIndexOrThrow("type");
+      final int _cursorIndexOfNotificationTime = _cursor.getColumnIndexOrThrow("notificationTime");
+      final int _cursorIndexOfIsDisplayed = _cursor.getColumnIndexOrThrow("isDisplayed");
+      final int _cursorIndexOfNotificationItemId = _cursor.getColumnIndexOrThrow("notificationItemId");
+      final int _cursorIndexOfNotificationReqId = _cursor.getColumnIndexOrThrow("notificationReqId");
+      final Notification _result;
+      if(_cursor.moveToFirst()) {
+        final String _tmpTitle;
+        _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+        final String _tmpSubTitile1;
+        _tmpSubTitile1 = _cursor.getString(_cursorIndexOfSubTitile1);
+        final String _tmpSubTitile2;
+        _tmpSubTitile2 = _cursor.getString(_cursorIndexOfSubTitile2);
+        final String _tmpTimeStr;
+        _tmpTimeStr = _cursor.getString(_cursorIndexOfTimeStr);
+        final String _tmpType;
+        _tmpType = _cursor.getString(_cursorIndexOfType);
+        final String _tmpNotificationTime;
+        _tmpNotificationTime = _cursor.getString(_cursorIndexOfNotificationTime);
+        final boolean _tmpIsDisplayed;
+        final int _tmp;
+        _tmp = _cursor.getInt(_cursorIndexOfIsDisplayed);
+        _tmpIsDisplayed = _tmp != 0;
+        final int _tmpNotificationItemId;
+        _tmpNotificationItemId = _cursor.getInt(_cursorIndexOfNotificationItemId);
+        final String _tmpNotificationReqId;
+        _tmpNotificationReqId = _cursor.getString(_cursorIndexOfNotificationReqId);
+        _result = new Notification(_tmpTitle,_tmpSubTitile1,_tmpSubTitile2,_tmpTimeStr,_tmpType,_tmpNotificationTime,_tmpIsDisplayed,_tmpNotificationItemId,_tmpNotificationReqId);
+        final int _tmpNotificationId;
+        _tmpNotificationId = _cursor.getInt(_cursorIndexOfNotificationId);
+        _result.setNotificationId(_tmpNotificationId);
+      } else {
+        _result = null;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public List<Notification> getNotificationByReminderItemId(int notificationItemId,
+      String notificationType) {
+    final String _sql = "SELECT * from notification where notificationItemId = ? AND type = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, notificationItemId);
+    _argIndex = 2;
+    if (notificationType == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, notificationType);
+    }
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _cursorIndexOfNotificationId = _cursor.getColumnIndexOrThrow("notificationId");
+      final int _cursorIndexOfTitle = _cursor.getColumnIndexOrThrow("title");
+      final int _cursorIndexOfSubTitile1 = _cursor.getColumnIndexOrThrow("subTitile1");
+      final int _cursorIndexOfSubTitile2 = _cursor.getColumnIndexOrThrow("subTitile2");
+      final int _cursorIndexOfTimeStr = _cursor.getColumnIndexOrThrow("timeStr");
+      final int _cursorIndexOfType = _cursor.getColumnIndexOrThrow("type");
+      final int _cursorIndexOfNotificationTime = _cursor.getColumnIndexOrThrow("notificationTime");
+      final int _cursorIndexOfIsDisplayed = _cursor.getColumnIndexOrThrow("isDisplayed");
+      final int _cursorIndexOfNotificationItemId = _cursor.getColumnIndexOrThrow("notificationItemId");
+      final int _cursorIndexOfNotificationReqId = _cursor.getColumnIndexOrThrow("notificationReqId");
+      final List<Notification> _result = new ArrayList<Notification>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final Notification _item;
+        final String _tmpTitle;
+        _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
+        final String _tmpSubTitile1;
+        _tmpSubTitile1 = _cursor.getString(_cursorIndexOfSubTitile1);
+        final String _tmpSubTitile2;
+        _tmpSubTitile2 = _cursor.getString(_cursorIndexOfSubTitile2);
+        final String _tmpTimeStr;
+        _tmpTimeStr = _cursor.getString(_cursorIndexOfTimeStr);
+        final String _tmpType;
+        _tmpType = _cursor.getString(_cursorIndexOfType);
+        final String _tmpNotificationTime;
+        _tmpNotificationTime = _cursor.getString(_cursorIndexOfNotificationTime);
+        final boolean _tmpIsDisplayed;
+        final int _tmp;
+        _tmp = _cursor.getInt(_cursorIndexOfIsDisplayed);
+        _tmpIsDisplayed = _tmp != 0;
+        final int _tmpNotificationItemId;
+        _tmpNotificationItemId = _cursor.getInt(_cursorIndexOfNotificationItemId);
+        final String _tmpNotificationReqId;
+        _tmpNotificationReqId = _cursor.getString(_cursorIndexOfNotificationReqId);
+        _item = new Notification(_tmpTitle,_tmpSubTitile1,_tmpSubTitile2,_tmpTimeStr,_tmpType,_tmpNotificationTime,_tmpIsDisplayed,_tmpNotificationItemId,_tmpNotificationReqId);
+        final int _tmpNotificationId;
+        _tmpNotificationId = _cursor.getInt(_cursorIndexOfNotificationId);
+        _item.setNotificationId(_tmpNotificationId);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+}

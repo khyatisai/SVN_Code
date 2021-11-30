@@ -1,0 +1,741 @@
+package com.unfpa.appsistenciamaternaunfpa.database;
+
+import androidx.room.DatabaseConfiguration;
+import androidx.room.InvalidationTracker;
+import androidx.room.RoomOpenHelper;
+import androidx.room.RoomOpenHelper.Delegate;
+import androidx.room.util.TableInfo;
+import androidx.room.util.TableInfo.Column;
+import androidx.room.util.TableInfo.ForeignKey;
+import androidx.room.util.TableInfo.Index;
+import androidx.sqlite.db.SupportSQLiteDatabase;
+import androidx.sqlite.db.SupportSQLiteOpenHelper;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.country_office.CountryListDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.country_office.CountryListDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.AppointmentReminderDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.AppointmentReminderDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.MedicineEventDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.MedicineEventDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.MedicineReminderDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.MedicineReminderDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.PeriodTrackerDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.PeriodTrackerDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.ContentDetailDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.ContentDetailDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.QuizRequestDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.QuizRequestDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.QuizResponseDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.QuizResponseDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.SRHContentCategoryDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.SRHContentCategoryDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.SRHContentDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.my_knowledge.SRHContentDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.myservicedao.MyServiceDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.myservicedao.MyServiceDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.myservicedao.ServiceCenterDetailDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.myservicedao.ServiceCenterDetailDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.myvoice.MyVoiceDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.myvoice.MyVoiceDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.notification.NotificationDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.notification.NotificationDAO2;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.notification.NotificationDAO2_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.notification.NotificationDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.personal.CountryOfficeDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.personal.CountryOfficeDAO_Impl;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.personal.PersonalDetailsDAO;
+import com.unfpa.appsistenciamaternaunfpa.database.dao.personal.PersonalDetailsDAO_Impl;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+import java.lang.String;
+import java.lang.SuppressWarnings;
+import java.util.HashMap;
+import java.util.HashSet;
+
+@SuppressWarnings("unchecked")
+public final class MhealthRoomDatabase_Impl extends MhealthRoomDatabase {
+  private volatile SRHContentDAO _sRHContentDAO;
+
+  private volatile ContentDetailDAO _contentDetailDAO;
+
+  private volatile SRHContentCategoryDAO _sRHContentCategoryDAO;
+
+  private volatile ServiceCenterDetailDAO _serviceCenterDetailDAO;
+
+  private volatile MyServiceDAO _myServiceDAO;
+
+  private volatile MyVoiceDAO _myVoiceDAO;
+
+  private volatile QuizRequestDAO _quizRequestDAO;
+
+  private volatile PersonalDetailsDAO _personalDetailsDAO;
+
+  private volatile PeriodTrackerDAO _periodTrackerDAO;
+
+  private volatile QuizResponseDAO _quizResponseDAO;
+
+  private volatile MedicineReminderDAO _medicineReminderDAO;
+
+  private volatile CountryOfficeDAO _countryOfficeDAO;
+
+  private volatile MedicineEventDAO _medicineEventDAO;
+
+  private volatile AppointmentReminderDAO _appointmentReminderDAO;
+
+  private volatile NotificationDAO _notificationDAO;
+
+  private volatile NotificationDAO2 _notificationDAO2;
+
+  private volatile CountryListDAO _countryListDAO;
+
+  @Override
+  protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
+      @Override
+      public void createAllTables(SupportSQLiteDatabase _db) {
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `content_master` (`nid` TEXT NOT NULL, `title` TEXT, `field_image` TEXT, `field_cover_image` TEXT, `field_short_description` TEXT, `field_thematic_area` TEXT, `field_description` TEXT, `field_age_group` TEXT, `field_objective` TEXT, `field_tags` TEXT, `field_video` TEXT, `field_hot_srh_content` TEXT, `field_sms_text` TEXT, `isFavourite` INTEGER NOT NULL, `field_thematic_area_id` TEXT NOT NULL, PRIMARY KEY(`nid`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `content_detail` (`nid` TEXT NOT NULL, `title` TEXT, `field_image` TEXT, `field_short_description` TEXT, `field_description` TEXT, `field_age_group` TEXT, `field_objective` TEXT, `field_tags` TEXT, PRIMARY KEY(`nid`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `content_category` (`category_id` TEXT NOT NULL, `name` TEXT NOT NULL, `description_guide` TEXT NOT NULL, `description_class` TEXT NOT NULL, PRIMARY KEY(`category_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `service_center_details` (`distance` TEXT, `nid` TEXT NOT NULL, `field_name` TEXT NOT NULL, `field_address_field_1` TEXT NOT NULL, `field_address_field_2` TEXT NOT NULL, `field_country` TEXT NOT NULL, `field_city` TEXT NOT NULL, `field_municipal_region` TEXT NOT NULL, `field_postal_code` TEXT NOT NULL, `field_telephone` TEXT NOT NULL, `field_timezone` TEXT NOT NULL, `field_hours_of_operation` TEXT NOT NULL, `field_service_provided` TEXT NOT NULL, `field_primary_doctor` TEXT NOT NULL, `field_primary_nurse` TEXT NOT NULL, `field_latitude` TEXT NOT NULL, `field_longitude` TEXT NOT NULL, `field_service_provided_1` TEXT NOT NULL, `uuid` TEXT NOT NULL, PRIMARY KEY(`nid`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `my_services` (`title` TEXT NOT NULL, `nid` TEXT NOT NULL, `body` TEXT NOT NULL, `uuid` TEXT NOT NULL, PRIMARY KEY(`nid`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `quiz_request` (`categoryId` TEXT NOT NULL, `quizId` TEXT NOT NULL, `jsonQuiz` TEXT, PRIMARY KEY(`categoryId`, `quizId`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `quiz_response` (`responseId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `categoryId` TEXT NOT NULL, `quizId` TEXT, `jsonQuizResponse` TEXT, `statusSync` INTEGER, `result` INTEGER)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `my_voice` (`unique_id` TEXT NOT NULL, `title` TEXT NOT NULL, `story` TEXT NOT NULL, `story_mode` TEXT NOT NULL, PRIMARY KEY(`unique_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `personal_details` (`unique_id` TEXT NOT NULL, `title` TEXT NOT NULL, PRIMARY KEY(`unique_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `period_master` (`periodId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `startDate` TEXT NOT NULL, `endDate` TEXT NOT NULL, `periodLength` INTEGER NOT NULL, `avgCycle` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `medicine_reminder` (`medicineReminderId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `date` TEXT NOT NULL, `time` TEXT NOT NULL, `withFood` INTEGER NOT NULL, `medicineName` TEXT NOT NULL, `dose` INTEGER NOT NULL, `days` INTEGER NOT NULL, `reminderBefore` TEXT NOT NULL, `eventId` INTEGER NOT NULL, `eventURI` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `country_office_listing` (`field_country` TEXT NOT NULL, `field_client_code` TEXT NOT NULL, `field_image` TEXT NOT NULL, `title` TEXT NOT NULL, `field_subtitle` TEXT NOT NULL, `field_enable_health_manager` TEXT NOT NULL, `field_enable_live_chat` TEXT NOT NULL, `field_enable_service_locator` TEXT NOT NULL, `field_sms_getway_url` TEXT NOT NULL, `field_sms_username` TEXT NOT NULL, `field_sms_auth` TEXT NOT NULL, `field_maximum_distance` TEXT NOT NULL, `field_language` TEXT NOT NULL, `field_health_management_export` TEXT, `field_contact_number` TEXT NOT NULL, `field_country_export` TEXT NOT NULL, PRIMARY KEY(`field_country`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `medicine_event` (`medicineEventId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `medicineReminderId` INTEGER NOT NULL, `eventId` INTEGER NOT NULL, `eventURI` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `appointment_reminder` (`appointmentId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `appointmentName` TEXT NOT NULL, `serviceCenterId` TEXT NOT NULL, `serviceCenterName` TEXT NOT NULL, `time` TEXT NOT NULL, `date` TEXT NOT NULL, `eventURI` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `notification` (`notificationId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `subTitile1` TEXT NOT NULL, `subTitile2` TEXT NOT NULL, `timeStr` TEXT NOT NULL, `type` TEXT NOT NULL, `notificationTime` TEXT NOT NULL, `isDisplayed` INTEGER NOT NULL, `notificationItemId` INTEGER NOT NULL, `notificationReqId` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `appointment_notification_reminder` (`notificationId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `data` TEXT NOT NULL, `title` TEXT NOT NULL, `state` INTEGER NOT NULL, `hour` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `country_list` (`country_id` TEXT NOT NULL, `countryCode` TEXT NOT NULL, `countryName` TEXT NOT NULL, PRIMARY KEY(`country_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"b51f82c97e3bcf18d14263305b4c1606\")");
+      }
+
+      @Override
+      public void dropAllTables(SupportSQLiteDatabase _db) {
+        _db.execSQL("DROP TABLE IF EXISTS `content_master`");
+        _db.execSQL("DROP TABLE IF EXISTS `content_detail`");
+        _db.execSQL("DROP TABLE IF EXISTS `content_category`");
+        _db.execSQL("DROP TABLE IF EXISTS `service_center_details`");
+        _db.execSQL("DROP TABLE IF EXISTS `my_services`");
+        _db.execSQL("DROP TABLE IF EXISTS `quiz_request`");
+        _db.execSQL("DROP TABLE IF EXISTS `quiz_response`");
+        _db.execSQL("DROP TABLE IF EXISTS `my_voice`");
+        _db.execSQL("DROP TABLE IF EXISTS `personal_details`");
+        _db.execSQL("DROP TABLE IF EXISTS `period_master`");
+        _db.execSQL("DROP TABLE IF EXISTS `medicine_reminder`");
+        _db.execSQL("DROP TABLE IF EXISTS `country_office_listing`");
+        _db.execSQL("DROP TABLE IF EXISTS `medicine_event`");
+        _db.execSQL("DROP TABLE IF EXISTS `appointment_reminder`");
+        _db.execSQL("DROP TABLE IF EXISTS `notification`");
+        _db.execSQL("DROP TABLE IF EXISTS `appointment_notification_reminder`");
+        _db.execSQL("DROP TABLE IF EXISTS `country_list`");
+      }
+
+      @Override
+      protected void onCreate(SupportSQLiteDatabase _db) {
+        if (mCallbacks != null) {
+          for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
+            mCallbacks.get(_i).onCreate(_db);
+          }
+        }
+      }
+
+      @Override
+      public void onOpen(SupportSQLiteDatabase _db) {
+        mDatabase = _db;
+        internalInitInvalidationTracker(_db);
+        if (mCallbacks != null) {
+          for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
+            mCallbacks.get(_i).onOpen(_db);
+          }
+        }
+      }
+
+      @Override
+      protected void validateMigration(SupportSQLiteDatabase _db) {
+        final HashMap<String, TableInfo.Column> _columnsContentMaster = new HashMap<String, TableInfo.Column>(15);
+        _columnsContentMaster.put("nid", new TableInfo.Column("nid", "TEXT", true, 1));
+        _columnsContentMaster.put("title", new TableInfo.Column("title", "TEXT", false, 0));
+        _columnsContentMaster.put("field_image", new TableInfo.Column("field_image", "TEXT", false, 0));
+        _columnsContentMaster.put("field_cover_image", new TableInfo.Column("field_cover_image", "TEXT", false, 0));
+        _columnsContentMaster.put("field_short_description", new TableInfo.Column("field_short_description", "TEXT", false, 0));
+        _columnsContentMaster.put("field_thematic_area", new TableInfo.Column("field_thematic_area", "TEXT", false, 0));
+        _columnsContentMaster.put("field_description", new TableInfo.Column("field_description", "TEXT", false, 0));
+        _columnsContentMaster.put("field_age_group", new TableInfo.Column("field_age_group", "TEXT", false, 0));
+        _columnsContentMaster.put("field_objective", new TableInfo.Column("field_objective", "TEXT", false, 0));
+        _columnsContentMaster.put("field_tags", new TableInfo.Column("field_tags", "TEXT", false, 0));
+        _columnsContentMaster.put("field_video", new TableInfo.Column("field_video", "TEXT", false, 0));
+        _columnsContentMaster.put("field_hot_srh_content", new TableInfo.Column("field_hot_srh_content", "TEXT", false, 0));
+        _columnsContentMaster.put("field_sms_text", new TableInfo.Column("field_sms_text", "TEXT", false, 0));
+        _columnsContentMaster.put("isFavourite", new TableInfo.Column("isFavourite", "INTEGER", true, 0));
+        _columnsContentMaster.put("field_thematic_area_id", new TableInfo.Column("field_thematic_area_id", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysContentMaster = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesContentMaster = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoContentMaster = new TableInfo("content_master", _columnsContentMaster, _foreignKeysContentMaster, _indicesContentMaster);
+        final TableInfo _existingContentMaster = TableInfo.read(_db, "content_master");
+        if (! _infoContentMaster.equals(_existingContentMaster)) {
+          throw new IllegalStateException("Migration didn't properly handle content_master(com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent).\n"
+                  + " Expected:\n" + _infoContentMaster + "\n"
+                  + " Found:\n" + _existingContentMaster);
+        }
+        final HashMap<String, TableInfo.Column> _columnsContentDetail = new HashMap<String, TableInfo.Column>(8);
+        _columnsContentDetail.put("nid", new TableInfo.Column("nid", "TEXT", true, 1));
+        _columnsContentDetail.put("title", new TableInfo.Column("title", "TEXT", false, 0));
+        _columnsContentDetail.put("field_image", new TableInfo.Column("field_image", "TEXT", false, 0));
+        _columnsContentDetail.put("field_short_description", new TableInfo.Column("field_short_description", "TEXT", false, 0));
+        _columnsContentDetail.put("field_description", new TableInfo.Column("field_description", "TEXT", false, 0));
+        _columnsContentDetail.put("field_age_group", new TableInfo.Column("field_age_group", "TEXT", false, 0));
+        _columnsContentDetail.put("field_objective", new TableInfo.Column("field_objective", "TEXT", false, 0));
+        _columnsContentDetail.put("field_tags", new TableInfo.Column("field_tags", "TEXT", false, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysContentDetail = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesContentDetail = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoContentDetail = new TableInfo("content_detail", _columnsContentDetail, _foreignKeysContentDetail, _indicesContentDetail);
+        final TableInfo _existingContentDetail = TableInfo.read(_db, "content_detail");
+        if (! _infoContentDetail.equals(_existingContentDetail)) {
+          throw new IllegalStateException("Migration didn't properly handle content_detail(com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.ContentDetail).\n"
+                  + " Expected:\n" + _infoContentDetail + "\n"
+                  + " Found:\n" + _existingContentDetail);
+        }
+        final HashMap<String, TableInfo.Column> _columnsContentCategory = new HashMap<String, TableInfo.Column>(4);
+        _columnsContentCategory.put("category_id", new TableInfo.Column("category_id", "TEXT", true, 1));
+        _columnsContentCategory.put("name", new TableInfo.Column("name", "TEXT", true, 0));
+        _columnsContentCategory.put("description_guide", new TableInfo.Column("description_guide", "TEXT", true, 0));
+        _columnsContentCategory.put("description_class", new TableInfo.Column("description_class", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysContentCategory = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesContentCategory = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoContentCategory = new TableInfo("content_category", _columnsContentCategory, _foreignKeysContentCategory, _indicesContentCategory);
+        final TableInfo _existingContentCategory = TableInfo.read(_db, "content_category");
+        if (! _infoContentCategory.equals(_existingContentCategory)) {
+          throw new IllegalStateException("Migration didn't properly handle content_category(com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContentCategory).\n"
+                  + " Expected:\n" + _infoContentCategory + "\n"
+                  + " Found:\n" + _existingContentCategory);
+        }
+        final HashMap<String, TableInfo.Column> _columnsServiceCenterDetails = new HashMap<String, TableInfo.Column>(19);
+        _columnsServiceCenterDetails.put("distance", new TableInfo.Column("distance", "TEXT", false, 0));
+        _columnsServiceCenterDetails.put("nid", new TableInfo.Column("nid", "TEXT", true, 1));
+        _columnsServiceCenterDetails.put("field_name", new TableInfo.Column("field_name", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_address_field_1", new TableInfo.Column("field_address_field_1", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_address_field_2", new TableInfo.Column("field_address_field_2", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_country", new TableInfo.Column("field_country", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_city", new TableInfo.Column("field_city", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_municipal_region", new TableInfo.Column("field_municipal_region", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_postal_code", new TableInfo.Column("field_postal_code", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_telephone", new TableInfo.Column("field_telephone", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_timezone", new TableInfo.Column("field_timezone", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_hours_of_operation", new TableInfo.Column("field_hours_of_operation", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_service_provided", new TableInfo.Column("field_service_provided", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_primary_doctor", new TableInfo.Column("field_primary_doctor", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_primary_nurse", new TableInfo.Column("field_primary_nurse", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_latitude", new TableInfo.Column("field_latitude", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_longitude", new TableInfo.Column("field_longitude", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("field_service_provided_1", new TableInfo.Column("field_service_provided_1", "TEXT", true, 0));
+        _columnsServiceCenterDetails.put("uuid", new TableInfo.Column("uuid", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysServiceCenterDetails = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesServiceCenterDetails = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoServiceCenterDetails = new TableInfo("service_center_details", _columnsServiceCenterDetails, _foreignKeysServiceCenterDetails, _indicesServiceCenterDetails);
+        final TableInfo _existingServiceCenterDetails = TableInfo.read(_db, "service_center_details");
+        if (! _infoServiceCenterDetails.equals(_existingServiceCenterDetails)) {
+          throw new IllegalStateException("Migration didn't properly handle service_center_details(com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.ServiceCenterDetailEntity).\n"
+                  + " Expected:\n" + _infoServiceCenterDetails + "\n"
+                  + " Found:\n" + _existingServiceCenterDetails);
+        }
+        final HashMap<String, TableInfo.Column> _columnsMyServices = new HashMap<String, TableInfo.Column>(4);
+        _columnsMyServices.put("title", new TableInfo.Column("title", "TEXT", true, 0));
+        _columnsMyServices.put("nid", new TableInfo.Column("nid", "TEXT", true, 1));
+        _columnsMyServices.put("body", new TableInfo.Column("body", "TEXT", true, 0));
+        _columnsMyServices.put("uuid", new TableInfo.Column("uuid", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysMyServices = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesMyServices = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoMyServices = new TableInfo("my_services", _columnsMyServices, _foreignKeysMyServices, _indicesMyServices);
+        final TableInfo _existingMyServices = TableInfo.read(_db, "my_services");
+        if (! _infoMyServices.equals(_existingMyServices)) {
+          throw new IllegalStateException("Migration didn't properly handle my_services(com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.MyServiceEntity).\n"
+                  + " Expected:\n" + _infoMyServices + "\n"
+                  + " Found:\n" + _existingMyServices);
+        }
+        final HashMap<String, TableInfo.Column> _columnsQuizRequest = new HashMap<String, TableInfo.Column>(3);
+        _columnsQuizRequest.put("categoryId", new TableInfo.Column("categoryId", "TEXT", true, 1));
+        _columnsQuizRequest.put("quizId", new TableInfo.Column("quizId", "TEXT", true, 2));
+        _columnsQuizRequest.put("jsonQuiz", new TableInfo.Column("jsonQuiz", "TEXT", false, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysQuizRequest = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesQuizRequest = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoQuizRequest = new TableInfo("quiz_request", _columnsQuizRequest, _foreignKeysQuizRequest, _indicesQuizRequest);
+        final TableInfo _existingQuizRequest = TableInfo.read(_db, "quiz_request");
+        if (! _infoQuizRequest.equals(_existingQuizRequest)) {
+          throw new IllegalStateException("Migration didn't properly handle quiz_request(com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.QuizRequest).\n"
+                  + " Expected:\n" + _infoQuizRequest + "\n"
+                  + " Found:\n" + _existingQuizRequest);
+        }
+        final HashMap<String, TableInfo.Column> _columnsQuizResponse = new HashMap<String, TableInfo.Column>(6);
+        _columnsQuizResponse.put("responseId", new TableInfo.Column("responseId", "INTEGER", true, 1));
+        _columnsQuizResponse.put("categoryId", new TableInfo.Column("categoryId", "TEXT", true, 0));
+        _columnsQuizResponse.put("quizId", new TableInfo.Column("quizId", "TEXT", false, 0));
+        _columnsQuizResponse.put("jsonQuizResponse", new TableInfo.Column("jsonQuizResponse", "TEXT", false, 0));
+        _columnsQuizResponse.put("statusSync", new TableInfo.Column("statusSync", "INTEGER", false, 0));
+        _columnsQuizResponse.put("result", new TableInfo.Column("result", "INTEGER", false, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysQuizResponse = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesQuizResponse = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoQuizResponse = new TableInfo("quiz_response", _columnsQuizResponse, _foreignKeysQuizResponse, _indicesQuizResponse);
+        final TableInfo _existingQuizResponse = TableInfo.read(_db, "quiz_response");
+        if (! _infoQuizResponse.equals(_existingQuizResponse)) {
+          throw new IllegalStateException("Migration didn't properly handle quiz_response(com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.QuizResponse).\n"
+                  + " Expected:\n" + _infoQuizResponse + "\n"
+                  + " Found:\n" + _existingQuizResponse);
+        }
+        final HashMap<String, TableInfo.Column> _columnsMyVoice = new HashMap<String, TableInfo.Column>(4);
+        _columnsMyVoice.put("unique_id", new TableInfo.Column("unique_id", "TEXT", true, 1));
+        _columnsMyVoice.put("title", new TableInfo.Column("title", "TEXT", true, 0));
+        _columnsMyVoice.put("story", new TableInfo.Column("story", "TEXT", true, 0));
+        _columnsMyVoice.put("story_mode", new TableInfo.Column("story_mode", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysMyVoice = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesMyVoice = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoMyVoice = new TableInfo("my_voice", _columnsMyVoice, _foreignKeysMyVoice, _indicesMyVoice);
+        final TableInfo _existingMyVoice = TableInfo.read(_db, "my_voice");
+        if (! _infoMyVoice.equals(_existingMyVoice)) {
+          throw new IllegalStateException("Migration didn't properly handle my_voice(com.unfpa.appsistenciamaternaunfpa.database.entity.myvoice.MyVoiceEntity).\n"
+                  + " Expected:\n" + _infoMyVoice + "\n"
+                  + " Found:\n" + _existingMyVoice);
+        }
+        final HashMap<String, TableInfo.Column> _columnsPersonalDetails = new HashMap<String, TableInfo.Column>(2);
+        _columnsPersonalDetails.put("unique_id", new TableInfo.Column("unique_id", "TEXT", true, 1));
+        _columnsPersonalDetails.put("title", new TableInfo.Column("title", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysPersonalDetails = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesPersonalDetails = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoPersonalDetails = new TableInfo("personal_details", _columnsPersonalDetails, _foreignKeysPersonalDetails, _indicesPersonalDetails);
+        final TableInfo _existingPersonalDetails = TableInfo.read(_db, "personal_details");
+        if (! _infoPersonalDetails.equals(_existingPersonalDetails)) {
+          throw new IllegalStateException("Migration didn't properly handle personal_details(com.unfpa.appsistenciamaternaunfpa.database.entity.personaldetails.PersonalDetailsEntity).\n"
+                  + " Expected:\n" + _infoPersonalDetails + "\n"
+                  + " Found:\n" + _existingPersonalDetails);
+        }
+        final HashMap<String, TableInfo.Column> _columnsPeriodMaster = new HashMap<String, TableInfo.Column>(5);
+        _columnsPeriodMaster.put("periodId", new TableInfo.Column("periodId", "INTEGER", true, 1));
+        _columnsPeriodMaster.put("startDate", new TableInfo.Column("startDate", "TEXT", true, 0));
+        _columnsPeriodMaster.put("endDate", new TableInfo.Column("endDate", "TEXT", true, 0));
+        _columnsPeriodMaster.put("periodLength", new TableInfo.Column("periodLength", "INTEGER", true, 0));
+        _columnsPeriodMaster.put("avgCycle", new TableInfo.Column("avgCycle", "INTEGER", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysPeriodMaster = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesPeriodMaster = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoPeriodMaster = new TableInfo("period_master", _columnsPeriodMaster, _foreignKeysPeriodMaster, _indicesPeriodMaster);
+        final TableInfo _existingPeriodMaster = TableInfo.read(_db, "period_master");
+        if (! _infoPeriodMaster.equals(_existingPeriodMaster)) {
+          throw new IllegalStateException("Migration didn't properly handle period_master(com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.PeriodTracker).\n"
+                  + " Expected:\n" + _infoPeriodMaster + "\n"
+                  + " Found:\n" + _existingPeriodMaster);
+        }
+        final HashMap<String, TableInfo.Column> _columnsMedicineReminder = new HashMap<String, TableInfo.Column>(10);
+        _columnsMedicineReminder.put("medicineReminderId", new TableInfo.Column("medicineReminderId", "INTEGER", true, 1));
+        _columnsMedicineReminder.put("date", new TableInfo.Column("date", "TEXT", true, 0));
+        _columnsMedicineReminder.put("time", new TableInfo.Column("time", "TEXT", true, 0));
+        _columnsMedicineReminder.put("withFood", new TableInfo.Column("withFood", "INTEGER", true, 0));
+        _columnsMedicineReminder.put("medicineName", new TableInfo.Column("medicineName", "TEXT", true, 0));
+        _columnsMedicineReminder.put("dose", new TableInfo.Column("dose", "INTEGER", true, 0));
+        _columnsMedicineReminder.put("days", new TableInfo.Column("days", "INTEGER", true, 0));
+        _columnsMedicineReminder.put("reminderBefore", new TableInfo.Column("reminderBefore", "TEXT", true, 0));
+        _columnsMedicineReminder.put("eventId", new TableInfo.Column("eventId", "INTEGER", true, 0));
+        _columnsMedicineReminder.put("eventURI", new TableInfo.Column("eventURI", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysMedicineReminder = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesMedicineReminder = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoMedicineReminder = new TableInfo("medicine_reminder", _columnsMedicineReminder, _foreignKeysMedicineReminder, _indicesMedicineReminder);
+        final TableInfo _existingMedicineReminder = TableInfo.read(_db, "medicine_reminder");
+        if (! _infoMedicineReminder.equals(_existingMedicineReminder)) {
+          throw new IllegalStateException("Migration didn't properly handle medicine_reminder(com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder).\n"
+                  + " Expected:\n" + _infoMedicineReminder + "\n"
+                  + " Found:\n" + _existingMedicineReminder);
+        }
+        final HashMap<String, TableInfo.Column> _columnsCountryOfficeListing = new HashMap<String, TableInfo.Column>(16);
+        _columnsCountryOfficeListing.put("field_country", new TableInfo.Column("field_country", "TEXT", true, 1));
+        _columnsCountryOfficeListing.put("field_client_code", new TableInfo.Column("field_client_code", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_image", new TableInfo.Column("field_image", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("title", new TableInfo.Column("title", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_subtitle", new TableInfo.Column("field_subtitle", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_enable_health_manager", new TableInfo.Column("field_enable_health_manager", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_enable_live_chat", new TableInfo.Column("field_enable_live_chat", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_enable_service_locator", new TableInfo.Column("field_enable_service_locator", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_sms_getway_url", new TableInfo.Column("field_sms_getway_url", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_sms_username", new TableInfo.Column("field_sms_username", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_sms_auth", new TableInfo.Column("field_sms_auth", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_maximum_distance", new TableInfo.Column("field_maximum_distance", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_language", new TableInfo.Column("field_language", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_health_management_export", new TableInfo.Column("field_health_management_export", "TEXT", false, 0));
+        _columnsCountryOfficeListing.put("field_contact_number", new TableInfo.Column("field_contact_number", "TEXT", true, 0));
+        _columnsCountryOfficeListing.put("field_country_export", new TableInfo.Column("field_country_export", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysCountryOfficeListing = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesCountryOfficeListing = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoCountryOfficeListing = new TableInfo("country_office_listing", _columnsCountryOfficeListing, _foreignKeysCountryOfficeListing, _indicesCountryOfficeListing);
+        final TableInfo _existingCountryOfficeListing = TableInfo.read(_db, "country_office_listing");
+        if (! _infoCountryOfficeListing.equals(_existingCountryOfficeListing)) {
+          throw new IllegalStateException("Migration didn't properly handle country_office_listing(com.unfpa.appsistenciamaternaunfpa.database.entity.country_office_listing.CountryOfficeSettingEntity).\n"
+                  + " Expected:\n" + _infoCountryOfficeListing + "\n"
+                  + " Found:\n" + _existingCountryOfficeListing);
+        }
+        final HashMap<String, TableInfo.Column> _columnsMedicineEvent = new HashMap<String, TableInfo.Column>(4);
+        _columnsMedicineEvent.put("medicineEventId", new TableInfo.Column("medicineEventId", "INTEGER", true, 1));
+        _columnsMedicineEvent.put("medicineReminderId", new TableInfo.Column("medicineReminderId", "INTEGER", true, 0));
+        _columnsMedicineEvent.put("eventId", new TableInfo.Column("eventId", "INTEGER", true, 0));
+        _columnsMedicineEvent.put("eventURI", new TableInfo.Column("eventURI", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysMedicineEvent = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesMedicineEvent = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoMedicineEvent = new TableInfo("medicine_event", _columnsMedicineEvent, _foreignKeysMedicineEvent, _indicesMedicineEvent);
+        final TableInfo _existingMedicineEvent = TableInfo.read(_db, "medicine_event");
+        if (! _infoMedicineEvent.equals(_existingMedicineEvent)) {
+          throw new IllegalStateException("Migration didn't properly handle medicine_event(com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineEvent).\n"
+                  + " Expected:\n" + _infoMedicineEvent + "\n"
+                  + " Found:\n" + _existingMedicineEvent);
+        }
+        final HashMap<String, TableInfo.Column> _columnsAppointmentReminder = new HashMap<String, TableInfo.Column>(7);
+        _columnsAppointmentReminder.put("appointmentId", new TableInfo.Column("appointmentId", "INTEGER", true, 1));
+        _columnsAppointmentReminder.put("appointmentName", new TableInfo.Column("appointmentName", "TEXT", true, 0));
+        _columnsAppointmentReminder.put("serviceCenterId", new TableInfo.Column("serviceCenterId", "TEXT", true, 0));
+        _columnsAppointmentReminder.put("serviceCenterName", new TableInfo.Column("serviceCenterName", "TEXT", true, 0));
+        _columnsAppointmentReminder.put("time", new TableInfo.Column("time", "TEXT", true, 0));
+        _columnsAppointmentReminder.put("date", new TableInfo.Column("date", "TEXT", true, 0));
+        _columnsAppointmentReminder.put("eventURI", new TableInfo.Column("eventURI", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysAppointmentReminder = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesAppointmentReminder = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoAppointmentReminder = new TableInfo("appointment_reminder", _columnsAppointmentReminder, _foreignKeysAppointmentReminder, _indicesAppointmentReminder);
+        final TableInfo _existingAppointmentReminder = TableInfo.read(_db, "appointment_reminder");
+        if (! _infoAppointmentReminder.equals(_existingAppointmentReminder)) {
+          throw new IllegalStateException("Migration didn't properly handle appointment_reminder(com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.AppointmentReminder).\n"
+                  + " Expected:\n" + _infoAppointmentReminder + "\n"
+                  + " Found:\n" + _existingAppointmentReminder);
+        }
+        final HashMap<String, TableInfo.Column> _columnsNotification = new HashMap<String, TableInfo.Column>(10);
+        _columnsNotification.put("notificationId", new TableInfo.Column("notificationId", "INTEGER", true, 1));
+        _columnsNotification.put("title", new TableInfo.Column("title", "TEXT", true, 0));
+        _columnsNotification.put("subTitile1", new TableInfo.Column("subTitile1", "TEXT", true, 0));
+        _columnsNotification.put("subTitile2", new TableInfo.Column("subTitile2", "TEXT", true, 0));
+        _columnsNotification.put("timeStr", new TableInfo.Column("timeStr", "TEXT", true, 0));
+        _columnsNotification.put("type", new TableInfo.Column("type", "TEXT", true, 0));
+        _columnsNotification.put("notificationTime", new TableInfo.Column("notificationTime", "TEXT", true, 0));
+        _columnsNotification.put("isDisplayed", new TableInfo.Column("isDisplayed", "INTEGER", true, 0));
+        _columnsNotification.put("notificationItemId", new TableInfo.Column("notificationItemId", "INTEGER", true, 0));
+        _columnsNotification.put("notificationReqId", new TableInfo.Column("notificationReqId", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysNotification = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesNotification = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoNotification = new TableInfo("notification", _columnsNotification, _foreignKeysNotification, _indicesNotification);
+        final TableInfo _existingNotification = TableInfo.read(_db, "notification");
+        if (! _infoNotification.equals(_existingNotification)) {
+          throw new IllegalStateException("Migration didn't properly handle notification(com.unfpa.appsistenciamaternaunfpa.database.entity.notification.Notification).\n"
+                  + " Expected:\n" + _infoNotification + "\n"
+                  + " Found:\n" + _existingNotification);
+        }
+        final HashMap<String, TableInfo.Column> _columnsAppointmentNotificationReminder = new HashMap<String, TableInfo.Column>(5);
+        _columnsAppointmentNotificationReminder.put("notificationId", new TableInfo.Column("notificationId", "INTEGER", true, 1));
+        _columnsAppointmentNotificationReminder.put("data", new TableInfo.Column("data", "TEXT", true, 0));
+        _columnsAppointmentNotificationReminder.put("title", new TableInfo.Column("title", "TEXT", true, 0));
+        _columnsAppointmentNotificationReminder.put("state", new TableInfo.Column("state", "INTEGER", true, 0));
+        _columnsAppointmentNotificationReminder.put("hour", new TableInfo.Column("hour", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysAppointmentNotificationReminder = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesAppointmentNotificationReminder = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoAppointmentNotificationReminder = new TableInfo("appointment_notification_reminder", _columnsAppointmentNotificationReminder, _foreignKeysAppointmentNotificationReminder, _indicesAppointmentNotificationReminder);
+        final TableInfo _existingAppointmentNotificationReminder = TableInfo.read(_db, "appointment_notification_reminder");
+        if (! _infoAppointmentNotificationReminder.equals(_existingAppointmentNotificationReminder)) {
+          throw new IllegalStateException("Migration didn't properly handle appointment_notification_reminder(com.unfpa.appsistenciamaternaunfpa.database.entity.notification.Notification2).\n"
+                  + " Expected:\n" + _infoAppointmentNotificationReminder + "\n"
+                  + " Found:\n" + _existingAppointmentNotificationReminder);
+        }
+        final HashMap<String, TableInfo.Column> _columnsCountryList = new HashMap<String, TableInfo.Column>(3);
+        _columnsCountryList.put("country_id", new TableInfo.Column("country_id", "TEXT", true, 1));
+        _columnsCountryList.put("countryCode", new TableInfo.Column("countryCode", "TEXT", true, 0));
+        _columnsCountryList.put("countryName", new TableInfo.Column("countryName", "TEXT", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysCountryList = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesCountryList = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoCountryList = new TableInfo("country_list", _columnsCountryList, _foreignKeysCountryList, _indicesCountryList);
+        final TableInfo _existingCountryList = TableInfo.read(_db, "country_list");
+        if (! _infoCountryList.equals(_existingCountryList)) {
+          throw new IllegalStateException("Migration didn't properly handle country_list(com.unfpa.appsistenciamaternaunfpa.database.entity.country_office_listing.CountryList).\n"
+                  + " Expected:\n" + _infoCountryList + "\n"
+                  + " Found:\n" + _existingCountryList);
+        }
+      }
+    }, "b51f82c97e3bcf18d14263305b4c1606", "9de1f12ce364cc03e3346d6d1dd8c95c");
+    final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
+        .name(configuration.name)
+        .callback(_openCallback)
+        .build();
+    final SupportSQLiteOpenHelper _helper = configuration.sqliteOpenHelperFactory.create(_sqliteConfig);
+    return _helper;
+  }
+
+  @Override
+  protected InvalidationTracker createInvalidationTracker() {
+    return new InvalidationTracker(this, "content_master","content_detail","content_category","service_center_details","my_services","quiz_request","quiz_response","my_voice","personal_details","period_master","medicine_reminder","country_office_listing","medicine_event","appointment_reminder","notification","appointment_notification_reminder","country_list");
+  }
+
+  @Override
+  public void clearAllTables() {
+    super.assertNotMainThread();
+    final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
+    try {
+      super.beginTransaction();
+      _db.execSQL("DELETE FROM `content_master`");
+      _db.execSQL("DELETE FROM `content_detail`");
+      _db.execSQL("DELETE FROM `content_category`");
+      _db.execSQL("DELETE FROM `service_center_details`");
+      _db.execSQL("DELETE FROM `my_services`");
+      _db.execSQL("DELETE FROM `quiz_request`");
+      _db.execSQL("DELETE FROM `quiz_response`");
+      _db.execSQL("DELETE FROM `my_voice`");
+      _db.execSQL("DELETE FROM `personal_details`");
+      _db.execSQL("DELETE FROM `period_master`");
+      _db.execSQL("DELETE FROM `medicine_reminder`");
+      _db.execSQL("DELETE FROM `country_office_listing`");
+      _db.execSQL("DELETE FROM `medicine_event`");
+      _db.execSQL("DELETE FROM `appointment_reminder`");
+      _db.execSQL("DELETE FROM `notification`");
+      _db.execSQL("DELETE FROM `appointment_notification_reminder`");
+      _db.execSQL("DELETE FROM `country_list`");
+      super.setTransactionSuccessful();
+    } finally {
+      super.endTransaction();
+      _db.query("PRAGMA wal_checkpoint(FULL)").close();
+      if (!_db.inTransaction()) {
+        _db.execSQL("VACUUM");
+      }
+    }
+  }
+
+  @Override
+  public SRHContentDAO contentMasterDAO() {
+    if (_sRHContentDAO != null) {
+      return _sRHContentDAO;
+    } else {
+      synchronized(this) {
+        if(_sRHContentDAO == null) {
+          _sRHContentDAO = new SRHContentDAO_Impl(this);
+        }
+        return _sRHContentDAO;
+      }
+    }
+  }
+
+  @Override
+  public ContentDetailDAO contentDetailDAO() {
+    if (_contentDetailDAO != null) {
+      return _contentDetailDAO;
+    } else {
+      synchronized(this) {
+        if(_contentDetailDAO == null) {
+          _contentDetailDAO = new ContentDetailDAO_Impl(this);
+        }
+        return _contentDetailDAO;
+      }
+    }
+  }
+
+  @Override
+  public SRHContentCategoryDAO SRHContentCategoryDAO() {
+    if (_sRHContentCategoryDAO != null) {
+      return _sRHContentCategoryDAO;
+    } else {
+      synchronized(this) {
+        if(_sRHContentCategoryDAO == null) {
+          _sRHContentCategoryDAO = new SRHContentCategoryDAO_Impl(this);
+        }
+        return _sRHContentCategoryDAO;
+      }
+    }
+  }
+
+  @Override
+  public ServiceCenterDetailDAO serviceCenterDetailDAO() {
+    if (_serviceCenterDetailDAO != null) {
+      return _serviceCenterDetailDAO;
+    } else {
+      synchronized(this) {
+        if(_serviceCenterDetailDAO == null) {
+          _serviceCenterDetailDAO = new ServiceCenterDetailDAO_Impl(this);
+        }
+        return _serviceCenterDetailDAO;
+      }
+    }
+  }
+
+  @Override
+  public MyServiceDAO myServiceDAO() {
+    if (_myServiceDAO != null) {
+      return _myServiceDAO;
+    } else {
+      synchronized(this) {
+        if(_myServiceDAO == null) {
+          _myServiceDAO = new MyServiceDAO_Impl(this);
+        }
+        return _myServiceDAO;
+      }
+    }
+  }
+
+  @Override
+  public MyVoiceDAO myVoiceDAO() {
+    if (_myVoiceDAO != null) {
+      return _myVoiceDAO;
+    } else {
+      synchronized(this) {
+        if(_myVoiceDAO == null) {
+          _myVoiceDAO = new MyVoiceDAO_Impl(this);
+        }
+        return _myVoiceDAO;
+      }
+    }
+  }
+
+  @Override
+  public QuizRequestDAO quizRequestDAO() {
+    if (_quizRequestDAO != null) {
+      return _quizRequestDAO;
+    } else {
+      synchronized(this) {
+        if(_quizRequestDAO == null) {
+          _quizRequestDAO = new QuizRequestDAO_Impl(this);
+        }
+        return _quizRequestDAO;
+      }
+    }
+  }
+
+  @Override
+  public PersonalDetailsDAO personalDetailsDAO() {
+    if (_personalDetailsDAO != null) {
+      return _personalDetailsDAO;
+    } else {
+      synchronized(this) {
+        if(_personalDetailsDAO == null) {
+          _personalDetailsDAO = new PersonalDetailsDAO_Impl(this);
+        }
+        return _personalDetailsDAO;
+      }
+    }
+  }
+
+  @Override
+  public PeriodTrackerDAO periodTrackerDAO() {
+    if (_periodTrackerDAO != null) {
+      return _periodTrackerDAO;
+    } else {
+      synchronized(this) {
+        if(_periodTrackerDAO == null) {
+          _periodTrackerDAO = new PeriodTrackerDAO_Impl(this);
+        }
+        return _periodTrackerDAO;
+      }
+    }
+  }
+
+  @Override
+  public QuizResponseDAO quizResponseDAO() {
+    if (_quizResponseDAO != null) {
+      return _quizResponseDAO;
+    } else {
+      synchronized(this) {
+        if(_quizResponseDAO == null) {
+          _quizResponseDAO = new QuizResponseDAO_Impl(this);
+        }
+        return _quizResponseDAO;
+      }
+    }
+  }
+
+  @Override
+  public MedicineReminderDAO medicineReminderDAO() {
+    if (_medicineReminderDAO != null) {
+      return _medicineReminderDAO;
+    } else {
+      synchronized(this) {
+        if(_medicineReminderDAO == null) {
+          _medicineReminderDAO = new MedicineReminderDAO_Impl(this);
+        }
+        return _medicineReminderDAO;
+      }
+    }
+  }
+
+  @Override
+  public CountryOfficeDAO countryOfficeDAO() {
+    if (_countryOfficeDAO != null) {
+      return _countryOfficeDAO;
+    } else {
+      synchronized(this) {
+        if(_countryOfficeDAO == null) {
+          _countryOfficeDAO = new CountryOfficeDAO_Impl(this);
+        }
+        return _countryOfficeDAO;
+      }
+    }
+  }
+
+  @Override
+  public MedicineEventDAO medicineEventDAO() {
+    if (_medicineEventDAO != null) {
+      return _medicineEventDAO;
+    } else {
+      synchronized(this) {
+        if(_medicineEventDAO == null) {
+          _medicineEventDAO = new MedicineEventDAO_Impl(this);
+        }
+        return _medicineEventDAO;
+      }
+    }
+  }
+
+  @Override
+  public AppointmentReminderDAO appointmentReminderDAO() {
+    if (_appointmentReminderDAO != null) {
+      return _appointmentReminderDAO;
+    } else {
+      synchronized(this) {
+        if(_appointmentReminderDAO == null) {
+          _appointmentReminderDAO = new AppointmentReminderDAO_Impl(this);
+        }
+        return _appointmentReminderDAO;
+      }
+    }
+  }
+
+  @Override
+  public NotificationDAO notificationDAO() {
+    if (_notificationDAO != null) {
+      return _notificationDAO;
+    } else {
+      synchronized(this) {
+        if(_notificationDAO == null) {
+          _notificationDAO = new NotificationDAO_Impl(this);
+        }
+        return _notificationDAO;
+      }
+    }
+  }
+
+  @Override
+  public NotificationDAO2 notificationDAO2() {
+    if (_notificationDAO2 != null) {
+      return _notificationDAO2;
+    } else {
+      synchronized(this) {
+        if(_notificationDAO2 == null) {
+          _notificationDAO2 = new NotificationDAO2_Impl(this);
+        }
+        return _notificationDAO2;
+      }
+    }
+  }
+
+  @Override
+  public CountryListDAO countryListDAO() {
+    if (_countryListDAO != null) {
+      return _countryListDAO;
+    } else {
+      synchronized(this) {
+        if(_countryListDAO == null) {
+          _countryListDAO = new CountryListDAO_Impl(this);
+        }
+        return _countryListDAO;
+      }
+    }
+  }
+}

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/page_bg"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <EditText
+                android:id="@+id/edtSearch"
+                android:background="@drawable/rounded_border_edittext"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="false"
+                android:paddingRight="10dp"
+                android:hint="@string/SearchArticlesServices"
+                android:drawableRight="@drawable/ic_input_search"
+                android:layout_height="40dp"/>
+        <!-- Dashboard layout-->
+        <LinearLayout
+                android:id="@+id/llDashboard"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_below="@+id/edtSearch"
+                android:layout_height="match_parent">
+
+
+            <!--Tiles Section-->
+            <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                <!-- First row -->
+                <LinearLayout android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="20dp">
+                        <!-- My Knowledge Card -->
+                        <androidx.cardview.widget.CardView
+                                android:id="@+id/cardEmbarazada"
+                                android:layout_width="match_parent"
+                                app:cardBackgroundColor="@color/colorLightOrange"
+                                app:cardCornerRadius="7dp"
+                                android:layout_height="match_parent">
+                            <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                <ImageView
+                                        android:id="@+id/imgMyKnowledge"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_landing_knowledge"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_centerHorizontal="true"/>
+                                <TextView android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/text_16SP"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_below="@+id/imgMyKnowledge"
+                                        fontPath="fonts/Roboto-Bold.ttf"
+                                        android:text="@string/menu_my_knowledge"
+                                        />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:id="@+id/cardMyServices1"
+                            android:visibility="visible">
+                        <androidx.cardview.widget.CardView
+                                android:id="@+id/cardPersonalSalud"
+                                android:layout_width="match_parent"
+                                app:cardCornerRadius="7dp"
+                                app:cardBackgroundColor="@color/colorBlue"
+                                android:layout_height="match_parent"
+                                android:visibility="visible">
+                            <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                <ImageView
+                                        android:id="@+id/imgMyServices"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_landing_services"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_centerHorizontal="true"/>
+                                <TextView android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/text_16SP"
+                                        fontPath="fonts/Roboto-Bold.ttf"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_below="@+id/imgMyServices"
+                                        android:text="@string/menu_my_services"
+                                        />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Second row -->
+                <LinearLayout android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:weightSum="2">
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:id="@+id/cardMyHealth1"
+                            android:visibility="visible"
+                            android:layout_marginEnd="20dp">
+                        <androidx.cardview.widget.CardView
+                                android:id="@+id/cardBrigadista"
+                                android:layout_width="match_parent"
+                                app:cardBackgroundColor="@color/colorLightPink"
+                                app:cardCornerRadius="7dp"
+                                android:layout_height="match_parent"
+                                android:visibility="visible">
+                            <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                <ImageView
+                                        android:id="@+id/imgMyHealth"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_landing_health"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_centerHorizontal="true"/>
+                                <TextView android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/text_16SP"
+                                        fontPath="fonts/Roboto-Bold.ttf"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_below="@+id/imgMyHealth"
+                                        android:text="@string/menu_my_health"
+                                        />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:visibility="visible"
+                            android:id="@+id/cardMyVoice1">
+                        <androidx.cardview.widget.CardView
+                                android:id="@+id/cardMyVoice"
+                                android:layout_width="match_parent"
+                                app:cardCornerRadius="7dp"
+                                app:cardBackgroundColor="@color/colorYellow"
+                                android:layout_height="match_parent"
+                                android:visibility="visible">
+                            <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                <ImageView
+                                        android:id="@+id/imgMyVoice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_landing_voice"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_centerHorizontal="true"/>
+                                <TextView android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="@dimen/text_16SP"
+                                        fontPath="fonts/Roboto-Bold.ttf"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_below="@+id/imgMyVoice"
+                                        android:text="@string/menu_my_voice"
+                                        />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <!-- My Knowledge Card -->
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- My Reminders Section-->
+            <LinearLayout
+                    android:id="@+id/llMyReminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                <TextView android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorLightOrange"
+                        android:text="@string/MedicationForToday"
+                        android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lstMedicineReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <!-- My Appointment Section-->
+            <LinearLayout
+                    android:id="@+id/llMyAppoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                <TextView android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorLightOrange"
+                        android:text="@string/MyAppointments"
+                        android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lstAppointmentReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Search Result Layout -->
+        <LinearLayout
+                android:id="@+id/llSearchResult"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:paddingRight="15dp"
+                android:layout_below="@+id/edtSearch"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:id="@+id/llArticleContainer"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_height="0dp">
+                <TextView
+                        android:id="@+id/txtArticleHeader"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorLightOrange"
+                        android:text="@string/articles"
+                        android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lstSRHContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/llServiceContainer"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:layout_height="0dp">
+                <TextView
+                        android:id="@+id/txtHeaderServices"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorLightOrange"
+                        android:text="@string/services"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lstSRHServices"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/txtNoItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Text20Gray"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_result_found"/>
+        </LinearLayout>
+        <!-- Search layout-->
+    </RelativeLayout>
+</ScrollView>

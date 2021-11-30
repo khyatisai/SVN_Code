@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:context=".fragments.my_voice.MyVoiceListDetails">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <!-- Header-->
+    <LinearLayout
+            android:id="@+id/linearHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+        <TextView
+                android:id="@+id/txtVoiceTitle"
+                android:layout_width="0dp"
+                style="@style/TextOrangeHeaderLarge"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/header"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgVoiceShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right|top"
+            android:src="@drawable/ic_page_share"
+        />
+
+    </LinearLayout>
+    <!-- Detail Desc-->
+
+    <TextView
+            android:layout_below="@id/linearHeader"
+            android:id="@+id/txtVoiceDetailedDesc"
+            style="@style/Text12Grey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="@string/detailed_description" />
+    </LinearLayout>
+</FrameLayout>

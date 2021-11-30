@@ -1,0 +1,110 @@
+package com.unfpa.appsistenciamaternaunfpa.database.dao.my_health;
+
+import android.database.Cursor;
+import androidx.room.EntityInsertionAdapter;
+import androidx.room.RoomDatabase;
+import androidx.room.RoomSQLiteQuery;
+import androidx.room.SharedSQLiteStatement;
+import androidx.sqlite.db.SupportSQLiteStatement;
+import com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineEvent;
+import java.lang.Override;
+import java.lang.String;
+import java.lang.SuppressWarnings;
+import java.util.ArrayList;
+import java.util.List;
+
+@SuppressWarnings("unchecked")
+public final class MedicineEventDAO_Impl implements MedicineEventDAO {
+  private final RoomDatabase __db;
+
+  private final EntityInsertionAdapter __insertionAdapterOfMedicineEvent;
+
+  private final SharedSQLiteStatement __preparedStmtOfDeleteAll;
+
+  public MedicineEventDAO_Impl(RoomDatabase __db) {
+    this.__db = __db;
+    this.__insertionAdapterOfMedicineEvent = new EntityInsertionAdapter<MedicineEvent>(__db) {
+      @Override
+      public String createQuery() {
+        return "INSERT OR IGNORE INTO `medicine_event`(`medicineEventId`,`medicineReminderId`,`eventId`,`eventURI`) VALUES (nullif(?, 0),?,?,?)";
+      }
+
+      @Override
+      public void bind(SupportSQLiteStatement stmt, MedicineEvent value) {
+        stmt.bindLong(1, value.getMedicineEventId());
+        stmt.bindLong(2, value.getMedicineReminderId());
+        stmt.bindLong(3, value.getEventId());
+        if (value.getEventURI() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getEventURI());
+        }
+      }
+    };
+    this.__preparedStmtOfDeleteAll = new SharedSQLiteStatement(__db) {
+      @Override
+      public String createQuery() {
+        final String _query = "DELETE FROM medicine_event";
+        return _query;
+      }
+    };
+  }
+
+  @Override
+  public void insert(MedicineEvent medicineEvent) {
+    __db.beginTransaction();
+    try {
+      __insertionAdapterOfMedicineEvent.insert(medicineEvent);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void deleteAll() {
+    final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteAll.acquire();
+    __db.beginTransaction();
+    try {
+      _stmt.executeUpdateDelete();
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+      __preparedStmtOfDeleteAll.release(_stmt);
+    }
+  }
+
+  @Override
+  public List<MedicineEvent> getAllEventByReminderId(int medicineReminderId) {
+    final String _sql = "SELECT * from medicine_event where medicineReminderId= ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, medicineReminderId);
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _cursorIndexOfMedicineEventId = _cursor.getColumnIndexOrThrow("medicineEventId");
+      final int _cursorIndexOfMedicineReminderId = _cursor.getColumnIndexOrThrow("medicineReminderId");
+      final int _cursorIndexOfEventId = _cursor.getColumnIndexOrThrow("eventId");
+      final int _cursorIndexOfEventURI = _cursor.getColumnIndexOrThrow("eventURI");
+      final List<MedicineEvent> _result = new ArrayList<MedicineEvent>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final MedicineEvent _item;
+        final int _tmpMedicineReminderId;
+        _tmpMedicineReminderId = _cursor.getInt(_cursorIndexOfMedicineReminderId);
+        final long _tmpEventId;
+        _tmpEventId = _cursor.getLong(_cursorIndexOfEventId);
+        final String _tmpEventURI;
+        _tmpEventURI = _cursor.getString(_cursorIndexOfEventURI);
+        _item = new MedicineEvent(_tmpMedicineReminderId,_tmpEventId,_tmpEventURI);
+        final int _tmpMedicineEventId;
+        _tmpMedicineEventId = _cursor.getInt(_cursorIndexOfMedicineEventId);
+        _item.setMedicineEventId(_tmpMedicineEventId);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+}

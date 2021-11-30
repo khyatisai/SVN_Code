@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/nurse_green_color"
+            app:elevation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/colorBlack">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- Date picker layout-->
+
+    <ScrollView
+        android:id="@+id/scrollpaciente3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rlDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBar"
+            android:background="@drawable/page_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:visibility="visible">
+
+            <CalendarView
+                android:id="@+id/calendarView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dateTextAppearance="@style/CalenderViewDateCustomText"
+                android:elevation="10dp"
+                android:theme="@style/CalenderViewCustomGreen"
+                android:weekDayTextAppearance="@style/CalenderViewWeekCustomTextGreen" />
+
+            <TextView
+                android:id="@+id/txtTime2"
+                style="@android:style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/calendarView3"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:drawableRight="@drawable/ic_time_green"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/SelectTime"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_12SP" />
+
+            <RadioGroup
+                android:id="@+id/rgTypeAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTime2">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbMeet"
+                    android:layout_width="270dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/boton_redondo"
+                    android:button="@null"
+                    android:hint="CONSULTA PRESENCIAL"
+                    android:textAlignment="center"
+                    android:textColor="@color/nurse_green_color"
+                    android:textColorHint="@color/nurse_green_color"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbTelMedicine"
+                    android:layout_width="270dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/boton_redondo"
+                    android:button="@null"
+                    android:hint="TELECONSULTA MÉDICA"
+                    android:textAlignment="center"
+                    android:textColor="@color/nurse_green_color"
+                    android:textColorHint="@color/nurse_green_color"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnProximo5"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_below="@+id/rgTypeAppointment"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/nurse_green_color"
+                android:text="Próximo"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

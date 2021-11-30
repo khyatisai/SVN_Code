@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/nurse_green_color"
+            app:elevation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/colorBlack">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- Date picker layout-->
+    <RelativeLayout
+        android:id="@+id/rlDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:background="@drawable/page_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:visibility="visible">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:fillViewport="true"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/text_20SP"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="@dimen/text_20SP"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="20dp"
+                        android:text="En qué consiste el proyecto:"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/txtWelcomeDesc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtMiddleHeader"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|start"
+                        android:text="En consultas médicas programadas para usted a través de una aplicación que se descargará a su teléfono celular."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_12SP" />
+
+                    <TextView
+                        android:id="@+id/txtWelcomeDesc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtMiddleHeader"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|start"
+                        android:text="Estas tele-consultas son solo para embarazadas que actualmente vienen a Profamilia a realizar sus controles prenatales."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_12SP" />
+
+                    <TextView
+                        android:id="@+id/txtWelcomeDesc4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtMiddleHeader"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|start"
+                        android:text="El mismo personal de Profamilia que la está atendiendo actualmente es quien le dará consultas a través de la aplicación."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_12SP" />
+
+                    <TextView
+                        android:id="@+id/txtWelcomeDesc5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtMiddleHeader"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|start"
+                        android:text="En la fecha y hora programada se realizará la vídeo-llamada con participación del personal de enfermería y personal médico."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_12SP" />
+
+                    <TextView
+                        android:id="@+id/txtWelcomeDesc6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtMiddleHeader"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|start"
+                        android:text="Un resumen de las consultas será guardado en la base de datos de Profamilia y luego agregado a su expediente."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_12SP" />
+
+                    <Button
+                        android:id="@+id/btnDeacuerdo"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="100dp"
+                        android:background="@color/nurse_green_color"
+                        android:text="ESTOY DE ACUERDO"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

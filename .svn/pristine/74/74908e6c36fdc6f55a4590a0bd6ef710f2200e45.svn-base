@@ -1,0 +1,462 @@
+<resources>
+    <string name="app_name">Appsistencia Materna</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_notification">Notification</string>
+    <string name="action_home">Home</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_my_knowledge">Información para usted</string>
+    <string name="menu_my_services">Mis servicios</string>
+    <string name="menu_my_health">Mi salud</string>
+    <string name="menu_my_voice">Video Llamada</string>
+    <string name="menu_my_favourites">Mis favoritos</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_profile">Actualización del perfil</string>
+    <string name="menu_call">Llamada</string>
+    <string name="menu_settings">Configuraciones</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_services">Buscar servicios</string>
+    <string name="todo">TODO</string>
+    <string name="birth_control">Birth Control</string>
+    <string name="education_and_delivery_of_methods_for_pregnancy_prevention">Education and delivery of methods for
+        pregnancy prevention
+    </string>
+    <string name="item_name">Item Name</string>
+    <string name="my_service_item_desc">Service item description
+    </string>
+    <string name="nearby_centers">Nearby Centers</string>
+    <string name="find_more">
+        <u>Find More</u>
+    </string>
+    <string name="location">Ubicación</string>
+    <string name="current_location">Ubicación actual…</string>
+    <string name="center_one">Centro uno</string>
+    <string name="_42_65_4852_1102">+42 – 65–4852–1102</string>
+    <string name="give_feedback">Dar opinion</string>
+    <string name="operational_hours">Horas operativas</string>
+    <string name="services">Servicios</string>
+    <string name="doctors_amp_nurses"><![CDATA[Doctors & Nurses]]></string>
+    <string name="would_you_like_to_give_feedback">¿Le gustaría darnos su opinión?</string>
+    <string name="_08_00_am_to_06_00_pm">08:00 AM to 06:00 PM</string>
+    <string name="sunday">domingo</string>
+    <string name="dr_rossie_peterson">Dr. Rossie Peterson</string>
+    <string name="gynaecologist">Ginecólogo</string>
+    <string name="pregnancy_prevention">Prevención del embarazo</string>
+    <string name="comment">Comentario</string>
+    <string name="optional">(Opcional)</string>
+    <string name="send">enviar</string>
+    <string name="submit">Enviar</string>
+    <string name="provide_your_feedback_for_the_center_you_have_visited">Provide your feedback for the center you have
+        visited.
+    </string>
+    <string name="skip">
+        <u>SKIP</u>
+    </string>
+
+    <!-- Home Screen -->
+    <string name="MyAppointments">Mis citas</string>
+    <string name="MyReminders">Mis recordatorios</string>
+    <string name="_9329_kenyatta_ville_apt_847">9329 Kenyatta Ville Apt, 847</string>
+    <string name="services_head">Servicios:</string>
+    <string name="main_exit">Haga clic en ATRÁS nuevamente para salir.</string>
+    <string name="SearchArticlesServices">Buscar artículos y servicios</string>
+
+    <!-- SRH Content Category Screen -->
+    <!--    <string name="Relationships">Relaciones</string>-->
+    <!--    <string name="SexualAndReproductiveHealth">Salud sexual y reproductiva</string>-->
+    <!--    <string name="SexualityAndSexualBehaviour">Sexualidad y comportamiento sexual</string>-->
+    <!--    <string name="SkillsForHealthAndWellbeing">Habilidades para la salud y el bienestar</string>-->
+    <!--    <string name="HumanBodyAndDevelopment">El cuerpo humano y el desarrollo</string>-->
+    <!--    <string name="UnderstandingGender">Entendiendo el género</string>-->
+    <!--    <string name="ValuesRightsCultureAndSexuality">Valores, Derechos, Cultura y Sexualidad</string>-->
+    <!--    <string name="ViolenceAndStayingSafe">Violencia y mantenerse a salvo</string>-->
+
+    <string name="Relationships">Relationships</string>
+    <string name="SexualAndReproductiveHealth">Sexual and Reproductive Health</string>
+    <string name="SexualityAndSexualBehaviour">Sexuality and Sexual Behaviour</string>
+    <string name="SkillsForHealthAndWellbeing">Skills for Health and Well-being</string>
+    <string name="HumanBodyAndDevelopment">The Human Body and Development</string>
+    <string name="UnderstandingGender">Understanding Gender</string>
+    <string name="ValuesRightsCultureAndSexuality">Values, Rights, Culture and Sexuality</string>
+    <string name="ViolenceAndStayingSafe">Violence and Staying Safe</string>
+    <string name="cancel">
+        <p>
+            <u>CANCEL</u>
+        </p>
+    </string>
+
+    <!-- SRH Content Detail Screen-->
+    <string name="Images">IMAGES</string>
+    <string name="Videos">VIDEOS</string>
+    <string name="Topics">TOPICS</string>
+    <string name="next">Next</string>
+    <string name="disagree">
+        <u>DISAGREE</u>
+    </string>
+    <string name="disclaimer">Descargo de responsabilidad</string>
+    <string name="by_agreeing">By Agreeing to provide this information It profile will only be used to help provide you
+        with the most \n relevant sexual and reproductive health content
+    </string>
+    <string name="question_number_1">Pregunta número 1</string>
+    <string name="would_you_like_to_share_your_story">¿Te gustaría compartir tu historia?</string>
+    <string name="share_story">Compartir historia</string>
+    <string name="want_to_talk_with_the_counselor">¿Quieres hablar con The Counselor?</string>
+    <string name="call">Llamada</string>
+    <string name="chat">Charla</string>
+    <string name="story_header">Encabezado de la historia</string>
+    <string name="story_description">Descripción de la historia</string>
+    <string name="your_name">Tu nombre...</string>
+    <string name="tell_your_story">Cuenta tu historia ...</string>
+    <string name="story">Historia</string>
+    <string name="title">Título</string>
+    <string name="your_story_title">El título de tu historia ...</string>
+    <string name="submit_story">Enviar historia</string>
+    <string name="image_share_srh_content">¿Quieres compartir la imagen también?</string>
+    <string name="Share_Content">Compartir contenido</string>
+
+    <!-- My Health Section-->
+    <string name="PeriodTracker">Seguimiento del período</string>
+    <string name="DetailsToTrackPeriod">Proporcione algunos detalles para realizar un seguimiento de sus períodos.</string>
+    <string name="MedicationForToday">Medicamentos para hoy</string>
+    <string name="NoReminders">Sin recordatorios</string>
+    <string name="NoAppointments">Sin citas,</string>
+    <string name="AddAppointments">Agregar cita</string>
+    <string name="PeriodStarts">El período comienza en</string>
+    <string name="days">Dias</string>
+    <string name="Last_period_duration">Duración del último período</string>
+    <string name="StartPeriod">Período de inicio</string>
+    <string name="feel_free_to_share_your_story">Siéntete libre de compartir tu historia</string>
+    <string name="your_stories">Tus historias</string>
+    <string name="save_as_draft">Guardar como borrador</string>
+    <string name="last_period_start">¿Cuándo comenzó su último período? (1/2)</string>
+    <string name="Done">Hecho</string>
+    <string name="avg_period_length">¿Cuánto dura su período promedio? (2/2)</string>
+    <string name="DAYS">DIAS</string>
+    <string name="EndPeriod">Periodo final</string>
+    <string name="EnterEndDate">Elija la fecha de finalización</string>
+    <string name="EnterStartDate">Elija la fecha de inicio</string>
+    <string name="MedicineReminder">Recordatorio de medicina</string>
+    <string name="SelectTime">Seleccionar hora</string>
+    <string name="WithFood">Con comida</string>
+    <string name="MEDICINE">MEDICAMENTO</string>
+    <string name="Name">Nombre</string>
+    <string name="Dose">Dosis</string>
+    <string name="Days">Dias</string>
+    <string name="REMIND_ME_BEFORE">RECUERDA ANTES</string>
+    <string name="SaveAddMore">Guardar y Añadir más</string>
+    <string name="PleaseSelectTime">Seleccionar hora</string>
+    <string name="EnterMedicineName">Ingrese el nombre del medicamento</string>
+    <string name="EnterDose">Ingrese la dosis</string>
+    <string name="EnterDays">Ingrese días</string>
+    <string name="Are_you_sure">¿Estás seguro?</string>
+    <string name="message_del_reminder">Eliminará todos los recordatorios de este medicamento.</string>
+    <string name="AddReminder">Agregar recordatorio</string>
+    <string name="AppointmentReminder">Recordatorio de cita</string>
+    <string name="SelectDate">Seleccione fecha</string>
+    <string name="SelectCenter">Seleccionar centro</string>
+    <string name="AppointmentName">Nombre de la cita</string>
+    <string name="ErrorAppointmentName">Ingrese el nombre de la cita</string>
+    <string name="message_del_appointment">Eliminará el evento del calendario para esta cita.</string>
+    <string name="PeriodsNotStarted">Tus períodos aún no han comenzado</string>
+    <string name="PeriodsOverDue">Periodos vencidos</string>
+    <string name="megForgotPeriodLog">Parece que olvidó registrar el período, ¿desea registrarlo ahora?</string>
+    <string name="PeriodsLogs">Registros de períodos</string>
+
+
+    <!-- Quiz Screen -->
+    <string name="attempts">attempts</string>
+    <string name="NoResult">No Result</string>
+    <string name="TryAgain">Try Again</string>
+    <string name="TakeQuiz">Take Quiz</string>
+    <string name="Passed">Passed</string>
+    <string name="Failed">Failed</string>
+    <string name="list_of_centers">List of Centers</string>
+    <string name="YouHaveGiven">You have given</string>
+    <string name="CorrectAnswers">Correct answers.</string>
+    <string name="Close">
+        <u>CLOSE</u>
+    </string>
+    <string name="CloseSpanish">
+        <u>Cerrar</u>
+    </string>
+    <string name="choose_language">Choose Language</string>
+    <string name="content_setting">Content Settings</string>
+    <string name="cache_settings">Data Settings</string>
+    <string name="enable_disable_my_health">Enable/Disable \'My Health\'</string>
+    <string name="enable_disable_my_services">Enable/Disable \'My Services\'</string>
+    <string name="enable_disable_my_voice">Enable/Disable \'My Voice\'</string>
+    <string name="enable_disable_my_call">Enable/Disable Call</string>
+    <string name="enable_disable_my_chat">Enable/Disable Chat</string>
+    <string name="allow_notification">Allow notification</string>
+    <string name="maximum_cache_size">Maximum cache size</string>
+    <string name="clear_app_data">Clear All Data</string>
+    <string name="update_app_data">Update App Data</string>
+    <string name="update">Update</string>
+    <string name="clear">Clear</string>
+    <string name="english_us">English(US)</string>
+    <string name="_250_mb">250 MB</string>
+
+    <!-- Common text-->
+    <string name="No">No</string>
+    <string name="Yes">Yes</string>
+    <string name="clear_my_knowledge_data">my knowledge data</string>
+    <string name="clear_my_service_data">my service data</string>
+    <string name="clear_my_voice_data">my voice data</string>
+    <string name="clear_my_health_data">my health data</string>
+    <string name="no_articles_as_of_now_for_this_category">No hay artículos a partir de ahora para esta categoría.</string>
+    <string name="no_hot_topics_as_of_now_in_my_knowledge">No data in hot topics sections as of \n now in my knowledge
+    </string>
+    <string name="no_guides_as_of_now_in_my_knowledge">No hay informacion para usted en estos momento</string>
+    <string name="no_class_as_of_now_in_my_knowledge">No data in class section as of \n now in my knowledge</string>
+    <string name="no_result_found">No result found.</string>
+    <string name="articles">Articles</string>
+    <string name="search_articles">Search articles</string>
+    <string name="no_favourite_article_as_of_now">No favourite article as of now.</string>
+    <string name="_30">30</string>
+    <string name="_5_days">5 Days</string>
+    <string name="_4_5_5">4.5/5</string>
+    <string name="center_address">center address</string>
+    <string name="center_number">center number</string>
+    <string name="center_short_address">center short address</string>
+    <string name="_0_0_kms">0.0 kms</string>
+    <string name="timing">Timing:</string>
+    <string name="available_time_slot">available time slot</string>
+    <string name="doctor_name">Doctor name</string>
+    <string name="occupation">occupation</string>
+    <string name="upto_250_characters">up to 250 characters…</string>
+    <string name="chip_tab_text">chip tab text</string>
+    <string name="current_day">Current day</string>
+    <string name="header">Header</string>
+    <string name="description">Description</string>
+    <string name="no_quiz_as_of_now_for_this_category">No quiz as of now for this category.</string>
+    <string name="would_you_like_to_provide_n_information">Would you like to provide \n information?</string>
+    <string name="select_your_country">Select your country</string>
+    <string name="select_your_district">Select your district</string>
+    <string name="select_your_gender">Select your gender</string>
+    <string name="select_your_age_group">Select your age group</string>
+    <string name="what_are_you_interested_in">What are you interested in?</string>
+    <string name="level_of_education_completed">What level of formal education have you completed?</string>
+    <string name="name">Name</string>
+    <string name="detailed_description">Detailed description</string>
+    <string name="test_name">Test Name</string>
+    <string name="datetime">dateTime</string>
+    <string name="centername">centerName</string>
+    <string name="_1">1</string>
+    <string name="sample">Sample</string>
+
+    <!--From activity-->
+    <string name="select_appointment_date">Seleccione Fecha para la cita</string>
+    <string name="you_are_connected_to_internet">You are connected to internet</string>
+    <string name="please_connect_to_internet">Please connect to the internet</string>
+    <string name="coming_soon">Coming soon…</string>
+    <string name="fields_are_mandatory">Fields are mandatory!!!</string>
+    <string name="minimum_one_selected_option_is_necessary_to_proceed">Minimum one selected option is necessary to
+        proceed!!!
+    </string>
+    <string name="agree">Agree</string>
+    <string name="done">done</string>
+    <string name="self_described">Other / Self Described</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="age_14_18">14 – 18 years old</string>
+    <string name="age_18_24">18 – 24 years old</string>
+    <string name="age_24_above">24 or above</string>
+    <string name="age_any">any</string>
+    <string name="interest_1">Learn more about sexual and reproductive health topics.</string>
+    <string name="interest_2">Get help fining a clinic.</string>
+    <string name="interest_3">Talk to someone about my questions.</string>
+    <string name="interest_4">Share my Story.</string>
+    <string name="interest_5">Something else.</string>
+    <string name="thematic_area">Thematic area:</string>
+    <string name="with_food">With Food</string>
+    <string name="without_food">Without Food</string>
+    <string name="hot_topics_tab">Hot Topics</string>
+    <string name="guides_tab">Guides</string>
+    <string name="class_tab">Class</string>
+    <string name="information_on_my_story">Information on My Story</string>
+    <string name="story_name">Story Name:</string>
+    <string name="story_desc">Story Description:</string>
+    <string name="sharing_my_story_details_as_below">Sharing My Story details as below:</string>
+    <string name="information_on_where_you_can_find_imp_services">Here is some information on where you can find
+        important services.
+    </string>
+    <string name="title_and_story_should_not_be_empty">Title and Story should not be empty</string>
+    <string name="information_on_important_services">Information on important services</string>
+    <string name="center_name">Center Name:</string>
+    <string name="center_address_1">Center Address:</string>
+    <string name="center_telephone_no">Center Telephone No:</string>
+    <string name="center_service_provided">Center Services Provided:</string>
+    <string name="please_call_the_number_above_for_additional_information">Please call the number above for additional
+        information.
+    </string>
+    <string name="sharing_center_details_as_below">Sharing center details as below:</string>
+    <string name="permission_has_been_denied_by_user">Permission has been denied by user</string>
+    <string name="permission_access_the_nearby_centers">Location permission are required to access the nearby centers.
+        If you don\'t allow then click cancel
+    </string>
+    <string name="if_cancel_call">If Cancel call won\'t be able to place. Do you want to give the permission?</string>
+    <string name="permission_required">Permission required</string>
+    <string name="allow">Allow</string>
+    <string name="cancel_1">Cancel</string>
+    <string name="center_details">Center Details</string>
+    <string name="gps_disabled_enable_it">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="search_center">Search Center</string>
+    <string name="data_cleared">data cleared.</string>
+    <string name="my_knowledge_data_cleared">My Knowledge data cleared.</string>
+    <string name="my_service_data_cleared">My Service data cleared.</string>
+    <string name="my_voice_data_cleared">My Voice data cleared.</string>
+    <string name="my_health_data_cleared">My Health data cleared.</string>
+    <string name="data_updated">Data updated</string>
+
+    <string name="chatDataDeleted">Your chat data will be deleted.</string>
+    <string name="noNotification">No hay notificaciones a partir de ahora.</string>
+
+    <!-- Notification -->
+    <string name="Notifications">Notificaciones</string>
+    <string name="Delete">Delete</string>
+
+    <!-- Dashboard detail description_guide-->
+    <string name="myknowledge_desc">Learn more about your sexual and reproductive health</string>
+    <string name="myservices_desc">Help finding clinics that have the health services you need</string>
+    <string name="myhealth_desc">Tools to help you track and manage your health</string>
+    <string name="myVoice_desc">Share your story and connect to someone who can help</string>
+
+    <string-array name="education_level_intro_que">
+        <item>None</item>
+        <item>Primary</item>
+        <item>Secondary</item>
+        <item>College or University</item>
+        <item>Professional degree</item>
+    </string-array>
+
+    <!-- Chat module-->
+    <string name="DisplayName">Display Name</string>
+    <string name="errDisplayName">Please Enter Display Name</string>
+    <string name="ChatWillbeDeletedSoon">Your Chat Will be Deleted Soon!!!</string>
+    <string name="noKPAvailable">No knowledgeable person is available as of now!!</string>
+    <string name="kpExit">Knowledgeable Person has Exit!!!</string>
+    <string name="select_another_kp">Please select another knowledgeable person.</string>
+    <string name="Ok">Ok</string>
+
+    <!-- About Screen-->
+    <string name="AboutUNFPA">Acerca de UNFPA</string>
+    <string name="GlobalmHealthInitiative">Acerca de la iniciativa Global mHealth</string>
+    <string name="aboutUNFPATxt">UNFPA es la agencia de salud sexual y reproductiva de las Naciones Unidas. UNFPA pide la
+        realización de los derechos reproductivos para todos y apoya el acceso a una amplia gama de servicios de salud sexual y reproductiva
+        servicios, incluida la planificación familiar voluntaria, la atención de la salud materna y la educación integral en sexualidad.
+        \ n \ nDesde que el UNFPA comenzó su trabajo, el mundo ha visto avances: el número y la tasa de mujeres que mueren
+        complicaciones
+        del embarazo o el parto se ha reducido a la mitad. Las familias son más saludables. Los jóvenes están más conectados y
+        empoderado que nunca.
+        \ n \ nPero todavía quedan demasiados. Más de 760 millones de personas están sumidas en la pobreza extrema. Sexual y
+        Los problemas de salud reproductiva son una de las principales causas de muerte y discapacidad de las mujeres en el mundo en desarrollo.
+        Los jóvenes corren los mayores riesgos de infección por VIH y embarazos no deseados. Muchos millones de niñas enfrentan el
+        perspectiva de matrimonio infantil y otras prácticas nocivas, como la mutilación genital femenina (MGF).
+        \ n \ nSe necesita hacer mucho más para garantizar un mundo en el que todas las personas puedan ejercer sus derechos humanos básicos,
+        incluidos los que se relacionan con los aspectos más íntimos y fundamentales de la vida.
+    </string>
+    <string name="UNFPAGlobalInitiative">UNFPA siempre está trabajando para encontrar formas nuevas y efectivas de llegar a los jóvenes.
+         donde sea que estén. La Iniciativa Global de Salud Móvil ayuda a apoyar los esfuerzos para encontrar formas de usar teléfonos móviles que
+         están cada vez más disponibles para ayudar a los jóvenes a obtener el apoyo, el acceso a los servicios y la información que necesitan.
+         necesitar.
+    </string>
+    <string name="txtDummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum
+    </string>
+
+    <!-- Welcome Screen-->
+    <string name="Welcome">WELCOME</string>
+    <string name="GlobalmHealthStaterPack">Global mHealth Starter Pack</string>
+    <string name="Continue">Continue</string>
+    <string name="desc_welcom_screen"> <![CDATA[Le proporcionamos esta aplicación con la esperanza de que le ayude con sus preguntas sobre salud sexual y reproductiva. La aplicación incluye respuestas a muchas de sus preguntas y herramientas para ayudarlo. ]]>
+    </string>
+
+    <string name="detalle">
+<![CDATA[
+    primera linea<br>
+    segunda linea<br>
+    tercera linea<br><br>
+    <p>lorem ipsum dolor sit amet...</p>
+]]>
+</string>
+
+    <string name="desc_welcom_screen2"> <![CDATA[
+
+En consultas médicas programadas para usted a través de una aplicación que se descargará a su teléfono celular.
+
+Estas tele-consultas son solo para embarazadas que actualmente vienen a Profamilia a realizar sus controles prenatales.
+
+El mismo personal de Profamilia que la está atendiendo actualmente es quien le dará consultas a través de la aplicación.
+
+En la fecha y hora programada se realizará la vídeo-llamada con participación del personal de enfermería y personal médico.
+
+Un resumen de las consultas será guardado en la base de datos de Profamilia y luego agregado a su expediente. ]]>
+    </string>
+
+    <!-- Seccion calendario de citas-->
+    <string name="CalendarioCita">Calendario de Citas</string>
+
+    <!-- Country office selection popup-->
+    <string name="ChooseCountryOffice">Choose Country Office</string>
+    <string name="No_data_for_this_service">No data for this service</string>
+    <string name="facebook_app_id">821890441998131</string>
+    <string name="fb_login_protocol_scheme">fb821890441998131</string>
+
+    <!-- para notificaciones -->
+    <string name="msg_notification_service_desc">Para recibir mensajes y notificaciones.</string>
+    <string name="title_foreground_service_notification">Appsistencia Materna se esta ejecutando </string>
+    <string name="lbl_btn_sticky_notification_open_app">Open Application</string>
+    <string name="txt_home">Hello World</string>
+    <string name="lbl_home">Received Text</string>
+    <string name="title_gen_notification">Nuevo Mensaje</string>
+    <string name="description_gen_notification">Click here to open in App</string>
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="permission_text_confirm">Has denegado los permisos de camara y audio en Appsistencia Materna, sin estos permisos no podras hacer video llamadas, ve a configuración o desinstale y vuelva a instalar.</string>
+    <string name="ok">Abrir configuración</string>
+    <string name="go_out">Salir</string>
+    <string name="title_activity_add_patient_step1">AddPatientStep1</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Nurse module text -->
+    <string name="PatientDetails">Patient Details</string>
+    <string name="PatientName">Patient Name</string>
+    <string name="Age">Age</string>
+    <string name="WeeksofGestation">Weeks of Gestation</string>
+    <string name="NurseName">Nurse Name</string>
+    <string name="AppointmentDetails">Appointment Details</string>
+    <string name="AppointmentDateTime">Appointment Date &amp; Time</string>
+    <string name="CallStartTime">Call Start Time</string>
+    <string name="CallEndTime">Call End Time</string>
+    <string name="mainTopicDiscussed"> Main topic discussed during the nurse counselling session</string>
+    <string name="Contraception">Contraception</string>
+    <string name="Breastfeeding">Breastfeeding</string>
+    <string name="DangerSigns">Danger Signs of pregnancy</string>
+    <string name="Other">Other</string>
+    <string name="Pleasespecify">Please specify</string>
+    <string name="AddNotes">Add Notes</string>
+    <string name="required">(required)</string>
+    <string name="EnterNotes">Enter Notes</string>
+    <string name="selectTopic">Select atleast one topic</string>
+    <string name="otherTopic">Enter other topic</string>
+</resources>
+

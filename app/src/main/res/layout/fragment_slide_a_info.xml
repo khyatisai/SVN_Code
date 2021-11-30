@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.introductory.SlideAInfoFragment">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_qna_disclaimer"
+            android:contentDescription="@string/nav_header_desc"
+            android:id="@+id/imageView"/>
+
+    <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/would_you_like_to_provide_n_information"
+            tools:ignore="RtlHardcoded"
+            style="@style/TextOrangeHeaderLarge"/>
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
+    <TextView
+            android:id="@+id/txtItemDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text14Regular"
+            android:gravity="center"
+            android:text="@string/disclaimer"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Text14RegularGray"
+            android:gravity="center"
+            android:text="@string/by_agreeing"/>
+
+    <TextView
+            android:id="@+id/txtFindMore"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disagree"
+            android:textColor="@color/colorBlue"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:textAppearance="?android:attr/textAppearance"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>
+</FrameLayout>

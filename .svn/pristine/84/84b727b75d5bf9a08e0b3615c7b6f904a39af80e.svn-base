@@ -1,0 +1,75 @@
+package com.unfpa.appsistenciamaternaunfpa.database;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 \u00032\u00020\u0001:\u0001\u0003B\u0005\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0004"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/database/DBHelper;", "", "()V", "Companion", "app_debug"})
+public final class DBHelper {
+    public static final com.unfpa.appsistenciamaternaunfpa.database.DBHelper.Companion Companion = null;
+    
+    public DBHelper() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\u001c\u0010\u0003\u001a\u00020\u00042\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010\n\u001a\u00020\u00042\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\f0\u00062\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010\r\u001a\u00020\u00042\f\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000f0\u00062\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010\u0010\u001a\u00020\u00042\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00120\u00062\u0006\u0010\b\u001a\u00020\tJ\u0016\u0010\u0013\u001a\u00020\u00042\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010\u0016\u001a\u00020\u00042\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00180\u00062\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010\u0019\u001a\u00020\u00042\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u001b0\u00062\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010\u001c\u001a\u00020\u00042\f\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001e0\u00062\u0006\u0010\b\u001a\u00020\tJ\u0016\u0010\u001f\u001a\u00020\u00042\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010 \u001a\u00020\u00042\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00180\u00062\u0006\u0010\b\u001a\u00020\tJ\u001c\u0010!\u001a\u00020\u00042\f\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001e0\u00062\u0006\u0010\b\u001a\u00020\t\u00a8\u0006\""}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/database/DBHelper$Companion;", "", "()V", "insertCenterContentDetails", "", "centerList", "", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/myserviceentity/ServiceCenterDetailEntity;", "context", "Landroid/content/Context;", "insertContentCategory", "categoryList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_knowledge/SRHContentCategory;", "insertContentMaster", "contentList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_knowledge/SRHContent;", "insertCountries", "countryList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/country_office_listing/CountryList;", "insertCountryOfficeDetails", "rawResponse", "", "insertMVoiceDetails", "voiceList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/myvoice/MyVoiceEntity;", "insertMyServiceDetails", "serviceList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/myserviceentity/MyServiceEntity;", "insertPersonalDetails", "personalDetailsList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/personaldetails/PersonalDetailsEntity;", "insertQuizRequest", "updateMVoiceDetails", "updatePersonalDetails", "app_debug"})
+    public static final class Companion {
+        
+        public final void insertContentMaster(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContent> contentList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertContentCategory(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge.SRHContentCategory> categoryList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertCenterContentDetails(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.ServiceCenterDetailEntity> centerList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertMyServiceDetails(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.MyServiceEntity> serviceList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertMVoiceDetails(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.myvoice.MyVoiceEntity> voiceList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void updateMVoiceDetails(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.myvoice.MyVoiceEntity> voiceList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertPersonalDetails(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.personaldetails.PersonalDetailsEntity> personalDetailsList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void updatePersonalDetails(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.personaldetails.PersonalDetailsEntity> personalDetailsList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertQuizRequest(@org.jetbrains.annotations.NotNull()
+        java.lang.String rawResponse, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertCountryOfficeDetails(@org.jetbrains.annotations.NotNull()
+        java.lang.String rawResponse, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        public final void insertCountries(@org.jetbrains.annotations.NotNull()
+        java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.country_office_listing.CountryList> countryList, @org.jetbrains.annotations.NotNull()
+        android.content.Context context) {
+        }
+        
+        private Companion() {
+            super();
+        }
+    }
+}

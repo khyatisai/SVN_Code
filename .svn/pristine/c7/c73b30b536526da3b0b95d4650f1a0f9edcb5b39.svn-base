@@ -1,0 +1,68 @@
+package com.unfpa.appsistenciamaternaunfpa.database.entity.my_knowledge;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 8/16/2019.
+ */
+@androidx.room.Entity(tableName = "content_category")
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000f\b\u0007\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0007R\u001e\u0010\u0002\u001a\u00020\u00038\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR\u001e\u0010\u0006\u001a\u00020\u00038\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\t\"\u0004\b\r\u0010\u000bR\u001e\u0010\u0005\u001a\u00020\u00038\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\t\"\u0004\b\u000f\u0010\u000bR\u001e\u0010\u0004\u001a\u00020\u00038\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\t\"\u0004\b\u0011\u0010\u000b\u00a8\u0006\u0012"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_knowledge/SRHContentCategory;", "", "category_id", "", "name", "description_guide", "description_class", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getCategory_id", "()Ljava/lang/String;", "setCategory_id", "(Ljava/lang/String;)V", "getDescription_class", "setDescription_class", "getDescription_guide", "setDescription_guide", "getName", "setName", "app_debug"})
+public final class SRHContentCategory {
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.PrimaryKey()
+    @com.google.gson.annotations.SerializedName(value = "tid")
+    private java.lang.String category_id;
+    @org.jetbrains.annotations.NotNull()
+    @com.google.gson.annotations.SerializedName(value = "name")
+    private java.lang.String name;
+    @org.jetbrains.annotations.NotNull()
+    @com.google.gson.annotations.SerializedName(value = "description__value_export")
+    private java.lang.String description_guide;
+    @org.jetbrains.annotations.NotNull()
+    @com.google.gson.annotations.SerializedName(value = "field_quiz_description_export")
+    private java.lang.String description_class;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCategory_id() {
+        return null;
+    }
+    
+    public final void setCategory_id(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getName() {
+        return null;
+    }
+    
+    public final void setName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getDescription_guide() {
+        return null;
+    }
+    
+    public final void setDescription_guide(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getDescription_class() {
+        return null;
+    }
+    
+    public final void setDescription_class(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public SRHContentCategory(@org.jetbrains.annotations.NotNull()
+    java.lang.String category_id, @org.jetbrains.annotations.NotNull()
+    java.lang.String name, @org.jetbrains.annotations.NotNull()
+    java.lang.String description_guide, @org.jetbrains.annotations.NotNull()
+    java.lang.String description_class) {
+        super();
+    }
+}

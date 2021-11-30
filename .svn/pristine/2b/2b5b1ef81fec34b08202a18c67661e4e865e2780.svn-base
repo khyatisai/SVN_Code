@@ -1,0 +1,194 @@
+package com.unfpa.appsistenciamaternaunfpa.activities;
+
+import java.lang.System;
+
+@kotlin.Suppress(names = {"NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS"})
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u001c\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u00012\u00020\u0002:\u0001FB\u0005\u00a2\u0006\u0002\u0010\u0003J\u0006\u00109\u001a\u00020:J\u0010\u0010;\u001a\u00020:2\u0006\u0010<\u001a\u00020=H\u0016J\u0012\u0010>\u001a\u00020:2\b\u0010?\u001a\u0004\u0018\u00010@H\u0014J\b\u0010A\u001a\u00020:H\u0014J\b\u0010B\u001a\u00020:H\u0014J\u0006\u0010C\u001a\u00020:J\u0006\u0010D\u001a\u00020:J\u0006\u0010E\u001a\u00020:R\u0011\u0010\u0004\u001a\u00020\u0002\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u001a\u0010\u0007\u001a\u00020\bX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u001a\u0010\r\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0012\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u000f\"\u0004\b\u0013\u0010\u0011R\u001a\u0010\u0014\u001a\u00020\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0017\"\u0004\b\u0018\u0010\u0019R\u0011\u0010\u001a\u001a\u00020\u0002\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0006R\u001a\u0010\u001c\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u000f\"\u0004\b\u001e\u0010\u0011R\u001a\u0010\u001f\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b \u0010\u000f\"\u0004\b!\u0010\u0011R\u001a\u0010\"\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b#\u0010\u000f\"\u0004\b$\u0010\u0011R\u001a\u0010%\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b&\u0010\u000f\"\u0004\b\'\u0010\u0011R\u001a\u0010(\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010\u000f\"\u0004\b*\u0010\u0011R\u001a\u0010+\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010\u000f\"\u0004\b-\u0010\u0011R\u001a\u0010.\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u0010\u000f\"\u0004\b0\u0010\u0011R\u001a\u00101\u001a\u000202X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b3\u00104\"\u0004\b5\u00106R\u000e\u00107\u001a\u000208X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006G"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/SplashActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;", "()V", "apiCompleteListener", "getApiCompleteListener", "()Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;", "countryOfficeDAO", "Lcom/unfpa/appsistenciamaternaunfpa/database/dao/personal/CountryOfficeDAO;", "getCountryOfficeDAO", "()Lcom/unfpa/appsistenciamaternaunfpa/database/dao/personal/CountryOfficeDAO;", "setCountryOfficeDAO", "(Lcom/unfpa/appsistenciamaternaunfpa/database/dao/personal/CountryOfficeDAO;)V", "isMessageShown", "", "()Z", "setMessageShown", "(Z)V", "isPopupDisplayed", "setPopupDisplayed", "mainHandler", "Landroid/os/Handler;", "getMainHandler", "()Landroid/os/Handler;", "setMainHandler", "(Landroid/os/Handler;)V", "onCompleteCOListener", "getOnCompleteCOListener", "reqCat", "getReqCat", "setReqCat", "reqContentList", "getReqContentList", "setReqContentList", "reqCountryList", "getReqCountryList", "setReqCountryList", "reqCountryOfcie", "getReqCountryOfcie", "setReqCountryOfcie", "reqQuiz", "getReqQuiz", "setReqQuiz", "reqServiceCenterDetail", "getReqServiceCenterDetail", "setReqServiceCenterDetail", "reqServiceList", "getReqServiceList", "setReqServiceList", "sharedPreference", "Landroid/content/SharedPreferences;", "getSharedPreference", "()Landroid/content/SharedPreferences;", "setSharedPreference", "(Landroid/content/SharedPreferences;)V", "updateTask", "Ljava/lang/Runnable;", "checkInternet", "", "onComplete", "response", "", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onPause", "onResume", "redirectTONextScreen", "showCOPopup", "showWelcomePopup", "FetchDataTask", "app_debug"})
+public final class SplashActivity extends androidx.appcompat.app.AppCompatActivity implements com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener {
+    @org.jetbrains.annotations.NotNull()
+    public android.content.SharedPreferences sharedPreference;
+    @org.jetbrains.annotations.NotNull()
+    private android.os.Handler mainHandler;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.database.dao.personal.CountryOfficeDAO countryOfficeDAO;
+    private boolean isMessageShown;
+    private boolean isPopupDisplayed;
+    private boolean reqCat;
+    private boolean reqContentList;
+    private boolean reqServiceCenterDetail;
+    private boolean reqServiceList;
+    private boolean reqQuiz;
+    private boolean reqCountryOfcie;
+    private boolean reqCountryList;
+    private final java.lang.Runnable updateTask = null;
+    @org.jetbrains.annotations.NotNull()
+    private final com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener apiCompleteListener = null;
+    
+    /**
+     * onCmplete listenr for Country office API calling
+     */
+    @org.jetbrains.annotations.NotNull()
+    private final com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener onCompleteCOListener = null;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.SharedPreferences getSharedPreference() {
+        return null;
+    }
+    
+    public final void setSharedPreference(@org.jetbrains.annotations.NotNull()
+    android.content.SharedPreferences p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.os.Handler getMainHandler() {
+        return null;
+    }
+    
+    public final void setMainHandler(@org.jetbrains.annotations.NotNull()
+    android.os.Handler p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.database.dao.personal.CountryOfficeDAO getCountryOfficeDAO() {
+        return null;
+    }
+    
+    public final void setCountryOfficeDAO(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.database.dao.personal.CountryOfficeDAO p0) {
+    }
+    
+    public final boolean isMessageShown() {
+        return false;
+    }
+    
+    public final void setMessageShown(boolean p0) {
+    }
+    
+    public final boolean isPopupDisplayed() {
+        return false;
+    }
+    
+    public final void setPopupDisplayed(boolean p0) {
+    }
+    
+    public final boolean getReqCat() {
+        return false;
+    }
+    
+    public final void setReqCat(boolean p0) {
+    }
+    
+    public final boolean getReqContentList() {
+        return false;
+    }
+    
+    public final void setReqContentList(boolean p0) {
+    }
+    
+    public final boolean getReqServiceCenterDetail() {
+        return false;
+    }
+    
+    public final void setReqServiceCenterDetail(boolean p0) {
+    }
+    
+    public final boolean getReqServiceList() {
+        return false;
+    }
+    
+    public final void setReqServiceList(boolean p0) {
+    }
+    
+    public final boolean getReqQuiz() {
+        return false;
+    }
+    
+    public final void setReqQuiz(boolean p0) {
+    }
+    
+    public final boolean getReqCountryOfcie() {
+        return false;
+    }
+    
+    public final void setReqCountryOfcie(boolean p0) {
+    }
+    
+    public final boolean getReqCountryList() {
+        return false;
+    }
+    
+    public final void setReqCountryList(boolean p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onPause() {
+    }
+    
+    @java.lang.Override()
+    protected void onResume() {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    public final void showWelcomePopup() {
+    }
+    
+    public final void showCOPopup() {
+    }
+    
+    public final void checkInternet() {
+    }
+    
+    /**
+     * onComplete listener for get time stamp API
+     */
+    @java.lang.Override()
+    public void onComplete(@org.jetbrains.annotations.NotNull()
+    java.lang.String response) {
+    }
+    
+    public final void redirectTONextScreen() {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener getApiCompleteListener() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener getOnCompleteCOListener() {
+        return null;
+    }
+    
+    public SplashActivity() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0003J\'\u0010\u0004\u001a\u0004\u0018\u00010\u00022\u0016\u0010\u0005\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00020\u0006\"\u0004\u0018\u00010\u0002H\u0014\u00a2\u0006\u0002\u0010\u0007J\u0012\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u0002H\u0014J\b\u0010\u000b\u001a\u00020\tH\u0014\u00a8\u0006\f"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/SplashActivity$FetchDataTask;", "Landroid/os/AsyncTask;", "Ljava/lang/Void;", "(Lcom/unfpa/appsistenciamaternaunfpa/activities/SplashActivity;)V", "doInBackground", "params", "", "([Ljava/lang/Void;)Ljava/lang/Void;", "onPostExecute", "", "result", "onPreExecute", "app_debug"})
+    public final class FetchDataTask extends android.os.AsyncTask<java.lang.Void, java.lang.Void, java.lang.Void> {
+        
+        @org.jetbrains.annotations.Nullable()
+        @java.lang.Override()
+        protected java.lang.Void doInBackground(@org.jetbrains.annotations.NotNull()
+        java.lang.Void... params) {
+            return null;
+        }
+        
+        @java.lang.Override()
+        protected void onPreExecute() {
+        }
+        
+        @java.lang.Override()
+        protected void onPostExecute(@org.jetbrains.annotations.Nullable()
+        java.lang.Void result) {
+        }
+        
+        public FetchDataTask() {
+            super();
+        }
+    }
+}

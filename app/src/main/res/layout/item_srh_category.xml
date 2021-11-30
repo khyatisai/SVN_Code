@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardCategory"
+            android:layout_width="match_parent"
+            card_view:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                android:background="@drawable/orange_gradient_bg"
+                        android:orientation="vertical">
+            <ImageView
+                    android:id="@+id/imgBackgroundImgContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                    android:id="@+id/txtCategoryName"
+                    style="@style/Text14Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgBackgroundImgContainer"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/sample"
+                    android:textColor="@color/colorBlack" />
+
+            <TextView
+                    android:id="@+id/txtCategoryDesc"
+                    style="@style/Text11Grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCategoryName"
+                    android:layout_toRightOf="@+id/imgBackgroundImgContainer"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/sample"
+                    android:textColor="@color/colorRegularBlack" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

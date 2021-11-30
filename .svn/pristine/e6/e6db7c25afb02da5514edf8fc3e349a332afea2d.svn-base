@@ -1,0 +1,117 @@
+package com.unfpa.appsistenciamaternaunfpa.api_controller;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u001f\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0014\u0010\u000b\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006R\u0014\u0010\r\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006R\u0014\u0010\u000f\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0006R\u0014\u0010\u0011\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0006R\u0014\u0010\u0013\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0006R\u0014\u0010\u0015\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0006R\u0014\u0010\u0017\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0006R\u0014\u0010\u0019\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0006R\u0014\u0010\u001b\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0006R\u0014\u0010\u001d\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0006R\u0014\u0010\u001f\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b \u0010\u0006R\u0014\u0010!\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0006\u00a8\u0006#"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/api_controller/EndPoints;", "", "()V", "URL_COUNTRY_LIST", "", "getURL_COUNTRY_LIST", "()Ljava/lang/String;", "URL_COUNTRY_OFFICE_LISTING", "getURL_COUNTRY_OFFICE_LISTING", "URL_GET_TOKEN", "getURL_GET_TOKEN", "URL_HEROKU", "getURL_HEROKU", "URL_MY_SERVICE_DETAILS", "getURL_MY_SERVICE_DETAILS", "URL_MY_VOICE", "getURL_MY_VOICE", "URL_POST_FOR_FEEDBACK", "getURL_POST_FOR_FEEDBACK", "URL_POST_QUIZ", "getURL_POST_QUIZ", "URL_QUIZ_LISTING", "getURL_QUIZ_LISTING", "URL_ROOT", "getURL_ROOT", "URL_SERVICE_CENTER_DETAILS", "getURL_SERVICE_CENTER_DETAILS", "URL_SRH_CONTENT_CATGORY", "getURL_SRH_CONTENT_CATGORY", "URL_SRH_CONTENT_DESC", "getURL_SRH_CONTENT_DESC", "URL_SRH_CONTENT_LIST", "getURL_SRH_CONTENT_LIST", "URL_SYNC_TIMESTEMP", "getURL_SYNC_TIMESTEMP", "app_debug"})
+public final class EndPoints {
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_ROOT = "https://mhsp.unfpa.org";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_HEROKU = "http://143.208.181.241";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_SRH_CONTENT_LIST = "https://mhsp.unfpa.org/mhealth/srh_content_listing";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_SRH_CONTENT_DESC = "https://mhsp.unfpa.org/mhealth/srh_content_detail/";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_SRH_CONTENT_CATGORY = "https://mhsp.unfpa.org/mhealth/srh_categories";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_SERVICE_CENTER_DETAILS = "http://143.208.181.241/api/v1/centers";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_MY_SERVICE_DETAILS = "https://mhsp.unfpa.org/mhealth/srh_service";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_GET_TOKEN = "https://mhsp.unfpa.org/mhealth/rest/session/token";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_POST_FOR_FEEDBACK = "https://mhsp.unfpa.org/mhealth/node?_format=hal_json";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_QUIZ_LISTING = "https://mhsp.unfpa.org/mhealth/quiz_listing";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_MY_VOICE = "https://mhsp.unfpa.org/mhealth/api/custom?_format=hal_json";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_POST_QUIZ = "https://mhsp.unfpa.org/mhealth/api/quiz?_format=hal_json";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_COUNTRY_OFFICE_LISTING = "https://mhsp.unfpa.org/mhealth/country_office_listing";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_SYNC_TIMESTEMP = "https://mhsp.unfpa.org/mhealth/sync_content";
+    @org.jetbrains.annotations.NotNull()
+    private static final java.lang.String URL_COUNTRY_LIST = "https://mhsp.unfpa.org/mhealth/countries";
+    public static final com.unfpa.appsistenciamaternaunfpa.api_controller.EndPoints INSTANCE = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_ROOT() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_HEROKU() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_SRH_CONTENT_LIST() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_SRH_CONTENT_DESC() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_SRH_CONTENT_CATGORY() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_SERVICE_CENTER_DETAILS() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_MY_SERVICE_DETAILS() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_GET_TOKEN() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_POST_FOR_FEEDBACK() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_QUIZ_LISTING() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_MY_VOICE() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_POST_QUIZ() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_COUNTRY_OFFICE_LISTING() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_SYNC_TIMESTEMP() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURL_COUNTRY_LIST() {
+        return null;
+    }
+    
+    private EndPoints() {
+        super();
+    }
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools">
+<com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3E92C2"
+            app:elevation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/colorWhite">
+
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+<!-- Date picker layout-->
+<RelativeLayout
+        android:layout_below="@+id/appBar"
+        android:id="@+id/rlDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:visibility="visible"
+        android:background="@drawable/page_bg"
+        >
+
+    <ScrollView
+            android:id="@+id/scrollpaciente3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@color/white"
+            android:fillViewport="true">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/text_20SP"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="@dimen/text_20SP"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto"
+                android:text="Formulario"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="36sp" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="Edad">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEddad"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="number"
+                        android:clickable="true"
+                        android:cursorVisible="false"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorGrey"
+                        android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="Semanas de Gestación">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSemanasGestacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="number"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorGrey"
+                        android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                    android:id="@+id/etReporteMovimientosFetales"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:hint="Reporte de movimientos fetales"
+                    android:maxLength="250"
+                    android:singleLine="false"
+                    android:background="@drawable/list_item_border"/>
+            <EditText
+                    android:id="@+id/etAroBro"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:hint="Indicar si es ARO o BRO"
+                    android:maxLength="250"
+                    android:singleLine="false"
+                    android:background="@drawable/list_item_border"/>
+            <EditText
+                    android:id="@+id/etMotivoPrincipalConsulta"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:hint="Motivo principal de la consulta"
+                    android:maxLength="250"
+                    android:singleLine="false"
+                    android:background="@drawable/list_item_border"/>
+            <EditText
+                    android:id="@+id/etDiagnostico"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:hint="Diagnósticos"
+                    android:maxLength="250"
+                    android:singleLine="false"
+                    android:background="@drawable/list_item_border"/>
+            <EditText
+                    android:id="@+id/etPlanes"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:hint="Planes"
+                    android:maxLength="250"
+                    android:singleLine="false"
+                    android:background="@drawable/list_item_border"/>
+            <EditText
+                    android:id="@+id/etOtrasObservaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:hint="Otras observaciones"
+                    android:maxLength="250"
+                    android:singleLine="false"
+                    android:background="@drawable/list_item_border"/>
+
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnConfirmar"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="25dp"
+                android:background="#3E92C2"
+                android:text="Confirmar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+</RelativeLayout>

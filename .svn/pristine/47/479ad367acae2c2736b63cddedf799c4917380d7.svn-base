@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/cardSRHContent"
+            android:background="@drawable/rounded_border_edittext"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text14Blue"
+                android:text="@string/header"
+        />
+        <TextView
+                android:layout_below="@+id/txtHeader"
+                android:id="@+id/txtShortDesc"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text10Grey"
+                android:text="@string/header"
+        />
+        <TextView
+                android:layout_below="@+id/txtShortDesc"
+                android:id="@+id/txtThematicArea"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text10Grey"
+                android:text=""
+        />
+    </RelativeLayout>
+</LinearLayout>

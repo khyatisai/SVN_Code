@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:background="@drawable/page_bg"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:elevation="0dp"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:titleTextColor="@color/colorBlue"
+                    app:elevation="0dp"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+                android:id="@+id/mainContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/appBar"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+        >
+            <TextView
+                    style="@style/Text12Orange"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/SelectDate"/>
+            <TextView
+                    android:id="@+id/txtDate"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:focusable="false"
+                    android:hint="@string/SelectDate"
+                    style="@android:style/Widget.EditText"
+                    android:textSize="@dimen/text_12SP"
+                    android:textColor="@color/colorBlack"
+                    android:drawableRight="@drawable/ic_input_cal"
+                    android:layout_height="40dp"/>
+            <TextView
+                    style="@style/Text12Orange"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/SelectTime"/>
+            <TextView
+                    android:id="@+id/txtTime"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/SelectTime"
+                    style="@android:style/Widget.EditText"
+                    android:textSize="@dimen/text_12SP"
+                    android:textColor="@color/colorBlack"
+                    android:drawableRight="@drawable/ic_time_clock"
+                    android:layout_height="40dp"/>
+
+            <CheckBox
+                    android:id="@+id/radioWithFood"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/selector_radio_button_quiz"
+                    android:text="@string/WithFood"
+                    android:checked="false"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical"
+                          android:layout_marginTop="20dp"
+                          android:layout_height="wrap_content">
+                <TextView
+                        style="@style/Text12Orange"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/MEDICINE"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:background="@color/colorBlue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+            <!-- Medicine Header-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="0.6"
+                          android:text="@string/Name"
+                          style="@style/Text12Blue"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="0.2"
+                          android:text="@string/Dose"
+                          style="@style/Text12Blue"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="0.2"
+                          android:text="@string/Days"
+                          style="@style/Text12Blue"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- Medicine Input -->
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="10dp"
+                          android:layout_height="wrap_content">
+                <EditText
+                        android:id="@+id/edtMedicineName"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/rounded_border_edittext"
+                        style="@style/Text12Black"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="40dp"/>
+                <EditText
+                        android:id="@+id/edtDose"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/rounded_border_edittext"
+                        style="@style/Text12Black"
+                        android:paddingLeft="5dp"
+                        android:inputType="number"
+                        android:paddingRight="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="40dp"/>
+                <EditText
+                        android:id="@+id/edtDays"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:inputType="number"
+                        android:background="@drawable/rounded_border_edittext"
+                        style="@style/Text12Black"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical"
+                          android:layout_marginTop="20dp"
+                          android:layout_height="wrap_content">
+                <TextView
+                        style="@style/Text12Orange"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/REMIND_ME_BEFORE"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:background="@color/colorBlue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/txt15Min"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/Text12Blue"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:text="15 mins"/>
+                <TextView
+                        android:id="@+id/txt30Min"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        style="@style/Text12Blue"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:text="30 mins"/>
+                <TextView
+                        android:id="@+id/txt1Hour"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        style="@style/Text12Blue"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:text="1 hour"/>
+                <TextView
+                        android:id="@+id/txt2Hour"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        style="@style/Text12Blue"
+                        android:includeFontPadding="false"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:text="2 hour"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnSaveAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/SaveAddMore"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_border"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_above="@+id/btnDone"
+                android:textAppearance="?android:attr/textAppearanceButton"/>
+
+        <Button
+                android:id="@+id/btnDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/Done"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_border"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:textAppearance="?android:attr/textAppearanceButton"/>
+
+    </LinearLayout>
+</ScrollView>

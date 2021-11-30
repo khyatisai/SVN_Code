@@ -1,0 +1,148 @@
+package com.unfpa.appsistenciamaternaunfpa.fragments.my_knowledge.quiz;
+
+import java.lang.System;
+
+/**
+ * A simple [Fragment] subclass.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0010\u00101\u001a\u0002022\u0006\u00103\u001a\u00020\u0011H\u0016J\u0018\u00104\u001a\u0002022\u0006\u00105\u001a\u0002062\u0006\u00107\u001a\u000208H\u0016J&\u00109\u001a\u0004\u0018\u00010:2\u0006\u00107\u001a\u00020;2\b\u0010<\u001a\u0004\u0018\u00010=2\b\u0010>\u001a\u0004\u0018\u00010?H\u0016J\u001a\u0010@\u001a\u0002022\u0006\u0010A\u001a\u00020:2\b\u0010>\u001a\u0004\u0018\u00010?H\u0016J\u0010\u0010B\u001a\u0002022\u0006\u0010C\u001a\u00020:H\u0002J\u0006\u0010D\u001a\u000202R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001a\u0010\u0016\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\r\"\u0004\b\u0018\u0010\u000fR\u001a\u0010\u0019\u001a\u00020\u001aX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001eR\u001a\u0010\u001f\u001a\u00020\u0011X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b \u0010\u0013\"\u0004\b!\u0010\u0015R\u001a\u0010\"\u001a\u00020#X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010%\"\u0004\b&\u0010\'R\u001a\u0010(\u001a\u00020\u0011X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b)\u0010\u0013\"\u0004\b*\u0010\u0015R\u001a\u0010+\u001a\u00020#X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010%\"\u0004\b-\u0010\'R\u001a\u0010.\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u0010\r\"\u0004\b0\u0010\u000f\u00a8\u0006E"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/fragments/my_knowledge/quiz/QuizFragment;", "Landroidx/fragment/app/Fragment;", "Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;", "()V", "adapter", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_knowledge/quiz/QuizQuestionAdapter;", "getAdapter", "()Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_knowledge/quiz/QuizQuestionAdapter;", "setAdapter", "(Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_knowledge/quiz/QuizQuestionAdapter;)V", "boolResult", "", "getBoolResult", "()I", "setBoolResult", "(I)V", "categoryId", "", "getCategoryId", "()Ljava/lang/String;", "setCategoryId", "(Ljava/lang/String;)V", "correctCount", "getCorrectCount", "setCorrectCount", "lstQuizQuestionsRecycler", "Landroidx/recyclerview/widget/RecyclerView;", "getLstQuizQuestionsRecycler", "()Landroidx/recyclerview/widget/RecyclerView;", "setLstQuizQuestionsRecycler", "(Landroidx/recyclerview/widget/RecyclerView;)V", "quizId", "getQuizId", "setQuizId", "quizJSON", "Lorg/json/JSONObject;", "getQuizJSON", "()Lorg/json/JSONObject;", "setQuizJSON", "(Lorg/json/JSONObject;)V", "quizName", "getQuizName", "setQuizName", "respnseQuiz", "getRespnseQuiz", "setRespnseQuiz", "totalCount", "getTotalCount", "setTotalCount", "onComplete", "", "response", "onCreateOptionsMenu", "menu", "Landroid/view/Menu;", "inflater", "Landroid/view/MenuInflater;", "onCreateView", "Landroid/view/View;", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onViewCreated", "view", "setQuestion", "rootView", "submitQuiz", "app_debug"})
+public final class QuizFragment extends androidx.fragment.app.Fragment implements com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener {
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String quizId;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String categoryId;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String quizName;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.adapters.my_knowledge.quiz.QuizQuestionAdapter adapter;
+    @org.jetbrains.annotations.NotNull()
+    public org.json.JSONObject quizJSON;
+    @org.jetbrains.annotations.NotNull()
+    public org.json.JSONObject respnseQuiz;
+    private int correctCount;
+    private int totalCount;
+    private int boolResult;
+    @org.jetbrains.annotations.NotNull()
+    public androidx.recyclerview.widget.RecyclerView lstQuizQuestionsRecycler;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getQuizId() {
+        return null;
+    }
+    
+    public final void setQuizId(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCategoryId() {
+        return null;
+    }
+    
+    public final void setCategoryId(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getQuizName() {
+        return null;
+    }
+    
+    public final void setQuizName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.adapters.my_knowledge.quiz.QuizQuestionAdapter getAdapter() {
+        return null;
+    }
+    
+    public final void setAdapter(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.adapters.my_knowledge.quiz.QuizQuestionAdapter p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final org.json.JSONObject getQuizJSON() {
+        return null;
+    }
+    
+    public final void setQuizJSON(@org.jetbrains.annotations.NotNull()
+    org.json.JSONObject p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final org.json.JSONObject getRespnseQuiz() {
+        return null;
+    }
+    
+    public final void setRespnseQuiz(@org.jetbrains.annotations.NotNull()
+    org.json.JSONObject p0) {
+    }
+    
+    public final int getCorrectCount() {
+        return 0;
+    }
+    
+    public final void setCorrectCount(int p0) {
+    }
+    
+    public final int getTotalCount() {
+        return 0;
+    }
+    
+    public final void setTotalCount(int p0) {
+    }
+    
+    public final int getBoolResult() {
+        return 0;
+    }
+    
+    public final void setBoolResult(int p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.recyclerview.widget.RecyclerView getLstQuizQuestionsRecycler() {
+        return null;
+    }
+    
+    public final void setLstQuizQuestionsRecycler(@org.jetbrains.annotations.NotNull()
+    androidx.recyclerview.widget.RecyclerView p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onViewCreated(@org.jetbrains.annotations.NotNull()
+    android.view.View view, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    private final void setQuestion(android.view.View rootView) {
+    }
+    
+    @java.lang.Override()
+    public void onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
+    android.view.Menu menu, @org.jetbrains.annotations.NotNull()
+    android.view.MenuInflater inflater) {
+    }
+    
+    public final void submitQuiz() {
+    }
+    
+    @java.lang.Override()
+    public void onComplete(@org.jetbrains.annotations.NotNull()
+    java.lang.String response) {
+    }
+    
+    public QuizFragment() {
+        super();
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:text="@string/kpExit"
+            style="@style/Text14Orange"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:text="@string/select_another_kp"
+            style="@style/Text12Grey"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/txtOk"
+                  android:layout_width="wrap_content"
+                  android:background="@color/white"
+                  android:text="@string/Ok"
+                  android:gravity="center"
+                  android:padding="20dp"
+                  android:layout_alignParentRight="true"
+                  style="@style/Text12Orange"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="10dp"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

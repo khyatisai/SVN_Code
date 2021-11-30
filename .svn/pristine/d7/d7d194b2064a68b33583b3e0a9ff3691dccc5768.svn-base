@@ -1,0 +1,54 @@
+package com.unfpa.appsistenciamaternaunfpa.adapters.my_voice;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 12/10/2019.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0017B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0005J\b\u0010\t\u001a\u00020\nH\u0016J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u000e\u001a\u00020\nH\u0016J\u0018\u0010\u000f\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\nH\u0016J\u001e\u0010\u0013\u001a\u00020\f2\u0016\u0010\u0006\u001a\u0012\u0012\u0004\u0012\u00020\b0\u0007j\b\u0012\u0004\u0012\u00020\b`\u0014J\u000e\u0010\u0015\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\bR\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0018"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_voice/ChatAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "activity", "Landroidx/fragment/app/FragmentActivity;", "(Landroidx/fragment/app/FragmentActivity;)V", "chatMessages", "Ljava/util/ArrayList;", "Lcom/unfpa/appsistenciamaternaunfpa/models/ChatMessage;", "getItemCount", "", "onBindViewHolder", "", "viewHolder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "setContentList", "Lkotlin/collections/ArrayList;", "setMessage", "chatMessage", "ContentListViewHolder", "app_debug"})
+public final class ChatAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder> {
+    private final java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.models.ChatMessage> chatMessages = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public androidx.recyclerview.widget.RecyclerView.ViewHolder onCreateViewHolder(@org.jetbrains.annotations.NotNull()
+    android.view.ViewGroup parent, int viewType) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public int getItemCount() {
+        return 0;
+    }
+    
+    @java.lang.Override()
+    public void onBindViewHolder(@org.jetbrains.annotations.NotNull()
+    androidx.recyclerview.widget.RecyclerView.ViewHolder viewHolder, int position) {
+    }
+    
+    public final void setContentList(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.models.ChatMessage> chatMessages) {
+    }
+    
+    public final void setMessage(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.models.ChatMessage chatMessage) {
+    }
+    
+    public ChatAdapter(@org.jetbrains.annotations.NotNull()
+    androidx.fragment.app.FragmentActivity activity) {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u000e\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b\u00a8\u0006\t"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_voice/ChatAdapter$ContentListViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_voice/ChatAdapter;Landroid/view/View;)V", "bindView", "", "chatMessage", "Lcom/unfpa/appsistenciamaternaunfpa/models/ChatMessage;", "app_debug"})
+    public final class ContentListViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+        
+        public final void bindView(@org.jetbrains.annotations.NotNull()
+        com.unfpa.appsistenciamaternaunfpa.models.ChatMessage chatMessage) {
+        }
+        
+        public ContentListViewHolder(@org.jetbrains.annotations.NotNull()
+        android.view.View itemView) {
+            super(null);
+        }
+    }
+}

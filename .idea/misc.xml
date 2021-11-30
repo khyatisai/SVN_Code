@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable-mdpi/chat_partner_bg.xml" value="0.19814814814814816" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable-mdpi/chat_user_bg.xml" value="0.2074074074074074" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable-xhdpi/boton_redondo_relleno.xml" value="0.2203125" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/boton_redondo.xml" value="0.2203125" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/btn_enabled_selected_pressed.xml" value="0.2203125" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/btn_selector_green.xml" value="0.2203125" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/button_border_green.xml" value="0.2203125" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/button_round_green.xml" value="0.2203125" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/chat_partner_nurse_bg.xml" value="0.20277777777777778" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/chat_user_nurse_bg.xml" value="0.2074074074074074" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/drawable/round_shape_green.xml" value="0.2203125" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_add_patient_setp1.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_add_patient_step2.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_add_patient_step3.xml" value="0.12952898550724637" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_add_patient_step4.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_add_patient_step5.xml" value="0.14719202898550723" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_add_patient_step6.xml" value="0.13541666666666666" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_add_patient_step7.xml" value="0.13541666666666666" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_appointment_calendar_doctor.xml" value="0.12952898550724637" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_appointment_calendar_for_pregnant.xml" value="0.13541666666666666" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_appointment_calendar_patient.xml" value="0.13541666666666666" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_appointment_calender_nurse.xml" value="0.12318840579710146" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_beforecall.xml" value="0.14130434782608695" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_call.xml" value="0.14130434782608695" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_chat_room_nurse.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_chatroom.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_chatroom_doctor_and_doctor.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_chatroom_patient.xml" value="0.13360507246376813" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_doctor_list.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_doctorlistpaciente2.xml" value="0.13360507246376813" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_doctorlistpacientedetails.xml" value="0.12318840579710146" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_doctors_list.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_nurse_login.xml" value="0.11141304347826086" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_paciente.xml" value="0.14719202898550723" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_paciente_detalle.xml" value="0.16" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_paciente_detalle_cita.xml" value="0.12318840579710146" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_paciente_list.xml" value="0.14" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_paciente_list_nurse.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_patient_brigadist.xml" value="0.14719202898550723" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_patient_detail.xml" value="0.12952898550724637" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_patient_nurse.xml" value="0.12952898550724637" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_period_tracker_input.xml" value="0.11820652173913043" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_paciente2.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_paciente5.xml" value="0.14719202898550723" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_paciente6.xml" value="0.14719202898550723" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_paciente7.xml" value="0.13541666666666666" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_paciente8.xml" value="0.14130434782608695" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_paciente_to_brigadist.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_paciente_to_brigadist_nurse.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_register_pregnant_mask.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_reprogramacion_paciente.xml" value="0.11503623188405797" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_reprogramacion_paciente2.xml" value="0.11503623188405797" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_reprogramacion_paciente2_nurse.xml" value="0.11503623188405797" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_reprogramacion_paciente3.xml" value="0.11503623188405797" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_reprogramacion_paciente3_nurse.xml" value="0.11503623188405797" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_reprogramacion_paciente_nurse.xml" value="0.11503623188405797" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_resumen_endcall.xml" value="0.14175724637681159" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_splash.xml" value="0.17980072463768115" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/activity_type_account.xml" value="0.15" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/add_patient_to_doc_nurse.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/bottomsheet_fragma.xml" value="0.12318840579710146" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/bottomsheet_list_users_paciente.xml" value="0.11005434782608696" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/chat_into_notification.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/chat_room_activity_nurse_doc.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/content_main.xml" value="0.11820652173913043" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/custom_toast_layout.xml" value="0.14130434782608695" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/dialog_schedule_list.xml" value="0.14130434782608695" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_chat_people.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_dialog_addpacientetodoctor.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_dialog_from_calender.xml" value="0.22" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_home_doctor.xml" value="0.14130434782608695" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_home_pregnant.xml" value="0.11820652173913043" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_homedoctorlistitem.xml" value="0.12952898550724637" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_homedoctorlistitem_dos.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/fragment_nurse_home.xml" value="0.12952898550724637" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/input_summary_sheet.xml" value="0.25" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/item_appointment_list_cal.xml" value="0.18" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/item_doctor_list.xml" value="0.1408514492753623" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/item_nurse_patientlist.xml" value="0.1408514492753623" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/item_patient_detail.xml" value="0.12318840579710146" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/item_schedule_list.xml" value="0.2903225806451613" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/message_bot_item.xml" value="0.13360507246376813" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/popup_date_input_nurse.xml" value="0.17980072463768115" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/popup_period_date_input.xml" value="0.17980072463768115" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/popup_period_date_input_dos.xml" value="0.17980072463768115" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/row_chat_doctor_right.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/row_chat_partner.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/row_chat_partner_nurse.xml" value="0.1272644927536232" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/row_chat_partner_patient.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/row_chat_user.xml" value="0.1" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/row_chat_user_nurse.xml" value="0.13360507246376813" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/layout/row_chat_user_patient.xml" value="0.13360507246376813" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Datamatics/UNFPA_Nicaragua/SVN_Code/app/src/main/res/menu/menu_nurse.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Class metricsJava</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
+            <id>Code maturityJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Compiler issuesJava</id>
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Data flowJava</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>EncapsulationJava</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>FinalizationJava</id>
+          </State>
+          <State>
+            <id>GPathGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>Google Cloud Endpoints</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>InitializationJava</id>
+          </State>
+          <State>
+            <id>InternationalizationJava</id>
+          </State>
+          <State>
+            <id>InteroperabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JNIAndroid</id>
+          </State>
+          <State>
+            <id>JUnitJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 10Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 11Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 9Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java interop issuesKotlin</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaBeans issuesJava</id>
+          </State>
+          <State>
+            <id>JavadocJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Kotlin InteroperabilityInteroperabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>Language Injection</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>LoggingJava</id>
+          </State>
+          <State>
+            <id>Manifest</id>
+          </State>
+          <State>
+            <id>MemoryJava</id>
+          </State>
+          <State>
+            <id>MessagesCorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Modularization issuesJava</id>
+          </State>
+          <State>
+            <id>Naming conventionsGroovy</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
+            <id>PerformanceJava</id>
+          </State>
+          <State>
+            <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>PortabilityJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Probable bugsKotlin</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Properties FilesJava</id>
+          </State>
+          <State>
+            <id>Reflective accessJava</id>
+          </State>
+          <State>
+            <id>Resource managementJava</id>
+          </State>
+          <State>
+            <id>SecurityJava</id>
+          </State>
+          <State>
+            <id>SecurityLintAndroid</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>Style issuesKotlin</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>UsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>VisibilityJava</id>
+          </State>
+          <State>
+            <id>toString() issuesJava</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://10.254.5.40/svn/Projects/mHealth/SourceCode" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

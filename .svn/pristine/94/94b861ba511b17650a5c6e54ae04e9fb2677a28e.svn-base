@@ -1,0 +1,127 @@
+package com.unfpa.appsistenciamaternaunfpa.activities.my_health;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 10/16/2019.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000~\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0000\n\u0002\u0010\u0015\n\u0002\b\u0004\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0010\u0010&\u001a\u00020\'2\u0006\u0010(\u001a\u00020)H\u0014J\u0006\u0010*\u001a\u00020\'J\b\u0010+\u001a\u00020\'H\u0016J\u0012\u0010,\u001a\u00020\'2\b\u0010-\u001a\u0004\u0018\u00010.H\u0016J\u0012\u0010/\u001a\u00020\'2\b\u00100\u001a\u0004\u0018\u000101H\u0014J\u0010\u00102\u001a\u0002032\u0006\u00104\u001a\u000205H\u0016J\u0010\u00106\u001a\u0002032\u0006\u00107\u001a\u000208H\u0016J+\u00109\u001a\u00020\'2\u0006\u0010:\u001a\u00020\u00052\f\u0010;\u001a\b\u0012\u0004\u0012\u00020\t0<2\u0006\u0010=\u001a\u00020>H\u0016\u00a2\u0006\u0002\u0010?J\u000e\u0010@\u001a\u00020\'2\u0006\u0010A\u001a\u00020\tR\u0014\u0010\u0004\u001a\u00020\u0005X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u001a\u0010\b\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR\u001a\u0010\u000e\u001a\u00020\u000fX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\u001a\u0010\u0014\u001a\u00020\u0015X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0017\"\u0004\b\u0018\u0010\u0019R\u0017\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\t0\u001b\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u001a\u0010\u001e\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010\u000b\"\u0004\b \u0010\rR\u001a\u0010!\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010\u000b\"\u0004\b#\u0010\rR\u0010\u0010$\u001a\u0004\u0018\u00010%X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006B"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/my_health/MedicineReminderInputActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "Landroid/view/View$OnClickListener;", "()V", "CONTACT_READ_PERMISSION_REQ_CODE", "", "getCONTACT_READ_PERMISSION_REQ_CODE", "()I", "enteredDt", "", "getEnteredDt", "()Ljava/lang/String;", "setEnteredDt", "(Ljava/lang/String;)V", "medicineReminder", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_health/MedicineReminder;", "getMedicineReminder", "()Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_health/MedicineReminder;", "setMedicineReminder", "(Lcom/unfpa/appsistenciamaternaunfpa/database/entity/my_health/MedicineReminder;)V", "medicineReminderDAO", "Lcom/unfpa/appsistenciamaternaunfpa/database/dao/my_health/MedicineReminderDAO;", "getMedicineReminderDAO", "()Lcom/unfpa/appsistenciamaternaunfpa/database/dao/my_health/MedicineReminderDAO;", "setMedicineReminderDAO", "(Lcom/unfpa/appsistenciamaternaunfpa/database/dao/my_health/MedicineReminderDAO;)V", "permissionList", "Ljava/util/ArrayList;", "getPermissionList", "()Ljava/util/ArrayList;", "reminderBefore", "getReminderBefore", "setReminderBefore", "selectedTime", "getSelectedTime", "setSelectedTime", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "attachBaseContext", "", "newBase", "Landroid/content/Context;", "clearData", "onBackPressed", "onClick", "v", "Landroid/view/View;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateOptionsMenu", "", "menu", "Landroid/view/Menu;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "onRequestPermissionsResult", "requestCode", "permissions", "", "grantResults", "", "(I[Ljava/lang/String;[I)V", "showDatePopup", "message", "app_debug"})
+public final class MedicineReminderInputActivity extends androidx.appcompat.app.AppCompatActivity implements android.view.View.OnClickListener {
+    private androidx.appcompat.widget.Toolbar toolbar;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String selectedTime;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String reminderBefore;
+    private final int CONTACT_READ_PERMISSION_REQ_CODE = 100;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder medicineReminder;
+    @org.jetbrains.annotations.NotNull()
+    private final java.util.ArrayList<java.lang.String> permissionList = null;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.MedicineReminderDAO medicineReminderDAO;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String enteredDt;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getSelectedTime() {
+        return null;
+    }
+    
+    public final void setSelectedTime(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getReminderBefore() {
+        return null;
+    }
+    
+    public final void setReminderBefore(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final int getCONTACT_READ_PERMISSION_REQ_CODE() {
+        return 0;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder getMedicineReminder() {
+        return null;
+    }
+    
+    public final void setMedicineReminder(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.database.entity.my_health.MedicineReminder p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getPermissionList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.MedicineReminderDAO getMedicineReminderDAO() {
+        return null;
+    }
+    
+    public final void setMedicineReminderDAO(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.database.dao.my_health.MedicineReminderDAO p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getEnteredDt() {
+        return null;
+    }
+    
+    public final void setEnteredDt(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    public final void showDatePopup(@org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+    }
+    
+    @java.lang.Override()
+    public void onRequestPermissionsResult(int requestCode, @org.jetbrains.annotations.NotNull()
+    java.lang.String[] permissions, @org.jetbrains.annotations.NotNull()
+    int[] grantResults) {
+    }
+    
+    public final void clearData() {
+    }
+    
+    @java.lang.Override()
+    public boolean onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
+    android.view.Menu menu) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.NotNull()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    @java.lang.Override()
+    public void onClick(@org.jetbrains.annotations.Nullable()
+    android.view.View v) {
+    }
+    
+    public MedicineReminderInputActivity() {
+        super();
+    }
+}

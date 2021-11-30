@@ -1,0 +1,64 @@
+package com.unfpa.appsistenciamaternaunfpa;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\u0013\u001a\u00020\u0014J\u0012\u0010\u0015\u001a\u0004\u0018\u00010\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\b\u0010\u0019\u001a\u00020\u0014H\u0016J\b\u0010\u001a\u001a\u00020\u0014H\u0016J\"\u0010\u001b\u001a\u00020\u001c2\b\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001cH\u0016R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u001a\u0010\r\u001a\u00020\u000eX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012\u00a8\u0006\u001f"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/callService;", "Landroid/app/Service;", "()V", "NOTIFICATION_CHANNEL_ID_SERVICE", "", "getNOTIFICATION_CHANNEL_ID_SERVICE", "()Ljava/lang/String;", "f", "Lcom/google/firebase/database/DatabaseReference;", "getF", "()Lcom/google/firebase/database/DatabaseReference;", "setF", "(Lcom/google/firebase/database/DatabaseReference;)V", "mp", "Landroid/media/MediaPlayer;", "getMp", "()Landroid/media/MediaPlayer;", "setMp", "(Landroid/media/MediaPlayer;)V", "initChannel", "", "onBind", "Landroid/os/IBinder;", "intent", "Landroid/content/Intent;", "onCreate", "onDestroy", "onStartCommand", "", "flags", "startId", "app_debug"})
+public final class callService extends android.app.Service {
+    @org.jetbrains.annotations.NotNull()
+    public android.media.MediaPlayer mp;
+    @org.jetbrains.annotations.NotNull()
+    private com.google.firebase.database.DatabaseReference f;
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.String NOTIFICATION_CHANNEL_ID_SERVICE = "com.unfpa.appsistenciamaternaunfpa.notification.CHANNEL_ID";
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.media.MediaPlayer getMp() {
+        return null;
+    }
+    
+    public final void setMp(@org.jetbrains.annotations.NotNull()
+    android.media.MediaPlayer p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.firebase.database.DatabaseReference getF() {
+        return null;
+    }
+    
+    public final void setF(@org.jetbrains.annotations.NotNull()
+    com.google.firebase.database.DatabaseReference p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNOTIFICATION_CHANNEL_ID_SERVICE() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onCreate() {
+    }
+    
+    @java.lang.Override()
+    public int onStartCommand(@org.jetbrains.annotations.Nullable()
+    android.content.Intent intent, int flags, int startId) {
+        return 0;
+    }
+    
+    public final void initChannel() {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.os.IBinder onBind(@org.jetbrains.annotations.NotNull()
+    android.content.Intent intent) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onDestroy() {
+    }
+    
+    public callService() {
+        super();
+    }
+}

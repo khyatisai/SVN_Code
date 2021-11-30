@@ -1,0 +1,199 @@
+package com.unfpa.appsistenciamaternaunfpa;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0010\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020\nH\u0002J\b\u0010E\u001a\u00020CH\u0002J\b\u0010F\u001a\u00020CH\u0016J\u0012\u0010G\u001a\u00020C2\b\u0010H\u001a\u0004\u0018\u00010IH\u0016J\u0012\u0010J\u001a\u00020C2\b\u0010K\u001a\u0004\u0018\u00010LH\u0014J\b\u0010M\u001a\u00020CH\u0014J\u0010\u0010N\u001a\u00020C2\u0006\u00104\u001a\u00020\u0005H\u0002J\u0010\u0010O\u001a\u00020C2\u0006\u00104\u001a\u00020\u0005H\u0002J\b\u0010P\u001a\u00020CH\u0002R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R!\u0010\b\u001a\u0012\u0012\u0004\u0012\u00020\n0\tj\b\u0012\u0004\u0012\u00020\n`\u000b\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u001a\u0010\u000e\u001a\u00020\u000fX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\u001a\u0010\u0014\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0007\"\u0004\b\u0016\u0010\u0017R\u001a\u0010\u0018\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0007\"\u0004\b\u001a\u0010\u0017R\u0011\u0010\u001b\u001a\u00020\u001c\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u001a\u0010\u001f\u001a\u00020 X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u001a\u0010%\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\'\u0010(\"\u0004\b)\u0010*R\u001a\u0010+\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010(\"\u0004\b-\u0010*R\u001a\u0010.\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u0010(\"\u0004\b0\u0010*R\u001a\u00101\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u0010\u0007\"\u0004\b3\u0010\u0017R\u001a\u00104\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b5\u0010\u0007\"\u0004\b6\u0010\u0017R\u001a\u00107\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b8\u0010\u0007\"\u0004\b9\u0010\u0017R\u001a\u0010:\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b;\u0010\u0007\"\u0004\b<\u0010\u0017R\u0010\u0010=\u001a\u0004\u0018\u00010>X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010?\u001a\u00020\u0005X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b@\u0010\u0007\"\u0004\bA\u0010\u0017\u00a8\u0006Q"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomActivityDoctorAndDoctor;", "Landroidx/appcompat/app/AppCompatActivity;", "Landroid/view/View$OnClickListener;", "()V", "TAG", "", "getTAG", "()Ljava/lang/String;", "chatList", "Ljava/util/ArrayList;", "Lcom/unfpa/appsistenciamaternaunfpa/Message;", "Lkotlin/collections/ArrayList;", "getChatList", "()Ljava/util/ArrayList;", "chatRoomAdapterDoctorAndDoctor", "Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapterDoctorAndDoctor;", "getChatRoomAdapterDoctorAndDoctor", "()Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapterDoctorAndDoctor;", "setChatRoomAdapterDoctorAndDoctor", "(Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapterDoctorAndDoctor;)V", "getMessage", "getGetMessage", "setGetMessage", "(Ljava/lang/String;)V", "getUsers", "getGetUsers", "setGetUsers", "gson", "Lcom/google/gson/Gson;", "getGson", "()Lcom/google/gson/Gson;", "mSocket", "Lio/socket/client/Socket;", "getMSocket", "()Lio/socket/client/Socket;", "setMSocket", "(Lio/socket/client/Socket;)V", "onConnect", "Lio/socket/emitter/Emitter$Listener;", "getOnConnect", "()Lio/socket/emitter/Emitter$Listener;", "setOnConnect", "(Lio/socket/emitter/Emitter$Listener;)V", "onUpdateChat", "getOnUpdateChat", "setOnUpdateChat", "onUserLeft", "getOnUserLeft", "setOnUserLeft", "readMessage", "getReadMessage", "setReadMessage", "receive", "getReceive", "setReceive", "roomName1", "getRoomName1", "setRoomName1", "roomName2", "getRoomName2", "setRoomName2", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "userName", "getUserName", "setUserName", "addItemToRecyclerView", "", "message", "getMessagePartner", "onBackPressed", "onClick", "p0", "Landroid/view/View;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onDestroy", "readMessages", "readMessages2", "sendMessage", "app_debug"})
+public final class ChatRoomActivityDoctorAndDoctor extends androidx.appcompat.app.AppCompatActivity implements android.view.View.OnClickListener {
+    private androidx.appcompat.widget.Toolbar toolbar;
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.String TAG = null;
+    @org.jetbrains.annotations.NotNull()
+    public io.socket.client.Socket mSocket;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String userName;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String roomName1;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String roomName2;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String receive;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getMessage;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getUsers;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String readMessage;
+    @org.jetbrains.annotations.NotNull()
+    private final com.google.gson.Gson gson = null;
+    @org.jetbrains.annotations.NotNull()
+    private final java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.Message> chatList = null;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapterDoctorAndDoctor chatRoomAdapterDoctorAndDoctor;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onUserLeft;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onUpdateChat;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onConnect;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTAG() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.client.Socket getMSocket() {
+        return null;
+    }
+    
+    public final void setMSocket(@org.jetbrains.annotations.NotNull()
+    io.socket.client.Socket p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUserName() {
+        return null;
+    }
+    
+    public final void setUserName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getRoomName1() {
+        return null;
+    }
+    
+    public final void setRoomName1(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getRoomName2() {
+        return null;
+    }
+    
+    public final void setRoomName2(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getReceive() {
+        return null;
+    }
+    
+    public final void setReceive(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetMessage() {
+        return null;
+    }
+    
+    public final void setGetMessage(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetUsers() {
+        return null;
+    }
+    
+    public final void setGetUsers(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getReadMessage() {
+        return null;
+    }
+    
+    public final void setReadMessage(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.gson.Gson getGson() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.Message> getChatList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapterDoctorAndDoctor getChatRoomAdapterDoctorAndDoctor() {
+        return null;
+    }
+    
+    public final void setChatRoomAdapterDoctorAndDoctor(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapterDoctorAndDoctor p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnUserLeft() {
+        return null;
+    }
+    
+    public final void setOnUserLeft(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnUpdateChat() {
+        return null;
+    }
+    
+    public final void setOnUpdateChat(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnConnect() {
+        return null;
+    }
+    
+    public final void setOnConnect(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    private final void readMessages(java.lang.String receive) {
+    }
+    
+    private final void readMessages2(java.lang.String receive) {
+    }
+    
+    private final void sendMessage() {
+    }
+    
+    private final void addItemToRecyclerView(com.unfpa.appsistenciamaternaunfpa.Message message) {
+    }
+    
+    private final void getMessagePartner() {
+    }
+    
+    @java.lang.Override()
+    public void onClick(@org.jetbrains.annotations.Nullable()
+    android.view.View p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onDestroy() {
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public ChatRoomActivityDoctorAndDoctor() {
+        super();
+    }
+}

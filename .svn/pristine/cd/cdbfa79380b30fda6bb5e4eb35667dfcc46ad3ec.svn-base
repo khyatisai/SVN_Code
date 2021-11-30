@@ -1,0 +1,13 @@
+package com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 12/9/2019.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J \u0010\u0002\u001a\u00020\u00032\u0016\u0010\u0004\u001a\u0012\u0012\u0004\u0012\u00020\u00060\u0005j\b\u0012\u0004\u0012\u00020\u0006`\u0007H&\u00a8\u0006\b"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/OnKnowledgeablePersonFetched;", "", "onComplete", "", "lstKnowledgeablePerson", "Ljava/util/ArrayList;", "Lcom/unfpa/appsistenciamaternaunfpa/models/KnowledgeablePerson;", "Lkotlin/collections/ArrayList;", "app_debug"})
+public abstract interface OnKnowledgeablePersonFetched {
+    
+    public abstract void onComplete(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.models.KnowledgeablePerson> lstKnowledgeablePerson);
+}

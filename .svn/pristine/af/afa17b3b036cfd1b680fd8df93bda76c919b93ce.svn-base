@@ -1,0 +1,188 @@
+package com.unfpa.appsistenciamaternaunfpa.activities;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010F\u001a\u00020G2\u0006\u0010H\u001a\u00020\u0005H\u0002J&\u0010I\u001a\u0004\u0018\u00010J2\u0006\u0010K\u001a\u00020L2\b\u0010M\u001a\u0004\u0018\u00010N2\b\u0010O\u001a\u0004\u0018\u00010PH\u0016J\u0010\u0010Q\u001a\u00020G2\u0006\u0010R\u001a\u00020SH\u0016J\u001a\u0010T\u001a\u00020G2\u0006\u0010U\u001a\u00020J2\b\u0010O\u001a\u0004\u0018\u00010PH\u0016R!\u0010\u0003\u001a\u0012\u0012\u0004\u0012\u00020\u00050\u0004j\b\u0012\u0004\u0012\u00020\u0005`\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R!\u0010\u0015\u001a\u0012\u0012\u0004\u0012\u00020\u00160\u0004j\b\u0012\u0004\u0012\u00020\u0016`\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\bR\u001a\u0010\u0018\u001a\u00020\u0016X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR\u0011\u0010\u001d\u001a\u00020\u001e\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\"\u0010!\u001a\n\u0012\u0004\u0012\u00020#\u0018\u00010\"X\u0084\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010%\"\u0004\b&\u0010\'R\u001a\u0010(\u001a\u00020)X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-R\u001a\u0010.\u001a\u00020/X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b0\u00101\"\u0004\b2\u00103R\u001a\u00104\u001a\u00020/X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b5\u00101\"\u0004\b6\u00103R\u001a\u00107\u001a\u00020/X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b8\u00101\"\u0004\b9\u00103R\u001a\u0010:\u001a\u00020\u0016X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b;\u0010\u001a\"\u0004\b<\u0010\u001cR\u001a\u0010=\u001a\u00020\u0016X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b>\u0010\u001a\"\u0004\b?\u0010\u001cR\u001a\u0010@\u001a\u00020\u0016X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bA\u0010\u001a\"\u0004\bB\u0010\u001cR\u001a\u0010C\u001a\u00020\u0016X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\bD\u0010\u001a\"\u0004\bE\u0010\u001c\u00a8\u0006V"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/DialogChatFragment;", "Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;", "()V", "chatList", "Ljava/util/ArrayList;", "Lcom/unfpa/appsistenciamaternaunfpa/Message;", "Lkotlin/collections/ArrayList;", "getChatList", "()Ljava/util/ArrayList;", "chatRoomAdapter", "Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapter;", "getChatRoomAdapter", "()Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapter;", "setChatRoomAdapter", "(Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapter;)V", "chatRoomAdapterPatient", "Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapterPatient;", "getChatRoomAdapterPatient", "()Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapterPatient;", "setChatRoomAdapterPatient", "(Lcom/unfpa/appsistenciamaternaunfpa/ChatRoomAdapterPatient;)V", "data", "", "getData", "getMessage", "getGetMessage", "()Ljava/lang/String;", "setGetMessage", "(Ljava/lang/String;)V", "gson", "Lcom/google/gson/Gson;", "getGson", "()Lcom/google/gson/Gson;", "mBehavior", "Lcom/google/android/material/bottomsheet/BottomSheetBehavior;", "Landroid/widget/FrameLayout;", "getMBehavior", "()Lcom/google/android/material/bottomsheet/BottomSheetBehavior;", "setMBehavior", "(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)V", "mSocket", "Lio/socket/client/Socket;", "getMSocket", "()Lio/socket/client/Socket;", "setMSocket", "(Lio/socket/client/Socket;)V", "onConnect", "Lio/socket/emitter/Emitter$Listener;", "getOnConnect", "()Lio/socket/emitter/Emitter$Listener;", "setOnConnect", "(Lio/socket/emitter/Emitter$Listener;)V", "onUpdateChat", "getOnUpdateChat", "setOnUpdateChat", "onUserLeft", "getOnUserLeft", "setOnUserLeft", "receive", "getReceive", "setReceive", "roomName", "getRoomName", "setRoomName", "typeUser", "getTypeUser", "setTypeUser", "userName", "getUserName", "setUserName", "addItemToRecyclerView", "", "message", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onDismiss", "dialog", "Landroid/content/DialogInterface;", "onViewCreated", "view", "app_debug"})
+public final class DialogChatFragment extends com.google.android.material.bottomsheet.BottomSheetDialogFragment {
+    @org.jetbrains.annotations.NotNull()
+    public io.socket.client.Socket mSocket;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String userName;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String roomName;
+    @org.jetbrains.annotations.NotNull()
+    public java.lang.String receive;
+    @org.jetbrains.annotations.Nullable()
+    private com.google.android.material.bottomsheet.BottomSheetBehavior<android.widget.FrameLayout> mBehavior;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getMessage;
+    @org.jetbrains.annotations.NotNull()
+    private final com.google.gson.Gson gson = null;
+    @org.jetbrains.annotations.NotNull()
+    private final java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.Message> chatList = null;
+    @org.jetbrains.annotations.NotNull()
+    private final java.util.ArrayList<java.lang.String> data = null;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapter chatRoomAdapter;
+    @org.jetbrains.annotations.NotNull()
+    public com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapterPatient chatRoomAdapterPatient;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String typeUser;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onUserLeft;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onUpdateChat;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onConnect;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.client.Socket getMSocket() {
+        return null;
+    }
+    
+    public final void setMSocket(@org.jetbrains.annotations.NotNull()
+    io.socket.client.Socket p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUserName() {
+        return null;
+    }
+    
+    public final void setUserName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getRoomName() {
+        return null;
+    }
+    
+    public final void setRoomName(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getReceive() {
+        return null;
+    }
+    
+    public final void setReceive(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    protected final com.google.android.material.bottomsheet.BottomSheetBehavior<android.widget.FrameLayout> getMBehavior() {
+        return null;
+    }
+    
+    protected final void setMBehavior(@org.jetbrains.annotations.Nullable()
+    com.google.android.material.bottomsheet.BottomSheetBehavior<android.widget.FrameLayout> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetMessage() {
+        return null;
+    }
+    
+    public final void setGetMessage(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.gson.Gson getGson() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.Message> getChatList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getData() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapter getChatRoomAdapter() {
+        return null;
+    }
+    
+    public final void setChatRoomAdapter(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapter p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapterPatient getChatRoomAdapterPatient() {
+        return null;
+    }
+    
+    public final void setChatRoomAdapterPatient(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.ChatRoomAdapterPatient p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTypeUser() {
+        return null;
+    }
+    
+    public final void setTypeUser(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onViewCreated(@org.jetbrains.annotations.NotNull()
+    android.view.View view, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnUserLeft() {
+        return null;
+    }
+    
+    public final void setOnUserLeft(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnUpdateChat() {
+        return null;
+    }
+    
+    public final void setOnUpdateChat(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnConnect() {
+        return null;
+    }
+    
+    public final void setOnConnect(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    private final void addItemToRecyclerView(com.unfpa.appsistenciamaternaunfpa.Message message) {
+    }
+    
+    @java.lang.Override()
+    public void onDismiss(@org.jetbrains.annotations.NotNull()
+    android.content.DialogInterface dialog) {
+    }
+    
+    public DialogChatFragment() {
+        super();
+    }
+}

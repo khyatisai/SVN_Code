@@ -1,0 +1,204 @@
+package com.unfpa.appsistenciamaternaunfpa.activities;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000v\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001:\u0001LB\u0005\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020\u00042\u0006\u00100\u001a\u00020\u0004H\u0002J\u0010\u00101\u001a\u00020.2\u0006\u00102\u001a\u00020\bH\u0014J\u0010\u00103\u001a\u00020.2\u0006\u00104\u001a\u00020\u0004H\u0002J\u000e\u00105\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eJ\u000e\u00106\u001a\n\u0012\u0004\u0012\u00020\u000f\u0018\u00010\u000eJ\u0016\u00107\u001a\u0012\u0012\u0004\u0012\u00020\u001a08j\b\u0012\u0004\u0012\u00020\u001a`9J\u000e\u0010:\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eJ\u000e\u0010;\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eJ\u0010\u0010<\u001a\u00020=2\u0006\u0010>\u001a\u00020=H\u0002J\u000e\u0010?\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eJ\b\u0010@\u001a\u00020.H\u0002J\b\u0010A\u001a\u00020.H\u0002J\b\u0010B\u001a\u00020.H\u0002J\b\u0010C\u001a\u00020.H\u0002J\b\u0010D\u001a\u00020.H\u0002J\u0006\u0010E\u001a\u00020.J\b\u0010F\u001a\u00020.H\u0016J\u0012\u0010G\u001a\u00020.2\b\u0010H\u001a\u0004\u0018\u00010IH\u0015J\b\u0010J\u001a\u00020.H\u0014J\u0010\u0010K\u001a\u00020.2\u0006\u0010+\u001a\u00020,H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\"\u0010\r\u001a\n\u0012\u0004\u0012\u00020\u000f\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\u001a\u0010\u0014\u001a\u00020\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\"\u0010\u0019\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u0011\"\u0004\b\u001c\u0010\u0013R\"\u0010\u001d\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u0011\"\u0004\b\u001f\u0010\u0013R\"\u0010 \u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\u0011\"\u0004\b\"\u0010\u0013R\"\u0010#\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010\u0011\"\u0004\b%\u0010\u0013R\u0016\u0010&\u001a\n\u0018\u00010\'j\u0004\u0018\u0001`(X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010)\u001a\u0004\u0018\u00010*X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010+\u001a\u0004\u0018\u00010,X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006M"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/IntroductoryActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "UniqueId", "", "btnNext", "Landroid/widget/Button;", "context", "Landroid/content/Context;", "getContext", "()Landroid/content/Context;", "setContext", "(Landroid/content/Context;)V", "countrylist", "", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/introductory/TypeForCountry;", "getCountrylist", "()Ljava/util/List;", "setCountrylist", "(Ljava/util/List;)V", "isFinish", "", "()Z", "setFinish", "(Z)V", "item_agelist", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/introductory/Type;", "getItem_agelist", "setItem_agelist", "item_genderlist", "getItem_genderlist", "setItem_genderlist", "item_interestlist", "getItem_interestlist", "setItem_interestlist", "itemlist", "getItemlist", "setItemlist", "stringBuilder", "Ljava/lang/StringBuilder;", "Lkotlin/text/StringBuilder;", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "viewPager", "Landroidx/viewpager/widget/ViewPager;", "addStoryToDatabase", "", "unique_id", "itemName", "attachBaseContext", "newBase", "checkModulesVisibility", "CountryCode", "getAgeGrpList", "getCountryList", "getEducationList", "Ljava/util/ArrayList;", "Lkotlin/collections/ArrayList;", "getGenderList", "getInterestList", "getItem", "", "i", "getItemList", "launchHomeScreen", "list", "listAgeGrp", "listGender", "listInterest", "main123", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onResume", "setupViewPager", "sectionsPagerAdapter", "app_debug"})
+public final class IntroductoryActivity extends androidx.appcompat.app.AppCompatActivity {
+    private androidx.appcompat.widget.Toolbar toolbar;
+    private android.widget.Button btnNext;
+    private androidx.viewpager.widget.ViewPager viewPager;
+    private java.lang.String UniqueId;
+    @org.jetbrains.annotations.Nullable()
+    private android.content.Context context;
+    private boolean isFinish;
+    @org.jetbrains.annotations.Nullable()
+    private java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> itemlist;
+    @org.jetbrains.annotations.Nullable()
+    private java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.TypeForCountry> countrylist;
+    @org.jetbrains.annotations.Nullable()
+    private java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> item_genderlist;
+    @org.jetbrains.annotations.Nullable()
+    private java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> item_agelist;
+    @org.jetbrains.annotations.Nullable()
+    private java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> item_interestlist;
+    private java.lang.StringBuilder stringBuilder;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final android.content.Context getContext() {
+        return null;
+    }
+    
+    public final void setContext(@org.jetbrains.annotations.Nullable()
+    android.content.Context p0) {
+    }
+    
+    public final boolean isFinish() {
+        return false;
+    }
+    
+    public final void setFinish(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getItemlist() {
+        return null;
+    }
+    
+    public final void setItemlist(@org.jetbrains.annotations.Nullable()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.TypeForCountry> getCountrylist() {
+        return null;
+    }
+    
+    public final void setCountrylist(@org.jetbrains.annotations.Nullable()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.TypeForCountry> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getItem_genderlist() {
+        return null;
+    }
+    
+    public final void setItem_genderlist(@org.jetbrains.annotations.Nullable()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getItem_agelist() {
+        return null;
+    }
+    
+    public final void setItem_agelist(@org.jetbrains.annotations.Nullable()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getItem_interestlist() {
+        return null;
+    }
+    
+    public final void setItem_interestlist(@org.jetbrains.annotations.Nullable()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> p0) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    protected void onResume() {
+    }
+    
+    @android.annotation.SuppressLint(value = {"ClickableViewAccessibility", "ApplySharedPref"})
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    private final void list() {
+    }
+    
+    public final void main123() {
+    }
+    
+    private final void listGender() {
+    }
+    
+    private final void listAgeGrp() {
+    }
+    
+    private final void listInterest() {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getItemList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.TypeForCountry> getCountryList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getGenderList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getAgeGrpList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.util.List<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getInterestList() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> getEducationList() {
+        return null;
+    }
+    
+    private final void addStoryToDatabase(java.lang.String unique_id, java.lang.String itemName) {
+    }
+    
+    private final void setupViewPager(androidx.viewpager.widget.ViewPager viewPager) {
+    }
+    
+    private final int getItem(int i) {
+        return 0;
+    }
+    
+    private final void launchHomeScreen() {
+    }
+    
+    private final void checkModulesVisibility(java.lang.String CountryCode) {
+    }
+    
+    public IntroductoryActivity() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\r\n\u0000\b\u0080\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0016\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\tJ\b\u0010\u000e\u001a\u00020\u000fH\u0016J\u0010\u0010\u0010\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u000fH\u0016J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0011\u001a\u00020\u000fH\u0016R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0014"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/IntroductoryActivity$sectionsPagerAdapter;", "Landroidx/fragment/app/FragmentPagerAdapter;", "manager", "Landroidx/fragment/app/FragmentManager;", "(Lcom/unfpa/appsistenciamaternaunfpa/activities/IntroductoryActivity;Landroidx/fragment/app/FragmentManager;)V", "mFragmentList", "Ljava/util/ArrayList;", "Landroidx/fragment/app/Fragment;", "mFragmentTitleList", "", "addFragment", "", "fragment", "title", "getCount", "", "getItem", "position", "getPageTitle", "", "app_debug"})
+    public final class sectionsPagerAdapter extends androidx.fragment.app.FragmentPagerAdapter {
+        private final java.util.ArrayList<androidx.fragment.app.Fragment> mFragmentList = null;
+        private final java.util.ArrayList<java.lang.String> mFragmentTitleList = null;
+        
+        @org.jetbrains.annotations.NotNull()
+        @java.lang.Override()
+        public androidx.fragment.app.Fragment getItem(int position) {
+            return null;
+        }
+        
+        @java.lang.Override()
+        public int getCount() {
+            return 0;
+        }
+        
+        public final void addFragment(@org.jetbrains.annotations.NotNull()
+        androidx.fragment.app.Fragment fragment, @org.jetbrains.annotations.NotNull()
+        java.lang.String title) {
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        @java.lang.Override()
+        public java.lang.CharSequence getPageTitle(int position) {
+            return null;
+        }
+        
+        public sectionsPagerAdapter(@org.jetbrains.annotations.NotNull()
+        androidx.fragment.app.FragmentManager manager) {
+            super(null);
+        }
+    }
+}

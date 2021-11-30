@@ -1,0 +1,12 @@
+package com.unfpa.appsistenciamaternaunfpa.activities.nurse
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.unfpa.appsistenciamaternaunfpa.R
+
+class AddPatientStep5Activity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_add_patient_step5)
+    }
+}

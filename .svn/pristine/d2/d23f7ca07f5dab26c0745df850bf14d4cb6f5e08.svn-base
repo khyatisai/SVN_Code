@@ -1,0 +1,80 @@
+package com.unfpa.appsistenciamaternaunfpa.fragments.notification;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 12/13/2019.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0016J&\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0006\u0010\u0019\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001f2\b\u0010 \u001a\u0004\u0018\u00010!H\u0016J\u001a\u0010\"\u001a\u00020\u00162\u0006\u0010#\u001a\u00020\u001c2\b\u0010 \u001a\u0004\u0018\u00010!H\u0016J\u0006\u0010$\u001a\u00020\u0016R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R \u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004\u00a2\u0006\u0002\n\u0000R \u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00040\bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\n\"\u0004\b\u0011\u0010\fR \u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00040\bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\n\"\u0004\b\u0014\u0010\f\u00a8\u0006%"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/fragments/notification/NotificationFragment;", "Landroidx/fragment/app/Fragment;", "()V", "getNotification", "", "getGetNotification", "()Ljava/lang/String;", "hour", "Ljava/util/ArrayList;", "getHour", "()Ljava/util/ArrayList;", "setHour", "(Ljava/util/ArrayList;)V", "p", "Landroid/graphics/Paint;", "text", "getText", "setText", "title", "getTitle", "setTitle", "onCreateOptionsMenu", "", "menu", "Landroid/view/Menu;", "inflater", "Landroid/view/MenuInflater;", "onCreateView", "Landroid/view/View;", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onViewCreated", "view", "showNoItemLayout", "app_debug"})
+public final class NotificationFragment extends androidx.fragment.app.Fragment {
+    private final android.graphics.Paint p = null;
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.String getNotification = "http://143.208.181.241/api/v1/notification";
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> title;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> text;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> hour;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetNotification() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTitle() {
+        return null;
+    }
+    
+    public final void setTitle(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getText() {
+        return null;
+    }
+    
+    public final void setText(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getHour() {
+        return null;
+    }
+    
+    public final void setHour(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @java.lang.Override()
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onViewCreated(@org.jetbrains.annotations.NotNull()
+    android.view.View view, @org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    @java.lang.Override()
+    public void onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
+    android.view.Menu menu, @org.jetbrains.annotations.NotNull()
+    android.view.MenuInflater inflater) {
+    }
+    
+    public final void showNoItemLayout() {
+    }
+    
+    public NotificationFragment() {
+        super();
+    }
+}

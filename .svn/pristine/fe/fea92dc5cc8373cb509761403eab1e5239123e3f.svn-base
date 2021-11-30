@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:textAlignment="viewStart"
+        android:weightSum="3">
+
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:textAlignment="textStart"
+            app:srcCompat="@drawable/account_circle" />
+
+    <TextView
+            android:id="@+id/tvCedula"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center|start|left"
+            android:text="001-301290-0019s"
+            android:textAlignment="textStart"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat,SmallSp" />
+
+    <TextView
+            android:id="@+id/txtNombreBrigadista"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+
+            android:gravity="center|start|left"
+            android:text="Catalina Torrez Torrez torrez torrez torrez"
+            android:textAlignment="textStart"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textSize="14sp"
+            tools:ignore="RtlCompat,SmallSp" />
+
+
+</LinearLayout>

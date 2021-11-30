@@ -1,0 +1,225 @@
+package com.unfpa.appsistenciamaternaunfpa;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0002\b\u0010\n\u0002\u0010\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010>\u001a\u00020?2\u0006\u0010@\u001a\u00020\u0004J\b\u0010A\u001a\u00020?H\u0002J\b\u0010B\u001a\u00020\u0004H\u0002J\b\u0010C\u001a\u00020?H\u0002J\b\u0010D\u001a\u00020?H\u0002J\b\u0010E\u001a\u00020?H\u0002J\u0012\u0010F\u001a\u00020?2\b\u0010G\u001a\u0004\u0018\u00010\u0004H\u0002J\b\u0010H\u001a\u00020?H\u0016J\u0012\u0010I\u001a\u00020?2\b\u0010J\u001a\u0004\u0018\u00010\u0004H\u0002J\u0012\u0010K\u001a\u00020?2\b\u0010L\u001a\u0004\u0018\u00010MH\u0014J\b\u0010N\u001a\u00020?H\u0014J\u0006\u0010O\u001a\u00020?J\b\u0010P\u001a\u00020?H\u0002J\u0012\u0010Q\u001a\u00020?2\b\u0010R\u001a\u0004\u0018\u00010\u0004H\u0003J\b\u0010S\u001a\u00020?H\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0006\"\u0004\b\u000b\u0010\bR\u001a\u0010\f\u001a\u00020\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0012\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0006\"\u0004\b\u0014\u0010\bR\u001a\u0010\u0015\u001a\u00020\u0016X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001a\u0010\u001b\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0006\"\u0004\b\u001d\u0010\bR\u001a\u0010\u001e\u001a\u00020\u001fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b \u0010!\"\u0004\b\"\u0010#R\u001a\u0010$\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b%\u0010\u0006\"\u0004\b&\u0010\bR\u001a\u0010\'\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b(\u0010\u0006\"\u0004\b)\u0010\bR\u001a\u0010*\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b+\u0010\u0006\"\u0004\b,\u0010\bR\u001a\u0010-\u001a\u00020.X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b-\u0010/\"\u0004\b0\u00101R\u001a\u00102\u001a\u00020.X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u0010/\"\u0004\b3\u00101R\u001a\u00104\u001a\u00020.X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b4\u0010/\"\u0004\b5\u00101R\u001a\u00106\u001a\u00020.X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b6\u0010/\"\u0004\b7\u00101R\u001a\u00108\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b9\u0010\u0006\"\u0004\b:\u0010\bR\u001a\u0010;\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b<\u0010\u0006\"\u0004\b=\u0010\b\u00a8\u0006T"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/call;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "IdAppointment", "", "getIdAppointment", "()Ljava/lang/String;", "setIdAppointment", "(Ljava/lang/String;)V", "birth", "getBirth", "setBirth", "bootomsheetFragment", "Lcom/unfpa/appsistenciamaternaunfpa/activities/DialogChatFragment;", "getBootomsheetFragment", "()Lcom/unfpa/appsistenciamaternaunfpa/activities/DialogChatFragment;", "setBootomsheetFragment", "(Lcom/unfpa/appsistenciamaternaunfpa/activities/DialogChatFragment;)V", "calluser", "getCalluser", "setCalluser", "count", "", "getCount", "()I", "setCount", "(I)V", "doctor", "getDoctor", "setDoctor", "firebaseRef", "Lcom/google/firebase/database/DatabaseReference;", "getFirebaseRef", "()Lcom/google/firebase/database/DatabaseReference;", "setFirebaseRef", "(Lcom/google/firebase/database/DatabaseReference;)V", "friendsUsername", "getFriendsUsername", "setFriendsUsername", "gestationWeeks", "getGestationWeeks", "setGestationWeeks", "gestationWeeksDate", "getGestationWeeksDate", "setGestationWeeksDate", "isAudio", "", "()Z", "setAudio", "(Z)V", "isPeerConnected", "setPeerConnected", "isVideo", "setVideo", "is_added", "set_added", "uniqueId", "getUniqueId", "setUniqueId", "username", "getUsername", "setUsername", "callJavascriptFunction", "", "functionString", "desconection", "getUniqueID", "initializePeer", "listenDesconection", "listenForConnId", "loadVideoCall", "uniqId", "onBackPressed", "onCallRequest", "caller", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onDestroy", "onPeerConnected", "sendCallRequest", "setUpWebView", "uniId", "switchToControls", "app_debug"})
+public final class call extends androidx.appcompat.app.AppCompatActivity {
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String username;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String calluser;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String friendsUsername;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String uniqueId;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String IdAppointment;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String birth;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String gestationWeeks;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String gestationWeeksDate;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String doctor;
+    private boolean isPeerConnected;
+    @org.jetbrains.annotations.NotNull()
+    private com.google.firebase.database.DatabaseReference firebaseRef;
+    private boolean isAudio;
+    private boolean isVideo;
+    private int count;
+    private boolean is_added;
+    @org.jetbrains.annotations.NotNull()
+    private com.unfpa.appsistenciamaternaunfpa.activities.DialogChatFragment bootomsheetFragment;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUsername() {
+        return null;
+    }
+    
+    public final void setUsername(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCalluser() {
+        return null;
+    }
+    
+    public final void setCalluser(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getFriendsUsername() {
+        return null;
+    }
+    
+    public final void setFriendsUsername(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getUniqueId() {
+        return null;
+    }
+    
+    public final void setUniqueId(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getIdAppointment() {
+        return null;
+    }
+    
+    public final void setIdAppointment(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getBirth() {
+        return null;
+    }
+    
+    public final void setBirth(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGestationWeeks() {
+        return null;
+    }
+    
+    public final void setGestationWeeks(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGestationWeeksDate() {
+        return null;
+    }
+    
+    public final void setGestationWeeksDate(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getDoctor() {
+        return null;
+    }
+    
+    public final void setDoctor(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final boolean isPeerConnected() {
+        return false;
+    }
+    
+    public final void setPeerConnected(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.firebase.database.DatabaseReference getFirebaseRef() {
+        return null;
+    }
+    
+    public final void setFirebaseRef(@org.jetbrains.annotations.NotNull()
+    com.google.firebase.database.DatabaseReference p0) {
+    }
+    
+    public final boolean isAudio() {
+        return false;
+    }
+    
+    public final void setAudio(boolean p0) {
+    }
+    
+    public final boolean isVideo() {
+        return false;
+    }
+    
+    public final void setVideo(boolean p0) {
+    }
+    
+    public final int getCount() {
+        return 0;
+    }
+    
+    public final void setCount(int p0) {
+    }
+    
+    public final boolean is_added() {
+        return false;
+    }
+    
+    public final void set_added(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.activities.DialogChatFragment getBootomsheetFragment() {
+        return null;
+    }
+    
+    public final void setBootomsheetFragment(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.activities.DialogChatFragment p0) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    private final void sendCallRequest() {
+    }
+    
+    private final void listenForConnId() {
+    }
+    
+    private final void desconection() {
+    }
+    
+    @android.annotation.SuppressLint(value = {"SetJavaScriptEnabled"})
+    private final void setUpWebView(java.lang.String uniId) {
+    }
+    
+    private final void loadVideoCall(java.lang.String uniqId) {
+    }
+    
+    private final void initializePeer() {
+    }
+    
+    private final void onCallRequest(java.lang.String caller) {
+    }
+    
+    private final void switchToControls() {
+    }
+    
+    private final java.lang.String getUniqueID() {
+        return null;
+    }
+    
+    public final void callJavascriptFunction(@org.jetbrains.annotations.NotNull()
+    java.lang.String functionString) {
+    }
+    
+    public final void onPeerConnected() {
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    @java.lang.Override()
+    protected void onDestroy() {
+    }
+    
+    private final void listenDesconection() {
+    }
+    
+    public call() {
+        super();
+    }
+}

@@ -1,0 +1,63 @@
+package com.unfpa.appsistenciamaternaunfpa.adapters.my_health;
+
+import java.lang.System;
+
+/**
+ * Created by KhyatiShah on 10/22/2019.
+ */
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB\u001d\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\b\u0010\f\u001a\u00020\rH\u0016J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00022\u0006\u0010\u0011\u001a\u00020\rH\u0016J\u0018\u0010\u0012\u001a\u00020\u00022\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\rH\u0016J\u000e\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\rJ\u0014\u0010\u0017\u001a\u00020\u000f2\f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u000b0\nJ\u0014\u0010\u0019\u001a\u00020\u000f2\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0082.\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001b"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_health/CenterListAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "currentlat", "", "currentlong", "listener", "Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;", "(Ljava/lang/String;Ljava/lang/String;Lcom/unfpa/appsistenciamaternaunfpa/api_controller/Listeners/Listener;)V", "myServiceCenterList", "", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/myserviceentity/ServiceCenterDetailEntity;", "getItemCount", "", "onBindViewHolder", "", "viewHolder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "removeItem", "setContentList", "contentList", "setMyServiceCenterList", "MyServiceCenterListViewHolder", "app_debug"})
+public final class CenterListAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder> {
+    private java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.ServiceCenterDetailEntity> myServiceCenterList;
+    private java.lang.String currentlat;
+    private java.lang.String currentlong;
+    private com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener listener;
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public androidx.recyclerview.widget.RecyclerView.ViewHolder onCreateViewHolder(@org.jetbrains.annotations.NotNull()
+    android.view.ViewGroup parent, int viewType) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onBindViewHolder(@org.jetbrains.annotations.NotNull()
+    androidx.recyclerview.widget.RecyclerView.ViewHolder viewHolder, int position) {
+    }
+    
+    @java.lang.Override()
+    public int getItemCount() {
+        return 0;
+    }
+    
+    public final void removeItem(int position) {
+    }
+    
+    public final void setMyServiceCenterList(@org.jetbrains.annotations.NotNull()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.ServiceCenterDetailEntity> myServiceCenterList) {
+    }
+    
+    public final void setContentList(@org.jetbrains.annotations.NotNull()
+    java.util.List<com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.ServiceCenterDetailEntity> contentList) {
+    }
+    
+    public CenterListAdapter(@org.jetbrains.annotations.NotNull()
+    java.lang.String currentlat, @org.jetbrains.annotations.NotNull()
+    java.lang.String currentlong, @org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.api_controller.Listeners.Listener listener) {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007\u00a8\u0006\t"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_health/CenterListAdapter$MyServiceCenterListViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Lcom/unfpa/appsistenciamaternaunfpa/adapters/my_health/CenterListAdapter;Landroid/view/View;)V", "bindView", "", "myServiceCenterList", "Lcom/unfpa/appsistenciamaternaunfpa/database/entity/myserviceentity/ServiceCenterDetailEntity;", "app_debug"})
+    public final class MyServiceCenterListViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+        
+        @android.annotation.SuppressLint(value = {"SetTextI18n"})
+        public final void bindView(@org.jetbrains.annotations.NotNull()
+        com.unfpa.appsistenciamaternaunfpa.database.entity.myserviceentity.ServiceCenterDetailEntity myServiceCenterList) {
+        }
+        
+        public MyServiceCenterListViewHolder(@org.jetbrains.annotations.NotNull()
+        android.view.View itemView) {
+            super(null);
+        }
+    }
+}

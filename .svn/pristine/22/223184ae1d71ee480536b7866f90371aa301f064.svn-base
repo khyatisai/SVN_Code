@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "216135740098",
+    "firebase_url": "https://unfpa-mhealth.firebaseio.com",
+    "project_id": "unfpa-mhealth",
+    "storage_bucket": "unfpa-mhealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216135740098:android:1353d419696bf970fce95b",
+        "android_client_info": {
+          "package_name": "com.unfpa.appsistenciamaternaunfpa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216135740098-mofb495f9q8013dpgbdgfglds7k0r277.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unfpa.appsistenciamaternaunfpa",
+            "certificate_hash": "93fbad63d0fd0c8029d4538efabd1e22a83cd14e"
+          }
+        },
+        {
+          "client_id": "216135740098-71tr65c468de5lr5npm6icsba8i21suj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqH_Phkj_lOObN4D7UZ-lOA90RoH3hdL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216135740098-71tr65c468de5lr5npm6icsba8i21suj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

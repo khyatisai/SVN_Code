@@ -1,0 +1,418 @@
+package com.unfpa.appsistenciamaternaunfpa.activities.my_health;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000v\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u001a\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u001e\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b)\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010z\u001a\u00020{2\u0006\u0010|\u001a\u00020}H\u0014J\u0006\u0010~\u001a\u00020{J\u000f\u0010\u007f\u001a\u00020{2\u0007\u0010\u0080\u0001\u001a\u00020\u0004J#\u0010\u0081\u0001\u001a\u0004\u0018\u00010\u00042\u0006\u0010w\u001a\u00020&2\u0006\u00107\u001a\u00020&2\u0006\u0010%\u001a\u00020&H\u0002J\t\u0010\u0082\u0001\u001a\u00020\u0004H\u0002J\t\u0010\u0083\u0001\u001a\u00020{H\u0016J\u0015\u0010\u0084\u0001\u001a\u00020{2\n\u0010\u0085\u0001\u001a\u0005\u0018\u00010\u0086\u0001H\u0015J\u0014\u0010\u0087\u0001\u001a\u00030\u0088\u00012\b\u0010\u0089\u0001\u001a\u00030\u008a\u0001H\u0016J\u0014\u0010\u008b\u0001\u001a\u00030\u0088\u00012\b\u0010\u008c\u0001\u001a\u00030\u008d\u0001H\u0016J\u0010\u0010\u008e\u0001\u001a\u00020{2\u0007\u0010\u008f\u0001\u001a\u00020\u0004J\"\u0010\u0090\u0001\u001a\u00030\u0091\u00012\u0006\u0010w\u001a\u00020&2\u0006\u00107\u001a\u00020&2\u0006\u0010%\u001a\u00020&H\u0003J\f\u0010\u0092\u0001\u001a\u00020{*\u00030\u0093\u0001R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0006\"\u0004\b\u000b\u0010\bR\u001a\u0010\f\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u0006\"\u0004\b\u000e\u0010\bR\u001a\u0010\u000f\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0006\"\u0004\b\u0011\u0010\bR\u001a\u0010\u0012\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0006\"\u0004\b\u0014\u0010\bR\u001a\u0010\u0015\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0006\"\u0004\b\u0017\u0010\bR\u001a\u0010\u0018\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0006\"\u0004\b\u001a\u0010\bR\u001a\u0010\u001b\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\u0006\"\u0004\b\u001d\u0010\bR\u0019\u0010\u001e\u001a\n  *\u0004\u0018\u00010\u001f0\u001f\u00a2\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0010\u0010#\u001a\u0004\u0018\u00010$X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010%\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\'\u0010(\"\u0004\b)\u0010*R\u001a\u0010+\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b,\u0010\u0006\"\u0004\b-\u0010\bR\u001a\u0010.\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b/\u0010\u0006\"\u0004\b0\u0010\bR\u001a\u00101\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b2\u0010\u0006\"\u0004\b3\u0010\bR\u001a\u00104\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b5\u0010\u0006\"\u0004\b6\u0010\bR\u001a\u00107\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b8\u0010(\"\u0004\b9\u0010*R\u001a\u0010:\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b;\u0010(\"\u0004\b<\u0010*R\u001a\u0010=\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b>\u0010\u0006\"\u0004\b?\u0010\bR\u000e\u0010@\u001a\u00020&X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010A\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bB\u0010\u0006\"\u0004\bC\u0010\bR\u001c\u0010D\u001a\u0004\u0018\u00010EX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bF\u0010G\"\u0004\bH\u0010IR\u000e\u0010J\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0019\u0010K\u001a\n  *\u0004\u0018\u00010$0$\u00a2\u0006\b\n\u0000\u001a\u0004\bL\u0010MR\u0010\u0010N\u001a\u0004\u0018\u00010OX\u0082\u000e\u00a2\u0006\u0002\n\u0000R \u0010P\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bR\u0010S\"\u0004\bT\u0010UR \u0010V\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bW\u0010S\"\u0004\bX\u0010UR \u0010Y\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bZ\u0010S\"\u0004\b[\u0010UR \u0010\\\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b]\u0010S\"\u0004\b^\u0010UR \u0010_\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b`\u0010S\"\u0004\ba\u0010UR \u0010b\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bc\u0010S\"\u0004\bd\u0010UR \u0010e\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bf\u0010S\"\u0004\bg\u0010UR \u0010h\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bi\u0010S\"\u0004\bj\u0010UR \u0010k\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bl\u0010S\"\u0004\bm\u0010UR \u0010n\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bo\u0010S\"\u0004\bp\u0010UR \u0010q\u001a\b\u0012\u0004\u0012\u00020\u00040QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\br\u0010S\"\u0004\bs\u0010UR\u001a\u0010t\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bu\u0010\u0006\"\u0004\bv\u0010\bR\u001a\u0010w\u001a\u00020&X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\bx\u0010(\"\u0004\by\u0010*\u00a8\u0006\u0094\u0001"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/my_health/PacienteDetalleActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "CallIdAppointment", "", "getCallIdAppointment", "()Ljava/lang/String;", "setCallIdAppointment", "(Ljava/lang/String;)V", "Callbirth", "getCallbirth", "setCallbirth", "CallgestationWeeks", "getCallgestationWeeks", "setCallgestationWeeks", "CallgestationWeeksDate", "getCallgestationWeeksDate", "setCallgestationWeeksDate", "CallpacientUserId", "getCallpacientUserId", "setCallpacientUserId", "IdAppointmentForCallCancelRepro", "getIdAppointmentForCallCancelRepro", "setIdAppointmentForCallCancelRepro", "URLcancelAppointment", "getURLcancelAppointment", "setURLcancelAppointment", "agePac", "getAgePac", "setAgePac", "cal", "Ljava/util/Calendar;", "kotlin.jvm.PlatformType", "getCal", "()Ljava/util/Calendar;", "date", "Ljava/util/Date;", "day", "", "getDay", "()I", "setDay", "(I)V", "gestationWeeksDate", "getGestationWeeksDate", "setGestationWeeksDate", "getPregnantDetail", "getGetPregnantDetail", "setGetPregnantDetail", "idPac", "getIdPac", "setIdPac", "idUserPac", "getIdUserPac", "setIdUserPac", "month", "getMonth", "setMonth", "mostrarBtn", "getMostrarBtn", "setMostrarBtn", "namePac", "getNamePac", "setNamePac", "numberOfDays", "pathologicalAntecedentsPac", "getPathologicalAntecedentsPac", "setPathologicalAntecedentsPac", "sdf", "Ljava/text/SimpleDateFormat;", "getSdf", "()Ljava/text/SimpleDateFormat;", "setSdf", "(Ljava/text/SimpleDateFormat;)V", "selectedDt", "today", "getToday", "()Ljava/util/Date;", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "tvCitaCancelada", "Ljava/util/ArrayList;", "getTvCitaCancelada", "()Ljava/util/ArrayList;", "setTvCitaCancelada", "(Ljava/util/ArrayList;)V", "tvDiagnostics", "getTvDiagnostics", "setTvDiagnostics", "tvFechaAppointment", "getTvFechaAppointment", "setTvFechaAppointment", "tvHora", "getTvHora", "setTvHora", "tvPlans", "getTvPlans", "setTvPlans", "tvTypeAppointment", "getTvTypeAppointment", "setTvTypeAppointment", "tvWeeksPac2", "getTvWeeksPac2", "setTvWeeksPac2", "tvarObro", "getTvarObro", "setTvarObro", "tvmainReasonForTheConsultation", "getTvmainReasonForTheConsultation", "setTvmainReasonForTheConsultation", "tvotherRemarks", "getTvotherRemarks", "setTvotherRemarks", "tvreportOfFetalMovements", "getTvreportOfFetalMovements", "setTvreportOfFetalMovements", "weeksPac", "getWeeksPac", "setWeeksPac", "year", "getYear", "setYear", "attachBaseContext", "", "newBase", "Landroid/content/Context;", "calculate_age", "cancelAppointment", "qName", "getAge", "getUniqueID", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateOptionsMenu", "", "menu", "Landroid/view/Menu;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "showPostDialog", "title", "weekendPregnant", "", "hideKeyboard", "Landroid/view/View;", "app_debug"})
+public final class PacienteDetalleActivity extends androidx.appcompat.app.AppCompatActivity {
+    
+    /**
+     * *var for age
+     */
+    private java.util.Date date;
+    private final java.util.Calendar cal = null;
+    @org.jetbrains.annotations.Nullable()
+    private java.text.SimpleDateFormat sdf;
+    private int year;
+    private int month;
+    private int day;
+    private final java.util.Date today = null;
+    
+    /**
+     * *end var for age
+     */
+    private androidx.appcompat.widget.Toolbar toolbar;
+    private java.lang.String selectedDt;
+    private int numberOfDays;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvCitaCancelada;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvFechaAppointment;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvHora;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvTypeAppointment;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvWeeksPac2;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvDiagnostics;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvPlans;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvreportOfFetalMovements;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvarObro;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvotherRemarks;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvmainReasonForTheConsultation;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getPregnantDetail;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String URLcancelAppointment;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String idUserPac;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String idPac;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String namePac;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String agePac;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String weeksPac;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String gestationWeeksDate;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String pathologicalAntecedentsPac;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String CallpacientUserId;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String CallIdAppointment;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String IdAppointmentForCallCancelRepro;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String Callbirth;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String CallgestationWeeks;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String CallgestationWeeksDate;
+    private int mostrarBtn;
+    private java.util.HashMap _$_findViewCache;
+    
+    public final java.util.Calendar getCal() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final java.text.SimpleDateFormat getSdf() {
+        return null;
+    }
+    
+    public final void setSdf(@org.jetbrains.annotations.Nullable()
+    java.text.SimpleDateFormat p0) {
+    }
+    
+    public final int getYear() {
+        return 0;
+    }
+    
+    public final void setYear(int p0) {
+    }
+    
+    public final int getMonth() {
+        return 0;
+    }
+    
+    public final void setMonth(int p0) {
+    }
+    
+    public final int getDay() {
+        return 0;
+    }
+    
+    public final void setDay(int p0) {
+    }
+    
+    public final java.util.Date getToday() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvCitaCancelada() {
+        return null;
+    }
+    
+    public final void setTvCitaCancelada(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvFechaAppointment() {
+        return null;
+    }
+    
+    public final void setTvFechaAppointment(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvHora() {
+        return null;
+    }
+    
+    public final void setTvHora(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvTypeAppointment() {
+        return null;
+    }
+    
+    public final void setTvTypeAppointment(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvWeeksPac2() {
+        return null;
+    }
+    
+    public final void setTvWeeksPac2(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvDiagnostics() {
+        return null;
+    }
+    
+    public final void setTvDiagnostics(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvPlans() {
+        return null;
+    }
+    
+    public final void setTvPlans(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvreportOfFetalMovements() {
+        return null;
+    }
+    
+    public final void setTvreportOfFetalMovements(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvarObro() {
+        return null;
+    }
+    
+    public final void setTvarObro(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvotherRemarks() {
+        return null;
+    }
+    
+    public final void setTvotherRemarks(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvmainReasonForTheConsultation() {
+        return null;
+    }
+    
+    public final void setTvmainReasonForTheConsultation(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetPregnantDetail() {
+        return null;
+    }
+    
+    public final void setGetPregnantDetail(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getURLcancelAppointment() {
+        return null;
+    }
+    
+    public final void setURLcancelAppointment(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getIdUserPac() {
+        return null;
+    }
+    
+    public final void setIdUserPac(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getIdPac() {
+        return null;
+    }
+    
+    public final void setIdPac(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getNamePac() {
+        return null;
+    }
+    
+    public final void setNamePac(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getAgePac() {
+        return null;
+    }
+    
+    public final void setAgePac(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getWeeksPac() {
+        return null;
+    }
+    
+    public final void setWeeksPac(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGestationWeeksDate() {
+        return null;
+    }
+    
+    public final void setGestationWeeksDate(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getPathologicalAntecedentsPac() {
+        return null;
+    }
+    
+    public final void setPathologicalAntecedentsPac(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCallpacientUserId() {
+        return null;
+    }
+    
+    public final void setCallpacientUserId(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCallIdAppointment() {
+        return null;
+    }
+    
+    public final void setCallIdAppointment(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getIdAppointmentForCallCancelRepro() {
+        return null;
+    }
+    
+    public final void setIdAppointmentForCallCancelRepro(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCallbirth() {
+        return null;
+    }
+    
+    public final void setCallbirth(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCallgestationWeeks() {
+        return null;
+    }
+    
+    public final void setCallgestationWeeks(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCallgestationWeeksDate() {
+        return null;
+    }
+    
+    public final void setCallgestationWeeksDate(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    public final int getMostrarBtn() {
+        return 0;
+    }
+    
+    public final void setMostrarBtn(int p0) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context newBase) {
+    }
+    
+    @androidx.annotation.RequiresApi(value = android.os.Build.VERSION_CODES.O)
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    public final void showPostDialog(@org.jetbrains.annotations.NotNull()
+    java.lang.String title) {
+    }
+    
+    public final void hideKeyboard(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$hideKeyboard) {
+    }
+    
+    public final void cancelAppointment(@org.jetbrains.annotations.NotNull()
+    java.lang.String qName) {
+    }
+    
+    public final void calculate_age() {
+    }
+    
+    private final java.lang.String getUniqueID() {
+        return null;
+    }
+    
+    private final java.lang.String getAge(int year, int month, int day) {
+        return null;
+    }
+    
+    @androidx.annotation.RequiresApi(value = android.os.Build.VERSION_CODES.O)
+    private final float weekendPregnant(int year, int month, int day) {
+        return 0.0F;
+    }
+    
+    @java.lang.Override()
+    public boolean onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
+    android.view.Menu menu) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.NotNull()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public PacienteDetalleActivity() {
+        super();
+    }
+}

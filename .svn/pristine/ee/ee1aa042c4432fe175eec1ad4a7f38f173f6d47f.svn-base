@@ -1,0 +1,116 @@
+package com.unfpa.appsistenciamaternaunfpa.fcm;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 /2\u00020\u0001:\u0001/B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00042\u0006\u0010\"\u001a\u00020\u0004J\b\u0010#\u001a\u00020 H\u0002J\u001e\u0010$\u001a\u0004\u0018\u00010\u00042\b\u0010%\u001a\u0004\u0018\u00010\u00042\b\u0010&\u001a\u0004\u0018\u00010\u0004H\u0007J\b\u0010\'\u001a\u00020 H\u0016J\u0010\u0010(\u001a\u00020 2\u0006\u0010)\u001a\u00020*H\u0016J\u0010\u0010+\u001a\u00020 2\u0006\u0010,\u001a\u00020\u0004H\u0016J\u0010\u0010-\u001a\u00020 2\u0006\u0010.\u001a\u00020\u0004H\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u001a\u0010\r\u001a\u00020\u000eX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u000e\u0010\u0013\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0016\u001a\u00020\u0017X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0018\u0010\u0019\"\u0004\b\u001a\u0010\u001bR\u001a\u0010\u001c\u001a\u00020\u0017X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u0019\"\u0004\b\u001e\u0010\u001b\u00a8\u00060"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/fcm/FCMService;", "Lcom/google/firebase/messaging/FirebaseMessagingService;", "()V", "getUsers", "", "getGetUsers", "()Ljava/lang/String;", "setGetUsers", "(Ljava/lang/String;)V", "gson", "Lcom/google/gson/Gson;", "getGson", "()Lcom/google/gson/Gson;", "mSocket", "Lio/socket/client/Socket;", "getMSocket", "()Lio/socket/client/Socket;", "setMSocket", "(Lio/socket/client/Socket;)V", "message", "notificationDAO", "Lcom/unfpa/appsistenciamaternaunfpa/database/dao/notification/NotificationDAO2;", "onConnect", "Lio/socket/emitter/Emitter$Listener;", "getOnConnect", "()Lio/socket/emitter/Emitter$Listener;", "setOnConnect", "(Lio/socket/emitter/Emitter$Listener;)V", "onConnect1", "getOnConnect1", "setOnConnect1", "addNotificationForAppointment", "", "title", "data", "handleNow", "obtenerFechaConFormato", "formato", "zonaHoraria", "onCreate", "onMessageReceived", "remoteMessage", "Lcom/google/firebase/messaging/RemoteMessage;", "onNewToken", "newToken", "sendNotification", "messageBody", "Companion", "app_debug"})
+public final class FCMService extends com.google.firebase.messaging.FirebaseMessagingService {
+    private com.unfpa.appsistenciamaternaunfpa.database.dao.notification.NotificationDAO2 notificationDAO;
+    @org.jetbrains.annotations.NotNull()
+    public io.socket.client.Socket mSocket;
+    private java.lang.String message;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getUsers;
+    @org.jetbrains.annotations.NotNull()
+    private final com.google.gson.Gson gson = null;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onConnect1;
+    @org.jetbrains.annotations.NotNull()
+    private io.socket.emitter.Emitter.Listener onConnect;
+    private static final java.lang.String TAG = "FCMService";
+    private static final java.lang.String CHANNEL_ID = "1001";
+    public static final com.unfpa.appsistenciamaternaunfpa.fcm.FCMService.Companion Companion = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.client.Socket getMSocket() {
+        return null;
+    }
+    
+    public final void setMSocket(@org.jetbrains.annotations.NotNull()
+    io.socket.client.Socket p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetUsers() {
+        return null;
+    }
+    
+    public final void setGetUsers(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.google.gson.Gson getGson() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onCreate() {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnConnect1() {
+        return null;
+    }
+    
+    public final void setOnConnect1(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final io.socket.emitter.Emitter.Listener getOnConnect() {
+        return null;
+    }
+    
+    public final void setOnConnect(@org.jetbrains.annotations.NotNull()
+    io.socket.emitter.Emitter.Listener p0) {
+    }
+    
+    @java.lang.Override()
+    public void onNewToken(@org.jetbrains.annotations.NotNull()
+    java.lang.String newToken) {
+    }
+    
+    @java.lang.Override()
+    public void onMessageReceived(@org.jetbrains.annotations.NotNull()
+    com.google.firebase.messaging.RemoteMessage remoteMessage) {
+    }
+    
+    /**
+     * Handle time allotted to BroadcastReceivers.
+     */
+    private final void handleNow() {
+    }
+    
+    /**
+     * Create and show a simple notification containing the received FCM message.
+     *
+     * @param messageBody FCM message body received.
+     */
+    private final void sendNotification(java.lang.String messageBody) {
+    }
+    
+    public final void addNotificationForAppointment(@org.jetbrains.annotations.NotNull()
+    java.lang.String title, @org.jetbrains.annotations.NotNull()
+    java.lang.String data) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @android.annotation.SuppressLint(value = {"SimpleDateFormat"})
+    public final java.lang.String obtenerFechaConFormato(@org.jetbrains.annotations.Nullable()
+    java.lang.String formato, @org.jetbrains.annotations.Nullable()
+    java.lang.String zonaHoraria) {
+        return null;
+    }
+    
+    public FCMService() {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0006"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/fcm/FCMService$Companion;", "", "()V", "CHANNEL_ID", "", "TAG", "app_debug"})
+    public static final class Companion {
+        
+        private Companion() {
+            super();
+        }
+    }
+}

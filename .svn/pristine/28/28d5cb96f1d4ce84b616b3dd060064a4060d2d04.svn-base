@@ -1,0 +1,68 @@
+package com.unfpa.appsistenciamaternaunfpa.api_controller;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J;\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00112#\u0010\u0012\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u0011\u00a2\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u000e0\u0013JC\u0010\u0017\u001a\u00020\u000e2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00112#\u0010\u0012\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u0011\u00a2\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u000e0\u0013J;\u0010\u001a\u001a\u00020\u000e2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u000f\u001a\u00020\u00042#\u0010\u0012\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u0004\u00a2\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u000e0\u0013JC\u0010\u001b\u001a\u00020\u000e2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00112#\u0010\u0012\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u0004\u00a2\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u000e0\u0013JC\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u00042#\u0010\u0012\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u0004\u00a2\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u000e0\u0013J;\u0010\u001f\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u001d2#\u0010\u0012\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u0004\u00a2\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u000e0\u0013JC\u0010 \u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u00042#\u0010\u0012\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u001d\u00a2\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u000e0\u0013R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u001b\u0010\u0007\u001a\u00020\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u000b\u0010\f\u001a\u0004\b\t\u0010\n\u00a8\u0006!"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/api_controller/ServiceVolley;", "", "()V", "TAG", "", "getTAG", "()Ljava/lang/String;", "imageLoader", "Lcom/android/volley/toolbox/ImageLoader;", "getImageLoader", "()Lcom/android/volley/toolbox/ImageLoader;", "imageLoader$delegate", "Lkotlin/Lazy;", "get", "", "url", "params", "Lorg/json/JSONArray;", "completionHandler", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "response", "jsonArrayRequest", "method", "", "jsonArrayRequestForToken", "jsonStringReq", "jsonStringRequest", "Lorg/json/JSONObject;", "feedback", "jsonStringRequestForMyVoice", "postJSON", "app_debug"})
+public final class ServiceVolley {
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.String TAG = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy imageLoader$delegate = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTAG() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.android.volley.toolbox.ImageLoader getImageLoader() {
+        return null;
+    }
+    
+    public final void jsonStringRequest(@org.jetbrains.annotations.NotNull()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    org.json.JSONObject params, @org.jetbrains.annotations.NotNull()
+    java.lang.String feedback, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> completionHandler) {
+    }
+    
+    public final void jsonStringRequestForMyVoice(@org.jetbrains.annotations.NotNull()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    org.json.JSONObject params, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> completionHandler) {
+    }
+    
+    public final void postJSON(@org.jetbrains.annotations.NotNull()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    org.json.JSONObject params, @org.jetbrains.annotations.NotNull()
+    java.lang.String feedback, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super org.json.JSONObject, kotlin.Unit> completionHandler) {
+    }
+    
+    public final void get(@org.jetbrains.annotations.NotNull()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    org.json.JSONArray params, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super org.json.JSONArray, kotlin.Unit> completionHandler) {
+    }
+    
+    public final void jsonArrayRequest(int method, @org.jetbrains.annotations.NotNull()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    org.json.JSONArray params, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super org.json.JSONArray, kotlin.Unit> completionHandler) {
+    }
+    
+    public final void jsonArrayRequestForToken(int method, @org.jetbrains.annotations.NotNull()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> completionHandler) {
+    }
+    
+    public final void jsonStringReq(int method, @org.jetbrains.annotations.NotNull()
+    java.lang.String url, @org.jetbrains.annotations.NotNull()
+    org.json.JSONArray params, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> completionHandler) {
+    }
+    
+    public ServiceVolley() {
+        super();
+    }
+}

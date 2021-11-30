@@ -1,0 +1,112 @@
+package com.unfpa.appsistenciamaternaunfpa.activities.nurse.appointment
+
+import android.content.Context
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.text.TextUtils
+import android.view.View
+import androidx.appcompat.widget.Toolbar
+import com.unfpa.appsistenciamaternaunfpa.R
+import com.unfpa.appsistenciamaternaunfpa.utils.AppUtils
+import io.github.inflationx.viewpump.ViewPumpContextWrapper
+import kotlinx.android.synthetic.main.input_summary_sheet.*
+import org.json.JSONArray
+import org.json.JSONObject
+import java.util.*
+
+class AppointmentSummaryActivity : AppCompatActivity() {
+
+    private var toolbar: Toolbar? = null
+
+    override fun attachBaseContext(newBase: Context) {
+        //super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.input_summary_sheet)
+        toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        /** terminos y condiciones ***/
+        supportActionBar!!.title = "Resumen de la consulta"
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)// show back button
+        supportActionBar!!.setHomeAsUpIndicator(R.drawable.arrow_back)
+
+        var appointmentJSONStr = intent.getStringExtra("appointmentJson")
+        var selectedAppointmentPos = intent.getIntExtra("selectedAppointmentPos", 0)
+        var appointmentJSON = JSONArray(appointmentJSONStr)
+        val selectedAppointment = appointmentJSON.getJSONObject(0).getJSONArray("appointments")
+            .getJSONObject(selectedAppointmentPos)
+        val selectedUser = appointmentJSON.getJSONObject(0).getJSONObject("user")
+
+        val firstName = selectedUser.getString("firstname")
+        val lstName = selectedUser.getString("lastname")
+        val topicsJson = selectedAppointment.getJSONObject("nurseTopic")
+
+        chkContraception.isEnabled = false
+        chkBreastfeeding.isEnabled = false
+        chkDangerSigns.isEnabled = false
+        chkOther.isEnabled = false
+
+        if (topicsJson != null) {
+            if (topicsJson.getString("contraception").equals("true")) {
+                chkContraception.isChecked = true
+            }
+            if (topicsJson.getString("breastfeeding").equals("true")) {
+                chkBreastfeeding.isChecked = true
+            }
+            if (topicsJson.getString("dangersignofpregnancy").equals("true")) {
+                chkDangerSigns.isChecked = true
+            }
+            if (topicsJson.getString("other").equals("true")) {
+                chkOther.isChecked = true
+                etOther.setText(topicsJson.getString("othervalue"))
+            }
+        }
+        tvPatientName.setText(firstName + " " + lstName)
+
+        if (selectedUser.getString("birth") != "0000-00-00") {
+            val dateString = selectedUser.getString("birth")
+            val dateFormat = "yyyy-MM-dd"
+            val dtf = java.time.format.DateTimeFormatter.ofPattern(dateFormat)
+            val d = java.time.LocalDate.parse(dateString, dtf)
+            val year = d.year
+            val month = d.monthValue
+            val day = d.dayOfMonth
+            tvAge.setText(getAge(year, month, day))
+        }
+        if (!TextUtils.isEmpty(selectedAppointment.getString("gestationWeeks"))) {
+            tvGestationWeek.text = selectedAppointment.getString("gestationWeeks")
+        }
+        if (!TextUtils.isEmpty(selectedAppointment.getString("date"))) {
+            tvAppointmentDate.text = selectedAppointment.getString("date")
+        }
+        tvNurseName.text = AppUtils.getDataCompleteNomUser(this)
+
+        if (!TextUtils.isEmpty(selectedAppointment.getString("callStart"))) {
+            tvClStartTime.text = selectedAppointment.getString("callStart")
+        }
+        if (!TextUtils.isEmpty(selectedAppointment.getString("callEnd"))) {
+            tvCallEndTime.text = selectedAppointment.getString("callEnd")
+        }
+        etNotes.isEnabled = false
+        etOther.isEnabled = false
+        btnConfirmar.visibility = View.GONE
+        if (!TextUtils.isEmpty(selectedAppointment.getString("nurseNote"))) {
+            etNotes.setText(selectedAppointment.getString("nurseNote"))
+        }
+    }
+
+    private fun getAge(year: Int, month: Int, day: Int): String? {
+        val dob = Calendar.getInstance()
+        val today = Calendar.getInstance()
+        dob[year, month] = day
+        var age = today[Calendar.YEAR] - dob[Calendar.YEAR]
+        if (today[Calendar.DAY_OF_YEAR] < dob[Calendar.DAY_OF_YEAR]) {
+            age--
+        }
+        val ageInt = age
+        return ageInt.toString()
+    }
+}

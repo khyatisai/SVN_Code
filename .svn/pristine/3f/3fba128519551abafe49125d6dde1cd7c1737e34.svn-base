@@ -1,0 +1,74 @@
+package com.unfpa.appsistenciamaternaunfpa.adapters.introductory;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001fB-\u0012\u0016\u0010\u0003\u001a\u0012\u0012\u0004\u0012\u00020\u00050\u0004j\b\u0012\u0004\u0012\u00020\u0005`\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\n\u00a2\u0006\u0002\u0010\u000bJ\b\u0010\u0016\u001a\u00020\u000fH\u0016J\u0018\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00022\u0006\u0010\u001a\u001a\u00020\u000fH\u0016J\u0018\u0010\u001b\u001a\u00020\u00022\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u000fH\u0016R\u001e\u0010\u0003\u001a\u0012\u0012\u0004\u0012\u00020\u00050\u0004j\b\u0012\u0004\u0012\u00020\u0005`\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0010\u001a\u00020\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015\u00a8\u0006 "}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/introductory/IntroAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/introductory/IntroAdapter$CountryViewHolder;", "IntroList", "Ljava/util/ArrayList;", "Lcom/unfpa/appsistenciamaternaunfpa/adapters/introductory/Type;", "Lkotlin/collections/ArrayList;", "activity", "Landroidx/fragment/app/FragmentActivity;", "itemName", "", "(Ljava/util/ArrayList;Landroidx/fragment/app/FragmentActivity;Ljava/lang/String;)V", "lastChecked", "Landroid/widget/CheckBox;", "lastCheckedPos", "", "selected", "", "getSelected", "()Z", "setSelected", "(Z)V", "getItemCount", "onBindViewHolder", "", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "CountryViewHolder", "app_debug"})
+public final class IntroAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.IntroAdapter.CountryViewHolder> {
+    private android.widget.CheckBox lastChecked;
+    private int lastCheckedPos;
+    private androidx.fragment.app.FragmentActivity activity;
+    private java.lang.String itemName;
+    private boolean selected;
+    private final java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> IntroList = null;
+    
+    public final boolean getSelected() {
+        return false;
+    }
+    
+    public final void setSelected(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public com.unfpa.appsistenciamaternaunfpa.adapters.introductory.IntroAdapter.CountryViewHolder onCreateViewHolder(@org.jetbrains.annotations.NotNull()
+    android.view.ViewGroup parent, int viewType) {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onBindViewHolder(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.adapters.introductory.IntroAdapter.CountryViewHolder holder, int position) {
+    }
+    
+    @java.lang.Override()
+    public int getItemCount() {
+        return 0;
+    }
+    
+    public IntroAdapter(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<com.unfpa.appsistenciamaternaunfpa.adapters.introductory.Type> IntroList, @org.jetbrains.annotations.NotNull()
+    androidx.fragment.app.FragmentActivity activity, @org.jetbrains.annotations.NotNull()
+    java.lang.String itemName) {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\r\u001a\u00020\u000e\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010\u00a8\u0006\u0011"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/adapters/introductory/IntroAdapter$CountryViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "itemView", "Landroid/view/View;", "(Landroid/view/View;)V", "checkBox", "Landroid/widget/CheckBox;", "getCheckBox", "()Landroid/widget/CheckBox;", "radioGroupOptions", "Landroid/widget/RadioGroup;", "getRadioGroupOptions", "()Landroid/widget/RadioGroup;", "textViewName", "Landroid/widget/TextView;", "getTextViewName", "()Landroid/widget/TextView;", "app_debug"})
+    public static final class CountryViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
+        @org.jetbrains.annotations.NotNull()
+        private final android.widget.TextView textViewName = null;
+        @org.jetbrains.annotations.NotNull()
+        private final android.widget.CheckBox checkBox = null;
+        @org.jetbrains.annotations.NotNull()
+        private final android.widget.RadioGroup radioGroupOptions = null;
+        
+        @org.jetbrains.annotations.NotNull()
+        public final android.widget.TextView getTextViewName() {
+            return null;
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final android.widget.CheckBox getCheckBox() {
+            return null;
+        }
+        
+        @org.jetbrains.annotations.NotNull()
+        public final android.widget.RadioGroup getRadioGroupOptions() {
+            return null;
+        }
+        
+        public CountryViewHolder(@org.jetbrains.annotations.NotNull()
+        android.view.View itemView) {
+            super(null);
+        }
+    }
+}

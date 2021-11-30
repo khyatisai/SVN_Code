@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>-->
+
+    <item
+            android:title="@string/action_notification"
+            android:id="@+id/notification"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_title_bell"/>
+    <item
+            android:title="@string/action_home"
+            android:id="@+id/home"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_title_home"/>
+
+    <item
+            android:title="calendar"
+            android:id="@+id/calendar"
+            app:showAsAction="always"
+            android:icon="@drawable/today_white"
+            />
+
+    <item
+            android:title="add"
+            android:id="@+id/add"
+            app:showAsAction="always"
+            android:icon="@drawable/add_white"/>
+</menu>

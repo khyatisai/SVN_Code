@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.sundeepk:compact-calendar-view:1.9.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/999f770c5e23039d56e5d07d216cce18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/999f770c5e23039d56e5d07d216cce18/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/999f770c5e23039d56e5d07d216cce18/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

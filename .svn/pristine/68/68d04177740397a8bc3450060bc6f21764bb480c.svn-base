@@ -1,0 +1,118 @@
+package com.unfpa.appsistenciamaternaunfpa.activities.my_health;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020,H\u0014J\u0006\u0010-\u001a\u00020*J\b\u0010.\u001a\u00020*H\u0016J\u0012\u0010/\u001a\u00020*2\b\u00100\u001a\u0004\u0018\u000101H\u0014J\u0010\u00102\u001a\u00020\u00162\u0006\u00103\u001a\u000204H\u0016J\u0010\u00105\u001a\u00020\u00162\u0006\u00106\u001a\u000207H\u0016R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR \u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001a\u0010\u0015\u001a\u00020\u0016X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR \u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001c\u0010\r\"\u0004\b\u001d\u0010\u000fR\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010!\u001a\u0004\u0018\u00010\"X\u0082\u000e\u00a2\u0006\u0002\n\u0000R \u0010#\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b$\u0010\r\"\u0004\b%\u0010\u000fR \u0010&\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\'\u0010\r\"\u0004\b(\u0010\u000f\u00a8\u00068"}, d2 = {"Lcom/unfpa/appsistenciamaternaunfpa/activities/my_health/PacienteActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "DialogAddPacienteToDoctor", "Lcom/unfpa/appsistenciamaternaunfpa/activities/DialogAddPacienteToDoctorFragment;", "getDialogAddPacienteToDoctor", "()Lcom/unfpa/appsistenciamaternaunfpa/activities/DialogAddPacienteToDoctorFragment;", "setDialogAddPacienteToDoctor", "(Lcom/unfpa/appsistenciamaternaunfpa/activities/DialogAddPacienteToDoctorFragment;)V", "IdUserPac", "Ljava/util/ArrayList;", "", "getIdUserPac", "()Ljava/util/ArrayList;", "setIdUserPac", "(Ljava/util/ArrayList;)V", "getPregnantByDoctor", "getGetPregnantByDoctor", "()Ljava/lang/String;", "setGetPregnantByDoctor", "(Ljava/lang/String;)V", "menuitemAddVisibled", "", "getMenuitemAddVisibled", "()Z", "setMenuitemAddVisibled", "(Z)V", "nombrePac", "getNombrePac", "setNombrePac", "numberOfDays", "", "selectedDt", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "tvCitasPersona", "getTvCitasPersona", "setTvCitasPersona", "tvCitasTelemedicina", "getTvCitasTelemedicina", "setTvCitasTelemedicina", "attachBaseContext", "", "newBase", "Landroid/content/Context;", "getAllPacient", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateOptionsMenu", "menu", "Landroid/view/Menu;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "app_debug"})
+public final class PacienteActivity extends androidx.appcompat.app.AppCompatActivity {
+    private androidx.appcompat.widget.Toolbar toolbar;
+    private java.lang.String selectedDt;
+    private int numberOfDays;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> nombrePac;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvCitasPersona;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> tvCitasTelemedicina;
+    @org.jetbrains.annotations.NotNull()
+    private java.util.ArrayList<java.lang.String> IdUserPac;
+    private boolean menuitemAddVisibled;
+    @org.jetbrains.annotations.NotNull()
+    private java.lang.String getPregnantByDoctor;
+    @org.jetbrains.annotations.NotNull()
+    private com.unfpa.appsistenciamaternaunfpa.activities.DialogAddPacienteToDoctorFragment DialogAddPacienteToDoctor;
+    private java.util.HashMap _$_findViewCache;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getNombrePac() {
+        return null;
+    }
+    
+    public final void setNombrePac(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvCitasPersona() {
+        return null;
+    }
+    
+    public final void setTvCitasPersona(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getTvCitasTelemedicina() {
+        return null;
+    }
+    
+    public final void setTvCitasTelemedicina(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.ArrayList<java.lang.String> getIdUserPac() {
+        return null;
+    }
+    
+    public final void setIdUserPac(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<java.lang.String> p0) {
+    }
+    
+    public final boolean getMenuitemAddVisibled() {
+        return false;
+    }
+    
+    public final void setMenuitemAddVisibled(boolean p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getGetPregnantByDoctor() {
+        return null;
+    }
+    
+    public final void setGetPregnantByDoctor(@org.jetbrains.annotations.NotNull()
+    java.lang.String p0) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.unfpa.appsistenciamaternaunfpa.activities.DialogAddPacienteToDoctorFragment getDialogAddPacienteToDoctor() {
+        return null;
+    }
+    
+    public final void setDialogAddPacienteToDoctor(@org.jetbrains.annotations.NotNull()
+    com.unfpa.appsistenciamaternaunfpa.activities.DialogAddPacienteToDoctorFragment p0) {
+    }
+    
+    @java.lang.Override()
+    protected void attachBaseContext(@org.jetbrains.annotations.NotNull()
+    android.content.Context newBase) {
+    }
+    
+    @java.lang.Override()
+    protected void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState) {
+    }
+    
+    public final void getAllPacient() {
+    }
+    
+    @java.lang.Override()
+    public boolean onCreateOptionsMenu(@org.jetbrains.annotations.NotNull()
+    android.view.Menu menu) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.NotNull()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    @java.lang.Override()
+    public void onBackPressed() {
+    }
+    
+    public PacienteActivity() {
+        super();
+    }
+}

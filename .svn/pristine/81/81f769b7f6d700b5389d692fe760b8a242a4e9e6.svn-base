@@ -1,0 +1,88 @@
+package com.unfpa.appsistenciamaternaunfpa.database.dao.country_office;
+
+import android.database.Cursor;
+import androidx.room.EntityInsertionAdapter;
+import androidx.room.RoomDatabase;
+import androidx.room.RoomSQLiteQuery;
+import androidx.sqlite.db.SupportSQLiteStatement;
+import com.unfpa.appsistenciamaternaunfpa.database.entity.country_office_listing.CountryList;
+import java.lang.Override;
+import java.lang.String;
+import java.lang.SuppressWarnings;
+import java.util.ArrayList;
+import java.util.List;
+
+@SuppressWarnings("unchecked")
+public final class CountryListDAO_Impl implements CountryListDAO {
+  private final RoomDatabase __db;
+
+  private final EntityInsertionAdapter __insertionAdapterOfCountryList;
+
+  public CountryListDAO_Impl(RoomDatabase __db) {
+    this.__db = __db;
+    this.__insertionAdapterOfCountryList = new EntityInsertionAdapter<CountryList>(__db) {
+      @Override
+      public String createQuery() {
+        return "INSERT OR IGNORE INTO `country_list`(`country_id`,`countryCode`,`countryName`) VALUES (?,?,?)";
+      }
+
+      @Override
+      public void bind(SupportSQLiteStatement stmt, CountryList value) {
+        if (value.getCountry_id() == null) {
+          stmt.bindNull(1);
+        } else {
+          stmt.bindString(1, value.getCountry_id());
+        }
+        if (value.getCountryCode() == null) {
+          stmt.bindNull(2);
+        } else {
+          stmt.bindString(2, value.getCountryCode());
+        }
+        if (value.getCountryName() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getCountryName());
+        }
+      }
+    };
+  }
+
+  @Override
+  public void insert(CountryList countryList) {
+    __db.beginTransaction();
+    try {
+      __insertionAdapterOfCountryList.insert(countryList);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
+  }
+
+  @Override
+  public List<CountryList> getAllCountry() {
+    final String _sql = "SELECT * from country_list";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _cursorIndexOfCountryId = _cursor.getColumnIndexOrThrow("country_id");
+      final int _cursorIndexOfCountryCode = _cursor.getColumnIndexOrThrow("countryCode");
+      final int _cursorIndexOfCountryName = _cursor.getColumnIndexOrThrow("countryName");
+      final List<CountryList> _result = new ArrayList<CountryList>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final CountryList _item;
+        final String _tmpCountry_id;
+        _tmpCountry_id = _cursor.getString(_cursorIndexOfCountryId);
+        final String _tmpCountryCode;
+        _tmpCountryCode = _cursor.getString(_cursorIndexOfCountryCode);
+        final String _tmpCountryName;
+        _tmpCountryName = _cursor.getString(_cursorIndexOfCountryName);
+        _item = new CountryList(_tmpCountry_id,_tmpCountryCode,_tmpCountryName);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+}

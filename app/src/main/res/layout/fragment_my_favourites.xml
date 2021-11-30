@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/page_bg"
+        android:layout_height="match_parent">
+
+
+    <EditText
+            android:id="@+id/edtSearch"
+            android:background="@drawable/rounded_border_edittext"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:lines="1"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="10dp"
+            android:hint="@string/search_articles"
+            android:drawableRight="@drawable/ic_input_search"
+            android:layout_height="40dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lstSRHContent"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:clipToPadding="false"
+            android:layout_below="@+id/edtSearch"
+            android:layout_height="match_parent"/>
+    <TextView
+            android:id="@+id/txtNoItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Text20Gray"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"
+            android:text="@string/no_favourite_article_as_of_now"/>
+
+</RelativeLayout>

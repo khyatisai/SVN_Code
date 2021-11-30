@@ -1,0 +1,140 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.unfpa.appsistenciamaternaunfpa"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 3
+        versionName "3.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+dependencies {
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    def room_version = "1.1.1"
+    def work_version = "2.2.0"
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+
+    // Declare the dependencies for the In-App Messaging and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-inappmessaging-display-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    // Lifecycle components
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.0.0'
+
+    implementation 'androidx.room:room-runtime:2.3.0'
+    kapt 'androidx.room:room-compiler:2.3.0'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.17'
+
+    //Volley implementation
+    implementation 'com.android.volley:volley:1.1.0'
+    //Gson implementation
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //calligraphy for custom fonts
+    //implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    //chips layout manager
+    implementation 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+    //Rich textview for html
+    implementation 'org.sufficientlysecure:html-textview:3.6'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.github.angads25:toggle:1.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+
+    implementation 'com.google.firebase:firebase-database-ktx:19.6.0'
+
+    // implementation 'com.github.sundeepk:compact-calendar-view:1.9.1'
+    implementation 'com.github.sundeepk:compact-calendar-view:1.9.8'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    // Add the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+//    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+//    implementation 'com.android.support:multidex:1.0.3
+
+    //chat SDK libs integration
+    implementation 'com.google.firebase:firebase-auth:20.0.3'
+    implementation 'com.google.firebase:firebase-firestore:22.1.1'
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    //implementation 'android.arch.work:work-runtime-ktx:1.0.1'
+    // WorkManager for background service
+    // Kotlin + coroutines
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    //google auth
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    //material design
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+
+
+    //facebook sdk
+    implementation 'com.facebook.android:facebook-android-sdk:5.0.0'
+
+    //Added
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Socket.io
+    implementation('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    implementation 'com.google.android.gms:play-services-basement:17.6.0'
+
+    implementation 'com.vicmikhailau:MaskedEditText:3.1.1'
+    kapt 'androidx.databinding:databinding-compiler-common:3.4.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

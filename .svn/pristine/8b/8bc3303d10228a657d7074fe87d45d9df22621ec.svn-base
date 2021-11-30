@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
+
+    <TextView
+            android:id="@+id/txtHeader"
+            style="@style/Text14Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permission_text_confirm"
+            android:textColor="#0062A9" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#0062A9"
+                android:padding="10dp"
+                android:text="@string/go_out"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+        <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#0062A9"
+                android:padding="10dp"
+                android:text="@string/ok"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

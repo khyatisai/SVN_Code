@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Date picker layout-->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:background="@drawable/page_bg"
+>
+
+    <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_period_start"
+            style="@style/Text14Orange"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:theme="@style/CalenderViewCustom"
+            android:elevation="10dp"
+            android:layout_below="@+id/txtHeader"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:id="@+id/txtClose"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btnDone"
+            style="@style/Text14Blue"
+            android:text="@string/Close"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/Done"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="?android:attr/textAppearanceButton"/>
+</RelativeLayout>
